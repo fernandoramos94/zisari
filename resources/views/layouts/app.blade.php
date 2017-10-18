@@ -9,14 +9,16 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="{!! asset('css/estilos.css') !!}" >
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <!--{!! asset('js/app.min.js') !!}-->
+        
+        <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"> -->
+        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+        <script type="text/javascript" src="{!! asset('js/app.js') !!}"></script>
+        
 
     </head>
     <body>
         @yield('contenedor')
-        <!-- <script src="{!! asset('js/jquery-3.1.1.min.js') !!}"></script> -->
-        <script src="{!! asset('js/bootstrap.min.js') !!}"></script>
+        <!-- <script src="{!! asset('js/bootstrap.min.js') !!}"></script> -->
         @yield('scripts')
     </body>
 </html>
