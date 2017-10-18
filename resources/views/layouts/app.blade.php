@@ -22,12 +22,13 @@
         @yield('scripts')
         <script type="text/javascript">
             var img1 = "{!! asset('/img/bg01.jpg') !!}";
-            console.log(img1);
+            var img2 = "{!! asset('/img/bg02.jpg') !!}";
+            var img3 = "{!! asset('/img/bg03.jpg') !!}";
             $("body").vegas({
                 slides: [
-                    { src: "" },
-                    { src: "/img/bg02.jpg" },
-                    { src: "/img/bg03.jpg" },
+                    { src: img1 },
+                    { src: img2 },
+                    { src: img3 },
                 ]
             });
         </script>
