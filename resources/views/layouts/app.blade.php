@@ -30,7 +30,8 @@
                     { src: img1 },
                     { src: img2 },
                     { src: img3 },
-                ]
+                ],
+                animation: 'kenburnsDownRight'
             });
         </script>
     </body>
