@@ -2,6 +2,7 @@
 @section("contenedor")
 <form action="" class="crearcuenta">
     <div id="list1">
+    	<h1 class="text-center" style="color: #74accf"><B>Zisari</B></h1>
         <h3 class="text">Crear Cuenta</h3>
     	<div class="form-group">
     		<label for="Nombre"><h5>Con las cuentas de Zisari se abre todo un mundo de ventajas para interactuar y conocer.</h5></label>
