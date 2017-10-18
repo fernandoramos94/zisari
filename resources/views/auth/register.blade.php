@@ -167,12 +167,15 @@
 @stop
 @section('scripts')
     <script type="text/javascript">
-        
+
         $(document).ready(function(){
             $("#btn_link1").on("click", function(){
-                alert("click");
                 $("#div2").show();
                 $("#div1").hide();
+            })
+            $("#btn_link2").on("click", function(){
+                $("#div3").show();
+                $("#div2").hide();
             })
         })
     </script>
