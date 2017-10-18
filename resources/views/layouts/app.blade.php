@@ -31,7 +31,8 @@
                     { src: img2 },
                     { src: img3 },
                 ],
-                animation: 'kenburnsDownRight'
+                animation: 'fadeInRight'
+                // kenburnsDownRight
             });
         </script>
     </body>
