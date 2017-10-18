@@ -9,13 +9,13 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="{!! asset('css/estilos.css') !!}" >
-
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <!--{!! asset('js/app.min.js') !!}-->
 
     </head>
     <body>
         @yield('contenedor')
-        <script src="{!! asset('js/jquery-3.1.1.min.js') !!}"></script>
+        <!-- <script src="{!! asset('js/jquery-3.1.1.min.js') !!}"></script> -->
         <script src="{!! asset('js/bootstrap.min.js') !!}"></script>
         @yield('scripts')
     </body>
