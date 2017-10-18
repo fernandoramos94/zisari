@@ -3,6 +3,9 @@
 @section('contenedor')
     <form class="crearcuenta" method="POST" action="{{ route('register') }}">
         {{ csrf_field() }}
+        <h1 class="text-center" style="color: #74accf"><B>Zisari</B></h1>
+        <h3 class="text">Crear Cuenta</h3>
+        <label for="Nombre"><h5>Con las cuentas de Zisari se abre todo un mundo de ventajas para interactuar y conocer.</h5></label>
         <div id="div1">
             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                     <input id="name" placeholder="Nombre de Usuario" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
