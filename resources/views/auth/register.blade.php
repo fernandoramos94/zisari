@@ -155,13 +155,11 @@
                     </span>
                 @endif
             </div>
-            <div class="form-group">
-                <div class="col-md-6 col-md-offset-4">
-                    <button type="submit" class="btn btn-primary btn-block">
-                        Finalizar
-                    </button>
-                </div>
-            </div>
+            <p class="text-center">
+                <button type="submit" class="btn btn-primary btn-block">
+                    Finalizar
+                </button>
+            </p>
         </div>
     </form>
 @stop
