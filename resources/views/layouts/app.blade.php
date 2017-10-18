@@ -21,9 +21,11 @@
         <!-- <script src="{!! asset('js/bootstrap.min.js') !!}"></script> -->
         @yield('scripts')
         <script type="text/javascript">
+            var img1 = "{!! asset('/img/bg01.jpg') !!}";
+            console.log(img1);
             $("body").vegas({
                 slides: [
-                    { src: "/img/bg01.jpg" },
+                    { src: "" },
                     { src: "/img/bg02.jpg" },
                     { src: "/img/bg03.jpg" },
                 ]
