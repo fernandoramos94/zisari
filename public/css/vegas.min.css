@@ -58,8 +58,8 @@ body.vegas-container>.vegas-timer{position:fixed;z-index:-1}:root body.vegas-con
 }
 @-webkit-keyframes fadeInRight{
 	0%{
-		-webkit-transform:scale(0) translate(100px,100px);
-		transform:scale(0) translate(-100px,-100px)
+		-webkit-transform:scale(0) translate(-50%,-50%);
+		transform:scale(0) translate(-50%,-50%)
 	}
 	100%{
 		-webkit-transform:scale(1) translate(0,0);
@@ -67,11 +67,11 @@ body.vegas-container>.vegas-timer{position:fixed;z-index:-1}:root body.vegas-con
 	}
 @keyframes fadeInRight{
 	0%{
-		-webkit-transform:scale(1.5) translate(-150%,-150%);
-		transform:scale(1.5) translate(-150%,-150%)
+		-webkit-transform:scale(1.5) translate(-50%,-50%);
+		transform:scale(1.5) translate(-50%,-50%)
 	}
 	100%{
-		-webkit-transform:scale(0) translate(-150%,-150%);
-		transform:scale(1) translate(-150%,-150%)
+		-webkit-transform:scale(1) translate(0, 0);
+		transform:scale(1) translate(0, 0)
 	}
 }
