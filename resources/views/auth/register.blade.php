@@ -57,7 +57,7 @@
                     @endif
             </div>
             <div class="form-group{{ $errors->has('pais') ? ' has-error' : '' }}">
-                    <select placeholder="Seleccionar país" name="pais" class="form-control">
+                    <select placeholder="Seleccionar país" id="pais" name="pais" class="form-control">
                         <option value="">Seleccionar país</option>
                         <option value="prueba1">prueba1</option>
                         <option value="prueba2">prueba2</option>
@@ -70,7 +70,7 @@
                     @endif
             </div>
             <div class="form-group{{ $errors->has('genero') ? has-'error' : '' }}">
-                <select class="form-control" name="genero" placeholder="Selecciona tu género">
+                <select class="form-control" name="genero" id="genero" placeholder="Selecciona tu género">
                     <option value="">Selecciona tu género</option>
                     <option value="Hombre">Hombre</option>
                     <option value="Mujer">Mujer</option>
@@ -86,7 +86,7 @@
             <div class="form-group{{ $errors->has('dia') ? ' has-error' : '' }}">
                 <div class="row">
                     <div class="col-lg-4">
-                        <input id="dias" placeholder="Día" type="number" class="form-control" name="dia" required autofocus>
+                        <input id="dia" placeholder="Día" type="number" class="form-control" name="dia" required autofocus>
 
                         @if ($errors->has('dia'))
                             <span class="help-block">
@@ -95,7 +95,7 @@
                         @endif
                     </div>
                     <div class="col-lg-4">
-                        <select class="form-control" name="mes" placeholder="Mes">
+                        <select class="form-control" id="mes" name="mes" placeholder="Mes">
                             <option value="">Mes</option>
                             <option value="10">Octubre</option>
                         </select>
