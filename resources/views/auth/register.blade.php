@@ -58,7 +58,9 @@
             </div>
             <div class="form-group{{ $errors->has('pais') ? ' has-error' : '' }}">
                     <select placeholder="Seleccionar país" name="pais" class="form-control">
-                        <option></option>
+                        <option value="">Seleccionar país</option>
+                        <option value="prueba1">prueba1</option>
+                        <option value="prueba2">prueba2</option>
                     </select>
 
                     @if ($errors->has('pais'))
@@ -69,7 +71,9 @@
             </div>
             <div class="form-group{{ $errors->has('genero') ? has-'error' : '' }}">
                 <select class="form-control" name="genero" placeholder="Selecciona tu género">
-                    <option></option>
+                    <option value="">Selecciona tu género</option>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
                 </select>
                 @if ($errors->has('genero'))
                     <span class="help-block">
@@ -92,7 +96,8 @@
                     </div>
                     <div class="col-lg-4">
                         <select class="form-control" name="mes" placeholder="Mes">
-                            <option></option>
+                            <option value="">Mes</option>
+                            <option value="10">Octubre</option>
                         </select>
 
                         @if ($errors->has('mes'))
