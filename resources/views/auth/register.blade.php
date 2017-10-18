@@ -73,7 +73,7 @@
                 </select>
                 @if ($errors->has('genero'))
                     <span class="help-block">
-                        <strong>{{ $errors->first('genero'}}</strong>
+                        <strong>{{ $errors->first('genero') }}</strong>
                     </span>
                 @endif
             </div>
@@ -135,9 +135,9 @@
             <div class="form-group{{ $errors->has('genero') ? has-'error' : '' }}">
 
                 <input id="documento" placeholder="Documento de Identidad" type="number" class="form-control" name="documento" required>
-                @if ($errors->has('documento')
+                @if ($errors->has('documento'))
                     <span class="help-block">
-                        <strong>{{ $errors->first('documento'}}</strong>
+                        <strong>{{ $errors->first('documento') }}</strong>
                     </span>
                 @endif
             </div>
