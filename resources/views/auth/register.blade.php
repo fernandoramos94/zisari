@@ -71,7 +71,7 @@
                 <select class="form-control" name="genero" placeholder="Selecciona tu género">
                     <option></option>
                 </select>
-                @if ($errors->has('genero')
+                @if ($errors->has('genero'))
                     <span class="help-block">
                         <strong>{{ $errors->first('genero'}}</strong>
                     </span>
