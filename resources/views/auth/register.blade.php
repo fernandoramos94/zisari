@@ -39,7 +39,7 @@
                 <input id="password-confirm" placeholder="Confirmar Contraseña" type="password" class="form-control" name="password_confirmation" required>
             </div>
         </div>
-        <div id="div2">
+        <div id="div2" style="display: none;">
             <div class="form-group{{ $errors->has('nombres') ? ' has-error' : '' }}">
                     <input id="nombres" placeholder="Nombres" type="text" class="form-control" name="nombres" required autofocus>
 
@@ -85,7 +85,7 @@
                 @endif
             </div>
         </div>
-        <div id="div3">
+        <div id="div3" style="display: none;">
             <div class="form-group{{ $errors->has('dia') ? ' has-error' : '' }}">
                 <div class="row">
                     <div class="col-lg-4">
