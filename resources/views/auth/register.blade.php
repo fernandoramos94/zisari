@@ -164,6 +164,8 @@
             </div>
         </div>
     </form>
+@stop
+@section('scripts')
     <script type="text/javascript">
         $(document).ready(function(){
             $("#btn_link1").on("click", function(){
