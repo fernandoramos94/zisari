@@ -8,11 +8,10 @@
         <title>Zisare</title>
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="{!! asset('css/estilos.css') !!}">
+        <link rel="stylesheet" href="{!! asset('css/estilos.css') !!}" >
 
         <!--{!! asset('js/app.min.js') !!}-->
 
-        <link />
     </head>
     <body>
         @yield('contenedor')
