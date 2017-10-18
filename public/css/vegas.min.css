@@ -53,13 +53,13 @@ body.vegas-container>.vegas-timer{position:fixed;z-index:-1}:root body.vegas-con
 .vegas-animation-fadeInRight{
 	-webkit-animation:fadeInRight;
 	animation:fadeInRight;
-	-webkit-animation-duration: 10s;
-	animation-duration: 10s;
+	-webkit-animation-duration: 20s;
+	animation-duration: 20s;
 }
 @-webkit-keyframes fadeInRight{
 	0%{
 		-webkit-transform:scale(0) translate(100px,100px);
-		transform:scale(0) translate(100px,100px)
+		transform:scale(0) translate(-100px,-100px)
 	}
 	100%{
 		-webkit-transform:scale(1) translate(0,0);
@@ -67,8 +67,8 @@ body.vegas-container>.vegas-timer{position:fixed;z-index:-1}:root body.vegas-con
 	}
 @keyframes fadeInRight{
 	0%{
-		-webkit-transform:scale(0) translate(100px,100px);
-		transform:scale(0) translate(100px,100px)
+		-webkit-transform:scale(1.5) translate(-100px,-100px);
+		transform:scale(1.5) translate(-100px,-100px)
 	}
 	100%{
 		-webkit-transform:scale(0) translate(-100px,-100px);
