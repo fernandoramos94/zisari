@@ -38,6 +38,9 @@
             <div class="form-group">
                 <input id="password-confirm" placeholder="Confirmar Contraseña" type="password" class="form-control" name="password_confirmation" required>
             </div>
+            <p class="text-center">
+                <button class="btn btn-primary btn-block" id="btn_link1">Siguiente</button>
+            </p>
         </div>
         <div id="div2" style="display: none;">
             <div class="form-group{{ $errors->has('nombres') ? ' has-error' : '' }}">
@@ -84,6 +87,9 @@
                     </span>
                 @endif
             </div>
+            <p class="text-center">
+                <button class="btn btn-primary btn-block" id="btn_link2">Siguiente</button>
+            </p>
         </div>
         <div id="div3" style="display: none;">
             <div class="form-group{{ $errors->has('dia') ? ' has-error' : '' }}">
@@ -149,13 +155,21 @@
                     </span>
                 @endif
             </div>
-        </div>
-        <div class="form-group">
-            <div class="col-md-6 col-md-offset-4">
-                <button type="submit" class="btn btn-primary">
-                    Register
-                </button>
+            <div class="form-group">
+                <div class="col-md-6 col-md-offset-4">
+                    <button type="submit" class="btn btn-primary">
+                        Register
+                    </button>
+                </div>
             </div>
         </div>
     </form>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#btn_link1").on("click", function(){
+                $("#div2").show();
+                $("#div1").hide();
+            })
+        })
+    </script>
 @endsection
