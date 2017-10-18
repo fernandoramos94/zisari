@@ -173,4 +173,4 @@
             })
         })
     </script>
-@endsection
+@stop
