@@ -27,6 +27,9 @@ class CreateUsersTable extends Migration
             $table->string('anio');
             $table->string('numeroCelular');
             $table->string('documento');
+            $table->string('correo')->unique();
+            $table->string('portado');
+            $table->string('imagen');
             $table->rememberToken();
             $table->timestamps();
         });

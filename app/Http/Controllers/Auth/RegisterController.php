@@ -74,6 +74,7 @@ class RegisterController extends Controller
             'anio' => $data['anio'],
             'numeroCelular' => $data['numeroCelular'],
             'documento' => $data['documento'],
+            'correo' => $data['correo'],
             'password' => bcrypt($data['password']),
         ]);
     }
