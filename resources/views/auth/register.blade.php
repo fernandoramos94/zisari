@@ -39,7 +39,7 @@
                 <input id="password-confirm" placeholder="Confirmar Contraseña" type="password" class="form-control" name="password_confirmation" required>
             </div>
             <p class="text-center">
-                <button class="btn btn-primary btn-block" id="btn_link1">Siguiente</button>
+                <a class="btn btn-primary btn-block" id="btn_link1">Siguiente</a>
             </p>
         </div>
         <div id="div2" style="display: none;">
@@ -88,7 +88,7 @@
                 @endif
             </div>
             <p class="text-center">
-                <button class="btn btn-primary btn-block" id="btn_link2">Siguiente</button>
+                <a class="btn btn-primary btn-block" id="btn_link2">Siguiente</a>
             </p>
         </div>
         <div id="div3" style="display: none;">
