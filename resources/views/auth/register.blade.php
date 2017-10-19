@@ -233,7 +233,7 @@
                     });
                     return false;
                 }
-                var emal = $("#email").val();
+                var emal = JSON.parse($("#email").val());
 
                 for (var e = 0; e < emal.length; e++) {
                     console.log(emal[e]);
