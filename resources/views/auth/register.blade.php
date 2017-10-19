@@ -187,20 +187,50 @@
                             icon:'fa fa-ban'
                         },
                         'position'  :'top right',
-                        'outEffect' :'slideBottom'
+                        'delay'     :3000
                     });
                     return false;
                 }
                 if ($("#email").val() == ""){
-                    
+                    $.amaran({
+                        'theme'     :'awesome warning',
+                        'content'   :{
+                            title: "",
+                            message:'El campo correo es requerido.',
+                            info: "",
+                            icon:'fa fa-ban'
+                        },
+                        'position'  :'top right',
+                        'delay'     :3000
+                    });
                     return false;
                 }
                 if ($("#password").val() == ""){
-                    
+                    $.amaran({
+                        'theme'     :'awesome warning',
+                        'content'   :{
+                            title: "",
+                            message:'El campo contraseña es requerido.',
+                            info: "",
+                            icon:'fa fa-ban'
+                        },
+                        'position'  :'top right',
+                        'delay'     :3000
+                    });
                     return false;
                 }
                 if ($("#password-confirm").val() == "") {
-                    
+                    $.amaran({
+                        'theme'     :'awesome warning',
+                        'content'   :{
+                            title: "",
+                            message:'El campo confirmar contraseña es requerido.',
+                            info: "",
+                            icon:'fa fa-ban'
+                        },
+                        'position'  :'top right',
+                        'delay'     :3000
+                    });
                     return false;
                 }
                 $("#div2").show();
