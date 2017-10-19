@@ -26,6 +26,8 @@
   					<label>Finalización</label>
   					<input type="date" name="" class="form-control">
   					<input type="text" name="" class="form-control">
+  					<br>
+  					<a href="" class="btn btn-success">Guardar</a>
   				</div>
   			</div>
 		</div>
@@ -51,6 +53,8 @@
   					<label>Finalización</label>
   					<input type="date" name="" class="form-control">
   					<input type="text" name="" class="form-control">
+  					<br>
+  					<a href="" class="btn btn-success">Guardar</a>
   				</div>
   			</div>
 		</div>
