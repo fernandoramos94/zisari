@@ -20,7 +20,7 @@
 					<td>{{$user->pais}}</td>
 					<td>45</td>
 					<td><a>Ver </a></td>
-					<td><a class="btn btn-success"> Bloquear Usuario </a></td>
+					<td><a > Bloquear Usuario </a></td>
 				</tr>
 			@endforeach
 		</tbody>
