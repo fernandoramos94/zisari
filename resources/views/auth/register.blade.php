@@ -65,8 +65,6 @@
             <div class="form-group{{ $errors->has('pais') ? ' has-error' : '' }}">
                     <select placeholder="Seleccionar país" id="pais" name="pais" class="form-control">
                         <option value="">Seleccionar país</option>
-                        <option value="prueba1">prueba1</option>
-                        <option value="prueba2">prueba2</option>
                     </select>
 
                     @if ($errors->has('pais'))
@@ -94,7 +92,7 @@
         <div id="div3" style="display: none;">
             <div class="form-group{{ $errors->has('dia') ? ' has-error' : '' }}">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                         <input id="dia" placeholder="Día" type="number" class="form-control" name="dia" required autofocus>
 
                         @if ($errors->has('dia'))
@@ -103,10 +101,9 @@
                             </span>
                         @endif
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-5">
                         <select class="form-control" id="mes" name="mes" placeholder="Mes">
                             <option value="">Mes</option>
-                            <option value="10">Octubre</option>
                         </select>
 
                         @if ($errors->has('mes'))
@@ -128,7 +125,7 @@
             </div>
             <div class="form-group{{ $errors->has('numeroCelular') ? ' has-error' : '' }}">
 
-                    <input id="numeroCelular" placeholder="+(Código)" type="text" class="form-control" name="numeroCelular"  required>
+                    <input id="numeroCelular" placeholder="+(Código) Número de Móbil" type="text" class="form-control" name="numeroCelular"  required>
 
                     @if ($errors->has('numeroCelular'))
                         <span class="help-block">
@@ -138,7 +135,7 @@
             </div>
             <div class="form-group{{ $errors->has('correo') ? ' has-error' : '' }}">
                     
-                    <input id="correo" type="email" placeholder="Correo" class="form-control" name="correo" required>
+                    <input id="correo" type="email" placeholder="Correo de coinbase" class="form-control" name="correo" required>
 
                     @if ($errors->has('correo'))
                         <span class="help-block">
@@ -165,8 +162,20 @@
 @stop
 @section('scripts')
     <script type="text/javascript">
-
         $(document).ready(function(){
+        var paises = [ "Afganistán", "Akrotiri", "Albania", "Alemania", "Andorra", "Angola", "Anguila", "Antártida", "Antigua y Barbuda", "Antillas Neerlandesas", "Arabia Saudí", "Arctic Ocean", "Argelia", "Argentina", "Armenia", "Aruba", "Ashmore andCartier Islands", "Atlantic Ocean", "Australia", "Austria", "Azerbaiyán", "Bahamas", "Bahráin", "Bangladesh", "Barbados", "Bélgica", "Belice", "Benín", "Bermudas", "Bielorrusia", "Birmania Myanmar", "Bolivia", "Bosnia y Hercegovina", "Botsuana", "Brasil", "Brunéi", "Bulgaria", "Burkina Faso", "Burundi", "Bután", "Cabo Verde", "Camboya", "Camerún", "Canadá", "Chad", "Chile", "China", "Chipre", "Clipperton Island", "Colombia", "Comoras", "Congo", "Coral Sea Islands", "Corea del Norte", "Corea del Sur", "Costa de Marfil", "Costa Rica", "Croacia", "Cuba", "Dhekelia", "Dinamarca", "Dominica", "Ecuador", "Egipto", "El Salvador", "El Vaticano", "Emiratos Árabes Unidos", "Eritrea", "Eslovaquia", "Eslovenia", "España", "Estados Unidos", "Estonia", "Etiopía", "Filipinas", "Finlandia", "Fiyi", "Francia", "Gabón", "Gambia", "Gaza Strip", "Georgia", "Ghana", "Gibraltar", "Granada", "Grecia", "Groenlandia", "Guam", "Guatemala", "Guernsey", "Guinea", "Guinea Ecuatorial", "Guinea-Bissau", "Guyana", "Haití", "Honduras", "Hong Kong", "Hungría", "India", "Indian Ocean", "Indonesia", "Irán", "Iraq", "Irlanda", "Isla Bouvet", "Isla Christmas", "Isla Norfolk", "Islandia", "Islas Caimán", "Islas Cocos", "Islas Cook", "Islas Feroe", "Islas Georgia del Sur y Sandwich del Sur", "Islas Heard y McDonald", "Islas Malvinas", "Islas Marianas del Norte", "IslasMarshall", "Islas Pitcairn", "Islas Salomón", "Islas Turcas y Caicos", "Islas Vírgenes Americanas", "Islas Vírgenes Británicas", "Israel", "Italia", "Jamaica", "Jan Mayen", "Japón", "Jersey", "Jordania", "Kazajistán", "Kenia", "Kirguizistán", "Kiribati", "Kuwait", "Laos", "Lesoto", "Letonia", "Líbano", "Liberia", "Libia", "Liechtenstein", "Lituania", "Luxemburgo", "Macao", "Macedonia", "Madagascar", "Malasia", "Malaui", "Maldivas", "Malí", "Malta", "Man, Isle of", "Marruecos", "Mauricio", "Mauritania", "Mayotte", "México", "Micronesia", "Moldavia", "Mónaco", "Mongolia", "Montserrat", "Mozambique", "Namibia", "Nauru", "Navassa Island", "Nepal", "Nicaragua", "Níger", "Nigeria", "Niue", "Noruega", "Nueva Caledonia", "Nueva Zelanda", "Omán", "Pacific Ocean", "Países Bajos", "Pakistán", "Palaos", "Panamá", "Papúa-Nueva Guinea", "Paracel Islands", "Paraguay", "Perú", "Polinesia Francesa", "Polonia", "Portugal", "Puerto Rico", "Qatar", "Reino Unido", "República Centroafricana", "República Checa", "República Democrática del Congo", "República Dominicana", "Ruanda", "Rumania", "Rusia", "Sáhara Occidental", "Samoa", "Samoa Americana", "San Cristóbal y Nieves", "San Marino", "San Pedro y Miquelón", "San Vicente y las Granadinas", "Santa Helena", "Santa Lucía", "Santo Tomé y Príncipe", "Senegal", "Seychelles", "Sierra Leona", "Singapur", "Siria", "Somalia", "Southern Ocean", "Spratly Islands", "Sri Lanka", "Suazilandia", "Sudáfrica", "Sudán", "Suecia", "Suiza", "Surinam", "Svalbard y Jan Mayen", "Tailandia", "Taiwán", "Tanzania", "Tayikistán", "TerritorioBritánicodel Océano Indico", "Territorios Australes Franceses", "Timor Oriental", "Togo", "Tokelau", "Tonga", "Trinidad y Tobago", "Túnez", "Turkmenistán", "Turquía", "Tuvalu", "Ucrania", "Uganda", "Unión Europea", "Uruguay", "Uzbekistán", "Vanuatu", "Venezuela", "Vietnam", "Wake Island", "Wallis y Futuna", "West Bank", "World", "Yemen", "Yibuti", "Zambia", "Zimbabue" ];
+            var op = "";
+            for (var i = 0; i < paises.length; i++) {
+                op += "<option value='"+paises[i]+"'>"+paises[i]+"</option>";
+            }
+            $("#pais").append(op);
+
+            var meses = ['enero','febrero','marzo','abril','mayo','junio','julio', 'agosto','septiembre','octubre','noviembre','diciembre'];
+            var opM = "";
+            for (var a = 0; a < meses.length; a++) {
+                opM += "<option value='"+meses[a]+"'>"+meses[a]+"</option>";
+            }
+            $("#mes").append(opM);
             $("#btn_link1").on("click", function(){
                 $("#div2").show();
                 $("#div1").hide();
