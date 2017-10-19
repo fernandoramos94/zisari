@@ -13,8 +13,8 @@
   				<div class="panel-body">
   					<label>Texto de Titulo</label>
   					<textarea class="form-control">
-  						
   					</textarea>
+  					<br><br>
   					<label>Definir Fecha de Inicio y de Finalizacion</label>
   					<br><br>
   					<label>
@@ -22,6 +22,7 @@
   					</label>
   					<input type="date" name="" class="form-control">
   					<input type="text" name="" class="form-control">
+  					<br>
   					<label>Finalización</label>
   					<input type="date" name="" class="form-control">
   					<input type="text" name="" class="form-control">
@@ -34,8 +35,12 @@
   				<div class="panel-body">
   					<label>Subir Imagen</label>
   					<input type="file" name="">
+  					<br>
+  					<br>
   					<label>Enlace de Imagen</label>
-  					<input type="text" name="">
+  					<br>
+  					<input type="text" name="" class="form-control">
+  					<br><br>
   					<label>Definir Fecha de Inicio y de Finalizacion</label>
   					<br><br>
   					<label>
@@ -43,6 +48,7 @@
   					</label>
   					<input type="date" name="" class="form-control">
   					<input type="text" name="" class="form-control">
+  					<br>
   					<label>Finalización</label>
   					<input type="date" name="" class="form-control">
   					<input type="text" name="" class="form-control">
