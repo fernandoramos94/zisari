@@ -233,10 +233,85 @@
                     });
                     return false;
                 }
+                var emal = $("#email").val();
+
+                for (var e = 0; e < emal.length; e++) {
+                    console.log(emal[e]);
+                    if( emal[e] != "@" ){
+                        $.amaran({
+                            'theme'     :'awesome warning',
+                            'content'   :{
+                                title: "",
+                                message:'El correo ingresado es incorrecto.',
+                                info: "",
+                                icon:'fa fa-ban'
+                            },
+                            'position'  :'top right',
+                            'delay'     :3000
+                        });
+                        return false;
+                    }
+                }
                 $("#div2").show();
                 $("#div1").hide();
             })
             $("#btn_link2").on("click", function(){
+                if ($("#nombres").val() == ""){
+                    $.amaran({
+                        'theme'     :'awesome warning',
+                        'content'   :{
+                            title: "",
+                            message:'El campo nombres es requerido.',
+                            info: "",
+                            icon:'fa fa-ban'
+                        },
+                        'position'  :'top right',
+                        'delay'     :3000
+                    });
+                    return false;
+                }
+                if ($("#apellidos").val() == ""){
+                    $.amaran({
+                        'theme'     :'awesome warning',
+                        'content'   :{
+                            title: "",
+                            message:'El campo apellidos es requerido.',
+                            info: "",
+                            icon:'fa fa-ban'
+                        },
+                        'position'  :'top right',
+                        'delay'     :3000
+                    });
+                    return false;
+                }
+                if ($("#pais").val() == ""){
+                    $.amaran({
+                        'theme'     :'awesome warning',
+                        'content'   :{
+                            title: "",
+                            message:'El campo pais es requerido.',
+                            info: "",
+                            icon:'fa fa-ban'
+                        },
+                        'position'  :'top right',
+                        'delay'     :3000
+                    });
+                    return false;
+                }
+                if ($("#genero").val() == "") {
+                    $.amaran({
+                        'theme'     :'awesome warning',
+                        'content'   :{
+                            title: "",
+                            message:'El campo género es requerido.',
+                            info: "",
+                            icon:'fa fa-ban'
+                        },
+                        'position'  :'top right',
+                        'delay'     :3000
+                    });
+                    return false;
+                }
                 $("#div3").show();
                 $("#div2").hide();
             })
