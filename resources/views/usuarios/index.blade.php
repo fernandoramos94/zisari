@@ -13,7 +13,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			@foreach ($usuario in $user)
+			@foreach ($usuario as $user)
 			{{dd($user)}}
 				<tr>
 					<td>{{$user->nombres}}</td>
