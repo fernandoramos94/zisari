@@ -178,19 +178,22 @@
             $("#mes").append(opM);
             $("#btn_link1").on("click", function(){
                 if ($("#name").val() == ""){
-                    toastr.warning('El campo nombre usuario es requerido.');
+                    $.amaran({
+                        'message'   :'My positioning example.',
+                        'position'  :'top right'
+                    });
                     return false;
                 }
                 if ($("#email").val() == ""){
-                    toastr.warning('El campo correo es requerido.');
+                    
                     return false;
                 }
                 if ($("#password").val() == ""){
-                    toastr.warning('El campo contraseña es requerido.');
+                    
                     return false;
                 }
                 if ($("#password-confirm").val() == "") {
-                    toastr.warning('El campo confirmar contraseña es requerido.');
+                    
                     return false;
                 }
                 $("#div2").show();
