@@ -37,10 +37,12 @@
 	</div>
 	
 </div>
+
+@stop()
+@section('scripts')
 <script type="text/javascript">
 	$(document).ready(function(){
 	    $('#tablaUsuarios').DataTable();
 	});
 </script>
-
-@stop
+@stop()
