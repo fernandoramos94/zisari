@@ -14,9 +14,9 @@
   					<label>Texto de Titulo</label>
   					<textarea class="form-control">
   					</textarea>
-  					<br><br>
+  					<br>
   					<label>Definir Fecha de Inicio y de Finalizacion</label>
-  					<br><br>
+  					<br>
   					<label>
   						Inicio
   					</label>
