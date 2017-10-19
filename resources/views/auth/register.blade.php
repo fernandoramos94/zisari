@@ -254,23 +254,24 @@
                                 return false;
                             }
                         }
+                        var spl = emal.split("@").pop();
+                        if (spl != "gmail.com") {
+                            $.amaran({
+                                'theme' :'awesome warning',
+                                'content' :{
+                                    title: "",
+                                    message:'Solo se admiten correos de gmail.',
+                                    info: "",
+                                    icon:'fa fa-ban'
+                                },
+                                'position'  :'top right',
+                                'delay'     :3000
+                            });
+                            return false;
+                        }
                     }
                 }
-                var spl = emal.split("@").pop();
-                if (spl != "gmail.com") {
-                    $.amaran({
-                        'theme' :'awesome warning',
-                        'content' :{
-                            title: "",
-                            message:'Solo se admiten correos de gmail.',
-                            info: "",
-                            icon:'fa fa-ban'
-                        },
-                        'position'  :'top right',
-                        'delay'     :3000
-                    });
-                    return false;
-                }
+                
                 console.log(arr);
                 $("#div2").show();
                 $("#div1").hide();
