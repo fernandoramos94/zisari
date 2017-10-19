@@ -42,7 +42,9 @@
 @section('scripts')
 <script type="text/javascript">
 	$(document).ready(function(){
-	    $('#tablaUsuarios').DataTable();
+	    $('#tablaUsuarios').DataTable({
+	    	ordering: false,
+	    });
 	});
 </script>
 @stop()
