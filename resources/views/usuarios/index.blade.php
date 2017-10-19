@@ -13,7 +13,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			@foreach($usuario in $user)
+			@foreach ($usuario in $user)
 				<tr>
 					<td>{{$user->nombres}}</td>
 					<td>{{$user->apellidos}}</td>
@@ -22,7 +22,7 @@
 					<td><a>Ver </a></td>
 					<td><a class="btn btn-success"> Bloquear Usuario </a></td>
 				</tr>
-			@endforeach()
+			@endforeach
 		</tbody>
 	</table>
 </div>
