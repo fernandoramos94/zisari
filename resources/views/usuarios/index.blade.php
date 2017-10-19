@@ -9,7 +9,7 @@
 	<div class="panel panel-default">
   		<div class="panel-heading">Base de Datos de Registro de Usuarios</div>
   		<div class="panel-body">
-  			<table class="table table-bordered">
+  			<table class="table table-bordered" id="tablaUsuarios">
 				<thead>
 					<tr>
 						<th>Nombre</th>
@@ -37,4 +37,10 @@
 	</div>
 	
 </div>
+<script type="text/javascript">
+	$(document).ready(function(){
+	    $('#tablaUsuarios').DataTable();
+	});
+</script>
+
 @stop
