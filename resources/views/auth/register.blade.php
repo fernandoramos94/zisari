@@ -179,8 +179,13 @@
             $("#btn_link1").on("click", function(){
                 if ($("#name").val() == ""){
                     $.amaran({
-                        'message'   :'My positioning example.',
-                        'position'  :'top right'
+                        'theme'     :'awesome warning',
+                        'content'   :{
+                            message:'El campo nombre de usuario es requerido.',
+                            icon:'fa fa-ban'
+                        },
+                        'position'  :'top right',
+                        'outEffect' :'slideBottom'
                     });
                     return false;
                 }
