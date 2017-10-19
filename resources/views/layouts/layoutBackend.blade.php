@@ -176,7 +176,7 @@
                     <li class="sub-menu">
                         <a href="javascript:void(0);"><i class="fa fa-table"></i><span>Usuarios</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                         <ul>
-                            <li><a href="#">Administración</a>
+                            <li><a href="{{URL::to('usuarios')}}">Administración</a>
                             </li>
                             <li><a href="#">Registros</a>
                             </li>
