@@ -238,6 +238,7 @@
                 for (var j = 0; j < emal.length; j++) {
                     arr[j] = emal.charAt(j);
                     if (j == emal.length-1) {
+                        console.log(arr);
                         for (var e = 0; e < arr.length; e++) {
                             if( arr[e] != "@" ){
                                 $.amaran({
