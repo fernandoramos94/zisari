@@ -187,26 +187,62 @@
                     return false;
                 }
                 if ($("#email").val() == ""){
+                    notif({
+                        type: "warning",
+                        msg: "El campo correo es requerido",
+                        position: "right",
+                        opacity: 0.8
+                    });
                     return false;
                 }
                 if ($("#password").val() == ""){
+                    notif({
+                        type: "warning",
+                        msg: "El campo contraseña es requerido",
+                        position: "right",
+                        opacity: 0.8
+                    });
                     return false;
                 }
                 if ($("#password-confirm").val() == "") {
+                    notif({
+                        type: "warning",
+                        msg: "El campo confirmar contraseña es requerido",
+                        position: "right",
+                        opacity: 0.8
+                    });
                     return false;
                 }
                 var emal = $("#email").val();
                 var vali = validateEmail(emal);
                 if (vali == false) {
+                    notif({
+                        type: "warning",
+                        msg: "El correo ingresado es invalido",
+                        position: "right",
+                        opacity: 0.8
+                    });
                     return false;
                 }
                 var spl = emal.split("@").pop();
                 if (spl != "gmail.com") {
+                    notif({
+                        type: "warning",
+                        msg: "El campo correo solo admite cuentas de gmail",
+                        position: "right",
+                        opacity: 0.8
+                    });
                     return false;
                 }
                 var pass = $("#password").val();
                 var confPass = $("#password-confirm").val();
                 if (pass != confPass) {
+                    notif({
+                        type: "warning",
+                        msg: "Las contraseñas no coinciden",
+                        position: "right",
+                        opacity: 0.8
+                    });
                     return false;
                 }
                 $("#div2").show();
