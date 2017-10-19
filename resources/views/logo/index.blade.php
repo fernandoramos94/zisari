@@ -16,14 +16,15 @@
   						
   					</textarea>
   					<label>Definir Fecha de Inicio y de Finalizacion</label>
+  					<br><br>
   					<label>
   						Inicio
   					</label>
-  					<input type="date" name="">
-  					<input type="text" name="">
+  					<input type="date" name="" class="form-control">
+  					<input type="text" name="" class="form-control">
   					<label>Finalización</label>
-  					<input type="date" name="">
-  					<input type="text" name="">
+  					<input type="date" name="" class="form-control">
+  					<input type="text" name="" class="form-control">
   				</div>
   			</div>
 		</div>
@@ -36,14 +37,15 @@
   					<label>Enlace de Imagen</label>
   					<input type="text" name="">
   					<label>Definir Fecha de Inicio y de Finalizacion</label>
+  					<br><br>
   					<label>
   						Inicio
   					</label>
-  					<input type="date" name="">
-  					<input type="text" name="">
+  					<input type="date" name="" class="form-control">
+  					<input type="text" name="" class="form-control">
   					<label>Finalización</label>
-  					<input type="date" name="">
-  					<input type="text" name="">
+  					<input type="date" name="" class="form-control">
+  					<input type="text" name="" class="form-control">
   				</div>
   			</div>
 		</div>
