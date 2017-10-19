@@ -127,7 +127,7 @@
                     </li>
                     <li class="dropdown settings">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                      {{Auth::user()->nombre}} <i class="fa fa-angle-down"></i>
+                      {{Auth::user()->name}} <i class="fa fa-angle-down"></i>
                     </a>
                         <ul class="dropdown-menu animated fadeInDown">
                             <li>
