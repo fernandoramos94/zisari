@@ -178,106 +178,35 @@
             $("#mes").append(opM);
             $("#btn_link1").on("click", function(){
                 if ($("#name").val() == ""){
-                    $.amaran({
-                        'theme'     :'awesome warning',
-                        'content'   :{
-                            title: "",
-                            message:'El campo nombre de usuario es requerido.',
-                            info: "",
-                            icon:'fa fa-ban'
-                        },
-                        'position'  :'top right',
-                        'delay'     :3000
+                    notif({
+                        type: "warning",
+                        msg: "El campo nombre de usuario es requerido",
+                        position: "right",
+                        opacity: 0.8
                     });
                     return false;
                 }
                 if ($("#email").val() == ""){
-                    $.amaran({
-                        'theme'     :'awesome warning',
-                        'content'   :{
-                            title: "",
-                            message:'El campo correo es requerido.',
-                            info: "",
-                            icon:'fa fa-ban'
-                        },
-                        'position'  :'top right',
-                        'delay'     :3000
-                    });
                     return false;
                 }
                 if ($("#password").val() == ""){
-                    $.amaran({
-                        'theme'     :'awesome warning',
-                        'content'   :{
-                            title: "",
-                            message:'El campo contraseña es requerido.',
-                            info: "",
-                            icon:'fa fa-ban'
-                        },
-                        'position'  :'top right',
-                        'delay'     :3000
-                    });
                     return false;
                 }
                 if ($("#password-confirm").val() == "") {
-                    $.amaran({
-                        'theme'     :'awesome warning',
-                        'content'   :{
-                            title: "",
-                            message:'El campo confirmar contraseña es requerido.',
-                            info: "",
-                            icon:'fa fa-ban'
-                        },
-                        'position'  :'top right',
-                        'delay'     :3000
-                    });
                     return false;
                 }
                 var emal = $("#email").val();
                 var vali = validateEmail(emal);
                 if (vali == false) {
-                    $.amaran({
-                        'theme' :'awesome warning',
-                        'content' :{
-                            title: "",
-                            message:'Correo invalido.',
-                            info: "",
-                            icon:'fa fa-ban'
-                        },
-                        'position'  :'top right',
-                        'delay'     :3000
-                    });
                     return false;
                 }
                 var spl = emal.split("@").pop();
                 if (spl != "gmail.com") {
-                    $.amaran({
-                        'theme' :'awesome warning',
-                        'content' :{
-                            title: "",
-                            message:'Solo se admiten correos de gmail.',
-                            info: "",
-                            icon:'fa fa-ban'
-                        },
-                        'position'  :'top right',
-                        'delay'     :3000
-                    });
                     return false;
                 }
                 var pass = $("#password").val();
                 var confPass = $("#password-confirm").val();
                 if (pass != confPass) {
-                    $.amaran({
-                        'theme' :'awesome warning',
-                        'content' :{
-                            title: "",
-                            message:'Las contraseñas con coinciden.',
-                            info: "",
-                            icon:'fa fa-ban'
-                        },
-                        'position'  :'top right',
-                        'delay'     :3000
-                    });
                     return false;
                 }
                 $("#div2").show();

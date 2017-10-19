@@ -17,8 +17,9 @@
         <link rel="stylesheet" href="http://www.amaranjs.com/AmaranJS/dist/css/amaran.min.css">
         <link rel="stylesheet" href="http://www.amaranjs.com/AmaranJS/dist/css/animate.min.css">
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <script src="http://www.amaranjs.com/AmaranJS/dist/js/jquery.amaran.js"></script>
-        
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/notifIt.css') }}">
+        <script type="text/javascript" src="{{asset('js/notifIt.js'}}"></script>
+
     </head>
     <body>
         <script src="{{ asset('js/main.js') }}"></script>
