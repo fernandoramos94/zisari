@@ -36,13 +36,12 @@
   					<label>Subir Imagen</label>
   					<input type="file" name="">
   					<br>
-  					<br>
   					<label>Enlace de Imagen</label>
   					<br>
   					<input type="text" name="" class="form-control">
-  					<br><br>
+  					<br>
   					<label>Definir Fecha de Inicio y de Finalizacion</label>
-  					<br><br>
+  					<br>
   					<label>
   						Inicio
   					</label>
