@@ -233,8 +233,12 @@
                     });
                     return false;
                 }
-                var emal = JSON.parse($("#email").val());
-
+                var emal = $("#email").val();
+                var arr = [];
+                for (var j = 0; j < emal.length; j++) {
+                    arr[j] = emal.charAt(j);
+                }
+                console.log(arr);
                 for (var e = 0; e < emal.length; e++) {
                     console.log(emal[e]);
                     if( emal[e] != "@" ){
