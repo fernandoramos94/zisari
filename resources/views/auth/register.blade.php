@@ -240,7 +240,9 @@
                     if (j == emal.length-1) {
                         console.log(arr);
                         for (var e = 0; e < arr.length; e++) {
-                            if( arr[e] != "@" ){
+                            if( arr[e] == "@" ){
+                                console.log("existe");
+                            }else{
                                 $.amaran({
                                     'theme' :'awesome warning',
                                     'content' :{
@@ -253,6 +255,7 @@
                                     'delay'     :3000
                                 });
                                 return false;
+
                             }
                         }
                         var spl = emal.split("@").pop();
