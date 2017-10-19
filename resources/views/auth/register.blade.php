@@ -238,8 +238,8 @@
                 for (var j = 0; j < emal.length; j++) {
                     arr[j] = emal.charAt(j);
                 }
+                console.log(arr[e]);
                 for (var e = 0; e < arr.length; e++) {
-                    console.log(arr[e]);
                     if( arr[e] == "@" ){
                         console.log("existe");
                     }else{
