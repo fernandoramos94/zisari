@@ -73,7 +73,7 @@
                                         <img src="assets/img/avatar1.gif" alt="" class="img-circle">
                                     </div>
                                     <div class="message-info">
-                                        <span class="sender">{{Auth::user()->nombre}}</span>
+                                        <span class="sender"></span>
                                         <span class="time">2 hour</span>
                                         <div class="message-content">hendrerit pellentesque, iure tincidunt, faucibus vitae dolor aliquam...</div>
                                     </div>
@@ -127,7 +127,7 @@
                     </li>
                     <li class="dropdown settings">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                      Jin Star Chancafe Mejia <i class="fa fa-angle-down"></i>
+                      {{Auth::user()->nombre}} <i class="fa fa-angle-down"></i>
                     </a>
                         <ul class="dropdown-menu animated fadeInDown">
                             <li>
