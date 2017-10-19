@@ -237,46 +237,41 @@
                 var arr = [];
                 for (var j = 0; j < emal.length; j++) {
                     arr[j] = emal.charAt(j);
-                    if (j == emal.length-1) {
-                        console.log(arr);
-                        for (var e = 0; e < arr.length; e++) {
-                            if( arr[e] == "@" ){
-                                console.log("existe");
-                            }else{
-                                $.amaran({
-                                    'theme' :'awesome warning',
-                                    'content' :{
-                                        title: "",
-                                        message:'El correo ingresado es invalido.',
-                                        info: "",
-                                        icon:'fa fa-ban'
-                                    },
-                                    'position'  :'top right',
-                                    'delay'     :3000
-                                });
-                                return false;
-
-                            }
-                        }
-                        var spl = emal.split("@").pop();
-                        if (spl != "gmail.com") {
-                            $.amaran({
-                                'theme' :'awesome warning',
-                                'content' :{
-                                    title: "",
-                                    message:'Solo se admiten correos de gmail.',
-                                    info: "",
-                                    icon:'fa fa-ban'
-                                },
-                                'position'  :'top right',
-                                'delay'     :3000
-                            });
-                            return false;
-                        }
+                }
+                for (var e = 0; e < arr.length; e++) {
+                    console.log(arr[e]);
+                    if( arr[e] == "@" ){
+                        console.log("existe");
+                    }else{
+                        $.amaran({
+                            'theme' :'awesome warning',
+                            'content' :{
+                                title: "",
+                                message:'El correo ingresado es invalido.',
+                                info: "",
+                                icon:'fa fa-ban'
+                            },
+                            'position'  :'top right',
+                            'delay'     :3000
+                        });
+                        return false;
                     }
                 }
-                
-                console.log(arr);
+                var spl = emal.split("@").pop();
+                if (spl != "gmail.com") {
+                    $.amaran({
+                        'theme' :'awesome warning',
+                        'content' :{
+                            title: "",
+                            message:'Solo se admiten correos de gmail.',
+                            info: "",
+                            icon:'fa fa-ban'
+                        },
+                        'position'  :'top right',
+                        'delay'     :3000
+                    });
+                    return false;
+                }
                 $("#div2").show();
                 $("#div1").hide();
             })
