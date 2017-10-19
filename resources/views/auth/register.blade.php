@@ -264,6 +264,22 @@
                     });
                     return false;
                 }
+                var pass = $("#password").val();
+                var confPass = $("#password-confirm").val();
+                if (pass != confPass) {
+                    $.amaran({
+                        'theme' :'awesome warning',
+                        'content' :{
+                            title: "",
+                            message:'Las contraseñas con coinciden.',
+                            info: "",
+                            icon:'fa fa-ban'
+                        },
+                        'position'  :'top right',
+                        'delay'     :3000
+                    });
+                    return false;
+                }
                 $("#div2").show();
                 $("#div1").hide();
             })
