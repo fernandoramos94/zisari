@@ -2,6 +2,11 @@
 @section('contenedorBackend')
 <div class="col-lg-12">
 	<div class="panel panel-default">
+  		<div class="panel-body">
+		    Registros de Usuarios
+  		</div>
+	</div>
+	<div class="panel panel-default">
   		<div class="panel-heading">Base de Datos de Registro de Usuarios</div>
   		<div class="panel-body">
   			<table class="table table-bordered">
