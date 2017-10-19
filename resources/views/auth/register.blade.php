@@ -235,22 +235,35 @@
                 }
                 var emal = $("#email").val();
                 var vali = validateEmail(emal);
-                console.log(vali);
-                // var spl = emal.split("@").pop();
-                // if (spl != "gmail.com") {
-                //     $.amaran({
-                //         'theme' :'awesome warning',
-                //         'content' :{
-                //             title: "",
-                //             message:'Solo se admiten correos de gmail.',
-                //             info: "",
-                //             icon:'fa fa-ban'
-                //         },
-                //         'position'  :'top right',
-                //         'delay'     :3000
-                //     });
-                //     return false;
-                // }
+                if (vali == false) {
+                    $.amaran({
+                        'theme' :'awesome warning',
+                        'content' :{
+                            title: "",
+                            message:'Correo invalido.',
+                            info: "",
+                            icon:'fa fa-ban'
+                        },
+                        'position'  :'top right',
+                        'delay'     :3000
+                    });
+                    return false;
+                }
+                var spl = emal.split("@").pop();
+                if (spl != "gmail.com") {
+                    $.amaran({
+                        'theme' :'awesome warning',
+                        'content' :{
+                            title: "",
+                            message:'Solo se admiten correos de gmail.',
+                            info: "",
+                            icon:'fa fa-ban'
+                        },
+                        'position'  :'top right',
+                        'delay'     :3000
+                    });
+                    return false;
+                }
                 $("#div2").show();
                 $("#div1").hide();
             })
