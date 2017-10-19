@@ -250,58 +250,38 @@
             })
             $("#btn_link2").on("click", function(){
                 if ($("#nombres").val() == ""){
-                    $.amaran({
-                        'theme'     :'awesome warning',
-                        'content'   :{
-                            title: "",
-                            message:'El campo nombres es requerido.',
-                            info: "",
-                            icon:'fa fa-ban'
-                        },
-                        'position'  :'top right',
-                        'delay'     :3000
+                    notif({
+                        type: "warning",
+                        msg: "El campo nombres es requerido",
+                        position: "right",
+                        opacity: 0.8
                     });
                     return false;
                 }
                 if ($("#apellidos").val() == ""){
-                    $.amaran({
-                        'theme'     :'awesome warning',
-                        'content'   :{
-                            title: "",
-                            message:'El campo apellidos es requerido.',
-                            info: "",
-                            icon:'fa fa-ban'
-                        },
-                        'position'  :'top right',
-                        'delay'     :3000
+                    notif({
+                        type: "warning",
+                        msg: "El campo apellidos es requerido",
+                        position: "right",
+                        opacity: 0.8
                     });
                     return false;
                 }
                 if ($("#pais").val() == ""){
-                    $.amaran({
-                        'theme'     :'awesome warning',
-                        'content'   :{
-                            title: "",
-                            message:'El campo pais es requerido.',
-                            info: "",
-                            icon:'fa fa-ban'
-                        },
-                        'position'  :'top right',
-                        'delay'     :3000
+                    notif({
+                        type: "warning",
+                        msg: "Seleccione un país",
+                        position: "right",
+                        opacity: 0.8
                     });
                     return false;
                 }
                 if ($("#genero").val() == "") {
-                    $.amaran({
-                        'theme'     :'awesome warning',
-                        'content'   :{
-                            title: "",
-                            message:'El campo género es requerido.',
-                            info: "",
-                            icon:'fa fa-ban'
-                        },
-                        'position'  :'top right',
-                        'delay'     :3000
+                    notif({
+                        type: "warning",
+                        msg: "Seleccione un género",
+                        position: "right",
+                        opacity: 0.8
                     });
                     return false;
                 }
