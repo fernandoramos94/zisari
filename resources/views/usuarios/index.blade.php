@@ -14,7 +14,6 @@
 		</thead>
 		<tbody>
 			@foreach ($usuario as $user)
-			{{dd($user)}}
 				<tr>
 					<td>{{$user->nombres}}</td>
 					<td>{{$user->apellidos}}</td>
