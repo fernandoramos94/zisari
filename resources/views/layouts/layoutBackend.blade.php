@@ -126,7 +126,8 @@
 
                     </li>
                     <li class="profile-photo">
-                        <img src="assets/img/avatar1111.jpg" alt="" class="img-circle">
+                        <!-- <img src="assets/img/avatar1111.jpg" alt="" class="img-circle"> -->
+                        <img src="{{Auth::user->imagen}}" alt="" class="img-circle">
                     </li>
                     <li class="dropdown settings">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -172,7 +173,7 @@
                         <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>Elementos de Diseño</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                         <ul>
 
-                            <li><a href="#">Imagen de Fecha calendario</a>
+                            <li><a href="{{URL::to('logo')}}">Imagen de Fecha calendario</a>
                             </li>
                         </ul>
                     </li>
