@@ -181,7 +181,9 @@
                     $.amaran({
                         'theme'     :'awesome warning',
                         'content'   :{
+                            title: "",
                             message:'El campo nombre de usuario es requerido.',
+                            info: "",
                             icon:'fa fa-ban'
                         },
                         'position'  :'top right',
