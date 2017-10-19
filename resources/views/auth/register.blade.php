@@ -234,44 +234,23 @@
                     return false;
                 }
                 var emal = $("#email").val();
-                var arr = [];
-                for (var j = 0; j < emal.length; j++) {
-                    arr[j] = emal.charAt(j);
-                }
-                console.log(arr);
-                for (var e = 0; e < arr.length; e++) {
-                    if( arr[e] == "@" ){
-                        console.log("existe");
-                    }else{
-                        $.amaran({
-                            'theme' :'awesome warning',
-                            'content' :{
-                                title: "",
-                                message:'El correo ingresado es invalido.',
-                                info: "",
-                                icon:'fa fa-ban'
-                            },
-                            'position'  :'top right',
-                            'delay'     :3000
-                        });
-                        return false;
-                    }
-                }
-                var spl = emal.split("@").pop();
-                if (spl != "gmail.com") {
-                    $.amaran({
-                        'theme' :'awesome warning',
-                        'content' :{
-                            title: "",
-                            message:'Solo se admiten correos de gmail.',
-                            info: "",
-                            icon:'fa fa-ban'
-                        },
-                        'position'  :'top right',
-                        'delay'     :3000
-                    });
-                    return false;
-                }
+                var vali = validateEmail(emal);
+                console.log(vali);
+                // var spl = emal.split("@").pop();
+                // if (spl != "gmail.com") {
+                //     $.amaran({
+                //         'theme' :'awesome warning',
+                //         'content' :{
+                //             title: "",
+                //             message:'Solo se admiten correos de gmail.',
+                //             info: "",
+                //             icon:'fa fa-ban'
+                //         },
+                //         'position'  :'top right',
+                //         'delay'     :3000
+                //     });
+                //     return false;
+                // }
                 $("#div2").show();
                 $("#div1").hide();
             })
@@ -334,7 +313,11 @@
                 }
                 $("#div3").show();
                 $("#div2").hide();
-            })
+            });
+            function validateEmail(email) {
+                var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(email);
+            }
         })
     </script>
 @stop
