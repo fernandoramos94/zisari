@@ -177,6 +177,10 @@
             }
             $("#mes").append(opM);
             $("#btn_link1").on("click", function(){
+                if ($("#name").val() == "" || $("#email").val() == "" || $("#password").val() == "" || $("#password-confirm").val() == "") {
+                    alert("Complete los campos");
+                    return false;
+                }
                 $("#div2").show();
                 $("#div1").hide();
             })

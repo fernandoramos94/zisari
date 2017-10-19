@@ -126,7 +126,6 @@
 
                     </li>
                     <li class="profile-photo">
-                        <!-- <img src="assets/img/avatar1111.jpg" alt="" class="img-circle"> -->
                         <img src="{{Auth::user()->imagen}}" alt="" class="img-circle">
                     </li>
                     <li class="dropdown settings">
