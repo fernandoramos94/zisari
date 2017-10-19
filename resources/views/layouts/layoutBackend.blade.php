@@ -73,7 +73,7 @@
                                         <img src="assets/img/avatar1.gif" alt="" class="img-circle">
                                     </div>
                                     <div class="message-info">
-                                        <span class="sender">Jeffrey Ashby</span>
+                                        <span class="sender">{{Auth::user()->nombre}}</span>
                                         <span class="time">2 hour</span>
                                         <div class="message-content">hendrerit pellentesque, iure tincidunt, faucibus vitae dolor aliquam...</div>
                                     </div>
