@@ -13,7 +13,7 @@ class logoController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**
@@ -23,7 +23,7 @@ class logoController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**

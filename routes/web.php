@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('auth.login');
 });
+Route::get('/logo', function () {
+    return view('logo.index');
+});
 Route::get('/usuarios', 'UsuariosController@index');
 Auth::routes();
 
