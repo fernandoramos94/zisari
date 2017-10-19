@@ -237,25 +237,41 @@
                 var arr = [];
                 for (var j = 0; j < emal.length; j++) {
                     arr[j] = emal.charAt(j);
-                }
-                console.log(arr);
-                for (var e = 0; e < emal.length; e++) {
-                    console.log(emal[e]);
-                    if( emal[e] != "@" ){
-                        $.amaran({
-                            'theme'     :'awesome warning',
-                            'content'   :{
-                                title: "",
-                                message:'El correo ingresado es incorrecto.',
-                                info: "",
-                                icon:'fa fa-ban'
-                            },
-                            'position'  :'top right',
-                            'delay'     :3000
-                        });
-                        return false;
+                    if (j == emal.length-1) {
+                        for (var e = 0; e < a.length; e++) {
+                            if( emal[e] != "@" ){
+                                $.amaran({
+                                    'theme' :'awesome warning',
+                                    'content' :{
+                                        title: "",
+                                        message:'El correo ingresado es invalido.',
+                                        info: "",
+                                        icon:'fa fa-ban'
+                                    },
+                                    'position'  :'top right',
+                                    'delay'     :3000
+                                });
+                                return false;
+                            }
+                        }
                     }
                 }
+                var spl = emal.split("@").pop();
+                if (spl != "gmail.com") {
+                    $.amaran({
+                        'theme' :'awesome warning',
+                        'content' :{
+                            title: "",
+                            message:'Solo se admiten correos de gmail.',
+                            info: "",
+                            icon:'fa fa-ban'
+                        },
+                        'position'  :'top right',
+                        'delay'     :3000
+                    });
+                    return false;
+                }
+                console.log(arr);
                 $("#div2").show();
                 $("#div1").hide();
             })
