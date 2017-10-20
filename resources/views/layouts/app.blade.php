@@ -25,6 +25,25 @@
     <body>
         <script src="{{ asset('js/main.js') }}"></script>
         @yield('contenedor')
+        <div class="footer">
+            <div class="copyright">
+                <div class="container">
+                    <div class="col-md-6">
+                        <h6 class="text" style="color: #ffffff">© 2017 - Zisari</h6>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="bottom_ul">
+                            <li><a class="text" style="color: #677b85" href="#">Nosotros</a></li>
+                            <li><a class="text" style="color: #677b85" href="#">Términos</a></li>
+                            <li><a class="text" style="color: #677b85" href="#">Política de Privacidad</a></li>
+                            <li><a class="text" style="color: #677b85" href="#">Publicidad</a></li>
+                            <li><a class="text" style="color: #677b85" href="#">Blog</a></li>
+                            <li><a class="text" style="color: #677b85" href="#">Actualizaciones</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         @yield('scripts')
     </body>
 </html>
