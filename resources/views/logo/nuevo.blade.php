@@ -65,7 +65,7 @@
   					   <label>Enlace de Imagen</label>
   					   <input type="text" name="" class="form-control">
             </div>
-            <div class="form-control">
+            <div class="form-group">
   					   <label>Definir Fecha de Inicio y de Finalizacion</label>
             </div>
             <div class="form-group">
@@ -95,7 +95,6 @@
                 </div>
               </div>
             </div>
-  					<br>
   					<a href="" class="btn btn-success">Guardar</a>
   				</div>
   			</div>
