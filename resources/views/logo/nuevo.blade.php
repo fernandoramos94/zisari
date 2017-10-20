@@ -21,25 +21,27 @@
 	  					  <label>Definir Fecha de Inicio y de Finalizacion</label>
               </div>
               <div class="form-group">
-                <div class="col-lg-4">
-	  					    <label>Inicio</label>
-                </div>
-                <div class="col-lg-4">
-  	  					  <input type="text" name="fechaInicio" id="fechaInicio" class="form-control">
-                </div>
-                <div class="col-lg-2">
-	  					    <input type="text" name="horaInicio" class="form-control">
+                <div class="row">
+                  <div class="col-lg-3">
+  	  					    <label>Inicio</label>
+                  </div>
+                  <div class="col-lg-6">
+    	  					  <input type="text" name="fechaInicio" id="fechaInicio" class="form-control">
+                  </div>
+                  <div class="col-lg-3">
+  	  					    <input type="text" name="horaInicio" class="form-control">
+                  </div>
                 </div>
               </div>
               <div class="form-group">
                 <div class="row">
-                  <div class="col-lg-4">
+                  <div class="col-lg-3">
   	  					    <label>Finalización</label>
                   </div>
-                  <div class="col-lg-4">
+                  <div class="col-lg-6">
   	  					    <input type="text" name="fechaFinal" id="fechaFinal" class="form-control">
                   </div>
-                  <div class="col-lg-2">
+                  <div class="col-lg-3">
   	  					    <input type="text" name="horaFinal" class="form-control">
                   </div>
                 </div>
