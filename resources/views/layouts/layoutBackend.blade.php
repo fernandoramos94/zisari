@@ -324,6 +324,8 @@
      <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap-datepicker.js') }}"></script>
+    <script type="text/javascript" scr="{{asset('jquery.mask.min.js')}}"></script>
+
     <script>
         $(document).ready(function() {
             app.timer();
