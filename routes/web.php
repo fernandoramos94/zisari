@@ -1,4 +1,6 @@
 <?php
+use Illuminate\Http\Request;
+use App\LogoText;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +16,17 @@
 Route::get('/', function () {
     return view('auth.login');
 });
-Route::get('/logo', function () {
-    return view('logo.index');
+Route::get('/logo/nuevo', "LogoTextController@create" );
+Route::post('/agregaLogoText', function(Request $request){
+	
+	dd($request->get('titulo'));
+
+    exit;
+    $logo = new LogoText();
+    $logo->titulo = $request->get("titulo");
+    $logo->fechaInicio = "";
+    $logo->fechaFinalizacion = "";
+    $logo->estado = true;
 });
 Route::get('/usuarios', 'UsuariosController@index');
 Auth::routes();

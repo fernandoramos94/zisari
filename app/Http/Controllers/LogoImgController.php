@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class logoController extends Controller
+class LogoImgController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -23,7 +23,7 @@ class logoController extends Controller
      */
     public function create()
     {
-        
+        //
     }
 
     /**
@@ -34,7 +34,7 @@ class logoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd("te");
     }
 
     /**

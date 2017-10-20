@@ -1,13 +1,20 @@
 @extends('layouts.app')
 
 @section('contenedor')
-    <form class="crearcuenta" method="POST" action="{{ route('register') }}">
+    <?php 
+        use Illuminate\Support\Facades\DB;
+        $text = DB::table('logotext')->get();
+     ?>
+    <form class="crearcuenta" autocomplete="off" method="POST" action="{{ route('register') }}">
         {{ csrf_field() }}
-        <h1 class="text-center" style="color: #74accf"><B>Zisari</B></h1>
-        <h3 class="text">Crear Cuenta</h3>
+        @foreach ($text as $title)
+            <h1 class="text-center" style="color: #74accf"><B>{{$title->titulo}}</B></h1>
+        @endforeach
+        <h3 class="text">Crear Cuenta </h3>
         <label for="Nombre"><h5>Con las cuentas de Zisari se abre todo un mundo de ventajas para interactuar y conocer.</h5></label>
         <div id="div1">
             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                    <input type="hidden" name="ipAddress" id="ip">
                     <input id="name" placeholder="Nombre de Usuario" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
 
                     @if ($errors->has('name'))
@@ -153,7 +160,7 @@
                 @endif
             </div>
             <p class="text-center">
-                <button type="submit" class="btn btn-primary btn-block">
+                <button id="finalizar" type="submit" class="btn btn-primary btn-block">
                     Finalizar
                 </button>
             </p>
@@ -161,137 +168,6 @@
     </form>
 @stop
 @section('scripts')
-    <script type="text/javascript">
-        $(document).ready(function(){
-        var paises = [ "Afganistán", "Akrotiri", "Albania", "Alemania", "Andorra", "Angola", "Anguila", "Antártida", "Antigua y Barbuda", "Antillas Neerlandesas", "Arabia Saudí", "Arctic Ocean", "Argelia", "Argentina", "Armenia", "Aruba", "Ashmore andCartier Islands", "Atlantic Ocean", "Australia", "Austria", "Azerbaiyán", "Bahamas", "Bahráin", "Bangladesh", "Barbados", "Bélgica", "Belice", "Benín", "Bermudas", "Bielorrusia", "Birmania Myanmar", "Bolivia", "Bosnia y Hercegovina", "Botsuana", "Brasil", "Brunéi", "Bulgaria", "Burkina Faso", "Burundi", "Bután", "Cabo Verde", "Camboya", "Camerún", "Canadá", "Chad", "Chile", "China", "Chipre", "Clipperton Island", "Colombia", "Comoras", "Congo", "Coral Sea Islands", "Corea del Norte", "Corea del Sur", "Costa de Marfil", "Costa Rica", "Croacia", "Cuba", "Dhekelia", "Dinamarca", "Dominica", "Ecuador", "Egipto", "El Salvador", "El Vaticano", "Emiratos Árabes Unidos", "Eritrea", "Eslovaquia", "Eslovenia", "España", "Estados Unidos", "Estonia", "Etiopía", "Filipinas", "Finlandia", "Fiyi", "Francia", "Gabón", "Gambia", "Gaza Strip", "Georgia", "Ghana", "Gibraltar", "Granada", "Grecia", "Groenlandia", "Guam", "Guatemala", "Guernsey", "Guinea", "Guinea Ecuatorial", "Guinea-Bissau", "Guyana", "Haití", "Honduras", "Hong Kong", "Hungría", "India", "Indian Ocean", "Indonesia", "Irán", "Iraq", "Irlanda", "Isla Bouvet", "Isla Christmas", "Isla Norfolk", "Islandia", "Islas Caimán", "Islas Cocos", "Islas Cook", "Islas Feroe", "Islas Georgia del Sur y Sandwich del Sur", "Islas Heard y McDonald", "Islas Malvinas", "Islas Marianas del Norte", "IslasMarshall", "Islas Pitcairn", "Islas Salomón", "Islas Turcas y Caicos", "Islas Vírgenes Americanas", "Islas Vírgenes Británicas", "Israel", "Italia", "Jamaica", "Jan Mayen", "Japón", "Jersey", "Jordania", "Kazajistán", "Kenia", "Kirguizistán", "Kiribati", "Kuwait", "Laos", "Lesoto", "Letonia", "Líbano", "Liberia", "Libia", "Liechtenstein", "Lituania", "Luxemburgo", "Macao", "Macedonia", "Madagascar", "Malasia", "Malaui", "Maldivas", "Malí", "Malta", "Man, Isle of", "Marruecos", "Mauricio", "Mauritania", "Mayotte", "México", "Micronesia", "Moldavia", "Mónaco", "Mongolia", "Montserrat", "Mozambique", "Namibia", "Nauru", "Navassa Island", "Nepal", "Nicaragua", "Níger", "Nigeria", "Niue", "Noruega", "Nueva Caledonia", "Nueva Zelanda", "Omán", "Pacific Ocean", "Países Bajos", "Pakistán", "Palaos", "Panamá", "Papúa-Nueva Guinea", "Paracel Islands", "Paraguay", "Perú", "Polinesia Francesa", "Polonia", "Portugal", "Puerto Rico", "Qatar", "Reino Unido", "República Centroafricana", "República Checa", "República Democrática del Congo", "República Dominicana", "Ruanda", "Rumania", "Rusia", "Sáhara Occidental", "Samoa", "Samoa Americana", "San Cristóbal y Nieves", "San Marino", "San Pedro y Miquelón", "San Vicente y las Granadinas", "Santa Helena", "Santa Lucía", "Santo Tomé y Príncipe", "Senegal", "Seychelles", "Sierra Leona", "Singapur", "Siria", "Somalia", "Southern Ocean", "Spratly Islands", "Sri Lanka", "Suazilandia", "Sudáfrica", "Sudán", "Suecia", "Suiza", "Surinam", "Svalbard y Jan Mayen", "Tailandia", "Taiwán", "Tanzania", "Tayikistán", "TerritorioBritánicodel Océano Indico", "Territorios Australes Franceses", "Timor Oriental", "Togo", "Tokelau", "Tonga", "Trinidad y Tobago", "Túnez", "Turkmenistán", "Turquía", "Tuvalu", "Ucrania", "Uganda", "Unión Europea", "Uruguay", "Uzbekistán", "Vanuatu", "Venezuela", "Vietnam", "Wake Island", "Wallis y Futuna", "West Bank", "World", "Yemen", "Yibuti", "Zambia", "Zimbabue" ];
-            var op = "";
-            for (var i = 0; i < paises.length; i++) {
-                op += "<option value='"+paises[i]+"'>"+paises[i]+"</option>";
-            }
-            $("#pais").append(op);
-
-            var meses = ['enero','febrero','marzo','abril','mayo','junio','julio', 'agosto','septiembre','octubre','noviembre','diciembre'];
-            var opM = "";
-            for (var a = 0; a < meses.length; a++) {
-                opM += "<option value='"+meses[a]+"'>"+meses[a]+"</option>";
-            }
-            $("#mes").append(opM);
-            $("#btn_link1").on("click", function(){
-                if ($("#name").val() == ""){
-                    notif({
-                        type: "warning",
-                        msg: "El campo nombre de usuario es requerido",
-                        position: "right",
-                        opacity: 0.8
-                    });
-                    return false;
-                }
-                if ($("#email").val() == ""){
-                    notif({
-                        type: "warning",
-                        msg: "El campo correo es requerido",
-                        position: "right",
-                        opacity: 0.8
-                    });
-                    return false;
-                }
-                if ($("#password").val() == ""){
-                    notif({
-                        type: "warning",
-                        msg: "El campo contraseña es requerido",
-                        position: "right",
-                        opacity: 0.8
-                    });
-                    return false;
-                }
-                if ($("#password-confirm").val() == "") {
-                    notif({
-                        type: "warning",
-                        msg: "El campo confirmar contraseña es requerido",
-                        position: "right",
-                        opacity: 0.8
-                    });
-                    return false;
-                }
-                var emal = $("#email").val();
-                var vali = validateEmail(emal);
-                if (vali == false) {
-                    notif({
-                        type: "warning",
-                        msg: "El correo ingresado es invalido",
-                        position: "right",
-                        opacity: 0.8
-                    });
-                    return false;
-                }
-                var spl = emal.split("@").pop();
-                if (spl != "gmail.com") {
-                    notif({
-                        type: "warning",
-                        msg: "El campo correo solo admite cuentas de gmail",
-                        position: "right",
-                        opacity: 0.8
-                    });
-                    return false;
-                }
-                var pass = $("#password").val();
-                var confPass = $("#password-confirm").val();
-                if (pass != confPass) {
-                    notif({
-                        type: "warning",
-                        msg: "Las contraseñas no coinciden",
-                        position: "right",
-                        opacity: 0.8
-                    });
-                    return false;
-                }
-                $("#div2").show();
-                $("#div1").hide();
-            })
-            $("#btn_link2").on("click", function(){
-                if ($("#nombres").val() == ""){
-                    notif({
-                        type: "warning",
-                        msg: "El campo nombres es requerido",
-                        position: "right",
-                        opacity: 0.8
-                    });
-                    return false;
-                }
-                if ($("#apellidos").val() == ""){
-                    notif({
-                        type: "warning",
-                        msg: "El campo apellidos es requerido",
-                        position: "right",
-                        opacity: 0.8
-                    });
-                    return false;
-                }
-                if ($("#pais").val() == ""){
-                    notif({
-                        type: "warning",
-                        msg: "Seleccione un país",
-                        position: "right",
-                        opacity: 0.8
-                    });
-                    return false;
-                }
-                if ($("#genero").val() == "") {
-                    notif({
-                        type: "warning",
-                        msg: "Seleccione un género",
-                        position: "right",
-                        opacity: 0.8
-                    });
-                    return false;
-                }
-                $("#div3").show();
-                $("#div2").hide();
-            });
-            function validateEmail(email) {
-                var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                return re.test(email);
-            }
-        })
-    </script>
+    <script type="text/javascript" src="{{ asset('js/arrays.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/validaciones.js') }}"></script>
 @stop

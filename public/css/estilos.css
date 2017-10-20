@@ -8,6 +8,9 @@ html{
 .btn-block{
     background: #1cb495 !important;
 }
+.form-control, .btn-block{
+	border-radius: 0px !important;
+}
 .login{
 	width: 50%;
 	max-width: 416px;

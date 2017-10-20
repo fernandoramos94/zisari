@@ -26,7 +26,7 @@
 							<td>{{$user->nombres}}</td>
 							<td>{{$user->apellidos}}</td>
 							<td>{{$user->pais}}</td>
-							<td>45</td>
+							<td>{{$user->ip}}</td>
 							<td><a>Ver </a></td>
 							<td><a > Bloquear Usuario </a></td>
 						</tr>

@@ -28,8 +28,9 @@ class CreateUsersTable extends Migration
             $table->string('numeroCelular')->nullable();
             $table->string('documento')->nullable();
             $table->string('correo')->unique();
-            $table->string('portado')->nullable();
-            $table->string('imagen')->nullable();
+            $table->text('portado')->nullable();
+            $table->text('imagen')->nullable();
+            $table->string('ip')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

@@ -1,9 +1,15 @@
 @extends('layouts.app')
 
 @section('contenedor')
+    <?php 
+        use Illuminate\Support\Facades\DB;
+        $text = DB::table('logotext')->get();
+     ?>
     <form class="crearcuenta" method="POST" action="{{ route('login') }}">
         {{ csrf_field() }}
-        <h1 class="text-center" style="color: #74accf"><B>Zisari</B></h1>
+        @foreach ($text as $title)
+            <h1 class="text-center" style="color: #74accf"><B>{{$title->titulo}}</B></h1>
+        @endforeach
         <h3 class="text">Iniciar Sesión</h3>
         <label for="Nombre"><h5>Soñar en grande hace que gigantes cosas sucedan. !Bienvenidos al éxito¡</h5></label>
 
