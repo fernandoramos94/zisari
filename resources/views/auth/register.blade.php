@@ -170,4 +170,5 @@
 @section('scripts')
     <script type="text/javascript" src="{{ asset('js/arrays.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/validaciones.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.mask.min.js') }}"></script>
 @stop
