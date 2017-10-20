@@ -13,23 +13,26 @@
   				<div class="panel-body">
   					<form method="POST" action="{{URL::to('agregaLogoText')}}">
   						<input name="_token" type="hidden" value="{{ csrf_token() }}"/>
-	  					<label>Texto de Titulo</label>
-	  					<textarea class="form-control" name="titulo">
-	  					</textarea>
-	  					<br>
-	  					<label>Definir Fecha de Inicio y de Finalizacion</label>
-	  					<br>
-	  					<label>
-	  						Inicio
-	  					</label>
-	  					<input type="text" name="fechaInicio" id="fechaInicio" class="form-control">
-	  					<input type="text" name="horaInicio" class="form-control">
-	  					<br>
-	  					<label>Finalización</label>
-	  					<input type="text" name="fechaFinal" id="fechaFinal" class="form-control">
-	  					<input type="text" name="horaFinal" class="form-control">
-	  					<br>
-	  					<button class="btn btn-success">Guardar</button>
+              <div class="form-group">
+	  					  <label>Texto de Titulo</label>
+	  					  <input type="text" class="form-control" name="titulo">
+              </div>
+              <div class="form-group">
+	  					  <label>Definir Fecha de Inicio y de Finalizacion</label>
+              </div>
+              <div class="form-group">
+	  					  <label>Inicio</label>
+  	  					<input type="text" name="fechaInicio" id="fechaInicio" class="form-control">
+	  					  <input type="text" name="horaInicio" class="form-control">
+              </div>
+              <div class="form-group">
+	  					  <label>Finalización</label>
+	  					  <input type="text" name="fechaFinal" id="fechaFinal" class="form-control">
+	  					  <input type="text" name="horaFinal" class="form-control">
+              </div>
+              <div class="form-group">
+	  					  <button class="btn btn-success">Guardar</button>
+              </div>
   					</form>
   				</div>
   			</div>
