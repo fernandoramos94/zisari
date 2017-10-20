@@ -84,13 +84,13 @@
             </div>
             <div class="form-group">
               <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-3">
   					       <label>Finalización</label>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-6">
   					       <input type="date" name="" class="form-control">
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
   					       <input type="text" name="" class="form-control">
                 </div>
               </div>
