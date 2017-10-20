@@ -132,7 +132,7 @@
             </div>
             <div class="form-group{{ $errors->has('numeroCelular') ? ' has-error' : '' }}">
 
-                    <input id="numeroCelular" placeholder="+(Código) Número de Móbil" type="text" class="form-control" name="numeroCelular"  required>
+                    <input id="numeroCelular" type="text" class="form-control" name="numeroCelular"  required>
 
                     @if ($errors->has('numeroCelular'))
                         <span class="help-block">
