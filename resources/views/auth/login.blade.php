@@ -3,13 +3,29 @@
 @section('contenedor')
     <?php 
         use Illuminate\Support\Facades\DB;
+        date_default_timezone_set('UTC');
         $text = DB::table('logotext')->get();
+        $imgLogo = DB::table('logoimg')->get();
+        $fechaActual = date("Y-m-d H:i:s");
      ?>
     <form class="crearcuenta" method="POST" action="{{ route('login') }}">
         {{ csrf_field() }}
         @foreach ($text as $title)
-            <h1 class="text-center" style="color: #74accf"><B>{{$title->titulo}}</B></h1>
+            @if ($title->estado == 1 && $title->fechaFinalizacion > $fechaActual)
+                <h1 class="text-center" style="color: #74accf"><B>{{$title->titulo}}</B></h1>
+            @endif
         @endforeach
+
+        @foreach ($imgLogo as $logo)
+            @if ($logo->estado == 1 && $logo->fechaFinalizacion > $fechaActual)
+                @if ($logo->imagen != null && $logo->url == null || $logo->imagen != null && $logo->url != null)
+                    <center>
+                        <img src="{{$logo->imagen}}">
+                    </center>
+                @endif
+            @endif
+        @endforeach
+
         <h3 class="text">Iniciar Sesión</h3>
         <label for="Nombre"><h5>Soñar en grande hace que gigantes cosas sucedan. !Bienvenidos al éxito¡</h5></label>
 

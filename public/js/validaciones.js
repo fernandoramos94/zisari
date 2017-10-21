@@ -111,7 +111,7 @@ $(document).ready(function() {
 		$("#div3").show();
 		$("#div2").hide();
 	});
-	$("#finalizar").on("click", function(){
+	$("#btn_link3").on("click", function(){
 		if ($("#dia").val() == ""){
 			notif({
 				type: "warning",
@@ -166,8 +166,15 @@ $(document).ready(function() {
 			});
 			return false;
 		}
-		$("#div3").show();
-		$("#div2").hide();
+		$("#div4").show();
+		$("#div3").hide();
+		$(".crearcuenta").attr("style", "padding: 0");
+		$("#title").hide();
+		$("#textCrear").hide();
+		$("#con").hide();
+		var ht  = "<p><strong>"+$("#nombres").val()+" "+$("#apellidos").val()+"</strong><br><strong>"+$("#name").val()+"</strong></p>";
+		$("#nombreFinalizar").append(ht);
+		
 	});
 	function validateEmail(email) {
 		var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

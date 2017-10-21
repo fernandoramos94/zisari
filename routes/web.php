@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Http\Request;
 use App\LogoText;
+use App\LogoImg;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,18 +17,35 @@ use App\LogoText;
 Route::get('/', function () {
     return view('auth.login');
 });
-Route::get('/logo/nuevo', "LogoTextController@create" );
+Route::get('/logo/nuevo', function(){
+	return view('logo.nuevo');
+});
+Route::post('/agregaLogoImg', function(Request $request){
+	$fechaInicialImg = $request->get("fechaInicioImg") . " " . $request->get("horaInicioImg");
+	$fechaFinalImg = $request->get("fechaFinalImg") . " " .$request->get("horaFinalImg");
+	$logImagen = new LogoImg();
+	$logImagen->imagen = $request->get("imagen");
+	$logImagen->url = $request->get("url");
+	$logImagen->fechaInicio = $fechaInicialImg;
+	$logImagen->fechaFinalizacion = $fechaFinalImg;
+	$logImagen->estado = 1;
+	if ($logImagen->save()) {
+		return redirect('home');
+	}
+});
 Route::post('/agregaLogoText', function(Request $request){
-	
-	dd($request->get('titulo'));
-
-    exit;
+	$fechaFinal = $request->get("fechaInicio") . " ". $request->get("horaInicio");
+	$fechaInicial = $request->get("fechaFinal") . " " . $request->get("horaFinal");
     $logo = new LogoText();
     $logo->titulo = $request->get("titulo");
-    $logo->fechaInicio = "";
-    $logo->fechaFinalizacion = "";
-    $logo->estado = true;
+    $logo->fechaInicio = $fechaInicial;
+    $logo->fechaFinalizacion = $fechaFinal;
+    $logo->estado = 1;
+    if ($logo->save()) {
+		return redirect('home');
+	}
 });
+
 Route::get('/usuarios', 'UsuariosController@index');
 Auth::routes();
 

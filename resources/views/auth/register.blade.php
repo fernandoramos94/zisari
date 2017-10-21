@@ -8,10 +8,10 @@
     <form class="crearcuenta" autocomplete="off" method="POST" action="{{ route('register') }}">
         {{ csrf_field() }}
         @foreach ($text as $title)
-            <h1 class="text-center" style="color: #74accf"><B>{{$title->titulo}}</B></h1>
+            <h1 class="text-center" id="title" style="color: #74accf"><B>{{$title->titulo}}</B></h1>
         @endforeach
-        <h3 class="text">Crear Cuenta </h3>
-        <label for="Nombre"><h5>Con las cuentas de Zisari se abre todo un mundo de ventajas para interactuar y conocer.</h5></label>
+        <h3 class="text" id="textCrear">Crear Cuenta </h3>
+        <label for="Nombre" id="con"><h5>Con las cuentas de Zisari se abre todo un mundo de ventajas para interactuar y conocer.</h5></label>
         <div id="div1">
             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                     <input type="hidden" name="ipAddress" id="ip">
@@ -160,6 +160,21 @@
                 @endif
             </div>
             <p class="text-center">
+                <a class="btn btn-primary btn-block" id="btn_link3">Siguiente</a>
+            </p>
+        </div>
+        <div id="div4" style="display: none;">
+            <div class="portada">
+                <img src="" id="portada">
+            </div>
+            <div class="foto">
+                <img src="" id="foto">
+            </div>
+            <div id="nombreFinalizar"></div>
+            <div id="mensaje">
+                <p>Es importante mantener actualizado tu foto de perfil y/o portada; asi será más fácil que sea encontrado por tus amigos, familiares y comunidad</p>
+            </div>
+            <p class="text-center pFinalizar">
                 <button id="finalizar" type="submit" class="btn btn-primary btn-block">
                     Finalizar
                 </button>
@@ -169,6 +184,7 @@
 @stop
 @section('scripts')
     <script type="text/javascript" src="{{ asset('js/arrays.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/portada.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/validaciones.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/mascaras.js') }}"></script>
 @stop

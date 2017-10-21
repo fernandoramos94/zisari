@@ -98,3 +98,30 @@ input{
  .bottom_ul li { float:left; line-height:28px;}
  .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
  .bottom_ul li a { color:#FFF;  font-size:12px;}
+
+ .foto > img{
+    width: 15%;
+    position: absolute;
+    top: 28%;
+    left: 10%;
+ }
+ .pFinalizar{
+ 	margin: 5% 10%;
+ }
+ #mensaje{
+ 	margin: 20px 10%;
+    border: 1px #000 solid;
+ }
+ #mensaje p{
+ 	padding: 15px 15px;
+    font-size: 16px;
+ }
+ div#nombreFinalizar {
+    margin-top: 2%;
+    text-align: center;
+    margin: 0 10%;
+}
+ .portada > img{
+ 	width: 100%;
+ 	position: relative;
+ }
