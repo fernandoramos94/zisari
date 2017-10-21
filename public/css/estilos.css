@@ -99,29 +99,58 @@ input{
  .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
  .bottom_ul li a { color:#FFF;  font-size:12px;}
 
- .foto > img{
-    width: 15%;
+ .foto{
+    width: 20% !important;
     position: absolute;
-    top: 28%;
-    left: 10%;
+    margin-top: -10%;
+    padding: 0 !important;
+ }
+ .foto > img{
+ 	width: 100%;
+ }
+ .actualizarPerfil{
+ 	position: absolute;
+ 	bottom: 0;
+ 	right: 0;
+ 	cursor: pointer;
+ }
+ .actualizarPerfil > img{
+ 	width: 25px;
+ }
+ .actualizarPortada{
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+ }
+ .portada{
+    position: relative;
+    height: 200px;
+    overflow: hidden;
  }
  .pFinalizar{
  	margin: 5% 10%;
  }
+ button#finalizar{
+ 	margin-bottom: 5%;
+ }
+ .foto{
+ 	padding: 0 !important;
+ }
  #mensaje{
- 	margin: 20px 10%;
+ 	margin: 20px 0;
     border: 1px #000 solid;
  }
  #mensaje p{
- 	padding: 15px 15px;
-    font-size: 16px;
+ 	padding-top: 10px;
  }
  div#nombreFinalizar {
-    margin-top: 2%;
+    margin-top: 1%;
     text-align: center;
-    margin: 0 10%;
 }
  .portada > img{
  	width: 100%;
  	position: relative;
+ 	height: 100%;
  }

@@ -1,63 +1,62 @@
 @extends('layouts.layoutBackend')
 @section('contenedorBackend')
 <div class="col-lg-12">
-	<div class="panel panel-default">
-  		<div class="panel-body">
-		    Imagen de Fecha Calendario
-  		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg-6">
-			<div class="panel panel-default">
-  				<div class="panel-heading">Configurar y Selecionar Fecha</div>
-  				<div class="panel-body">
-  					<label>Texto de Titulo</label>
-  					<textarea class="form-control">
-  					</textarea>
-  					<br>
-  					<label>Definir Fecha de Inicio y de Finalizacion</label>
-  					<br>
-  					<label>
-  						Inicio
-  					</label>
-  					<input type="date" name="" class="form-control">
-  					<input type="text" name="" class="form-control">
-  					<br>
-  					<label>Finalización</label>
-  					<input type="date" name="" class="form-control">
-  					<input type="text" name="" class="form-control">
-  					<br>
-  					<a href="" class="btn btn-success">Guardar</a>
-  				</div>
-  			</div>
-		</div>
-		<div class="col-lg-6">
-			<div class="panel panel-default">
-  				<div class="panel-heading">Configurar y Selecionar Imagen como Titulo</div>
-  				<div class="panel-body">
-  					<label>Subir Imagen</label>
-  					<input type="file" name="">
-  					<br>
-  					<label>Enlace de Imagen</label>
-  					<br>
-  					<input type="text" name="" class="form-control">
-  					<br>
-  					<label>Definir Fecha de Inicio y de Finalizacion</label>
-  					<br>
-  					<label>
-  						Inicio
-  					</label>
-  					<input type="date" name="" class="form-control">
-  					<input type="text" name="" class="form-control">
-  					<br>
-  					<label>Finalización</label>
-  					<input type="date" name="" class="form-control">
-  					<input type="text" name="" class="form-control">
-  					<br>
-  					<a href="" class="btn btn-success">Guardar</a>
-  				</div>
-  			</div>
-		</div>
-	</div>
+  <div class="panel panel-default">
+      <div class="panel-body">
+        Administación logo
+      </div>
+  </div>
+  <div class="panel panel-default">
+      <div class="panel-heading">Logo titulo</div>
+      <div class="panel-body">
+        <table class="table table-bordered" id="tablaUsuarios">
+        <thead>
+          <tr>
+            <th>Titulo</th>
+            <th>Fecha Inicio</th>
+            <th>Fecha Finalización</th>
+            <th>Actualizar</th>
+          </tr>
+        </thead>
+        <tbody>
+          @foreach ($titulo as $title)
+            <tr>
+              <td>{{$title->titulo}}</td>
+              <td>{{$title->fechaInicio}}</td>
+              <td>{{$title->FechaFinalizacion}}</td>
+              <td>d</td>
+            </tr>
+          @endforeach
+        </tbody>
+      </table>
+      </div>
+  </div>
+  <div class="panel panel-default">
+      <div class="panel-heading">Logo imagen</div>
+      <div class="panel-body">
+        <table class="table table-bordered" id="tablaUsuarios">
+        <thead>
+          <tr>
+            <th>Link Imagen</th>
+            <th>Url</th>
+            <th>Fecha Inicio</th>
+            <th>Fecha Finalización</th>
+            <th>Actualizar</th>
+          </tr>
+        </thead>
+        <tbody>
+          @foreach ($imagen as $image)
+            <tr>
+              <td>{{$image->imagen}}</td>
+              <td>{{$image->url}}</td>
+              <td>{{$image->fechaInicio}}</td>
+              <td>{{$image->FechaFinalizacion}}</td>
+              <td>d</td>
+            </tr>
+          @endforeach
+        </tbody>
+      </table>
+      </div>
+  </div>
 </div>
 @stop()

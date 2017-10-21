@@ -126,7 +126,7 @@
 
                     </li>
                     <li class="profile-photo">
-                        <img src="{{Auth::user()->imagen}}" alt="" class="img-circle">
+                        <img src="{{asset('img/img_users/perfil/'.Auth::user()->imagen)}}" alt="" class="img-circle">
                     </li>
                     <li class="dropdown settings">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">

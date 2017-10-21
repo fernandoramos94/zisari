@@ -5,7 +5,7 @@
         use Illuminate\Support\Facades\DB;
         $text = DB::table('logotext')->get();
      ?>
-    <form class="crearcuenta" autocomplete="off" method="POST" action="{{ route('register') }}">
+    <form class="crearcuenta" autocomplete="off" method="POST" action="{{URL::to('agregarUser')}}" enctype="multipart/form-data">
         {{ csrf_field() }}
         @foreach ($text as $title)
             <h1 class="text-center" id="title" style="color: #74accf"><B>{{$title->titulo}}</B></h1>
@@ -164,21 +164,31 @@
             </p>
         </div>
         <div id="div4" style="display: none;">
+            <input id="uploadPortada" name="portada" style="display: none;" type="file"/>
+            <input id="uploadFoto" name="foto" style="display: none;" type="file"/>
             <div class="portada">
+                <a class="actualizarPortada" id="actualizarPortada">
+                    <img src="" id="iconPortada">
+                </a>
                 <img src="" id="portada">
             </div>
-            <div class="foto">
-                <img src="" id="foto">
+            <div style="padding: 0 35px; ">
+                <div class="foto col-lg-4">
+                    <a class="actualizarPerfil" id="actualizarPerfil">
+                        <img src="" id="iconPerfil">
+                    </a>
+                    <img src="" id="foto">
+                </div>
+                <div id="nombreFinalizar" class="col-lg-8"></div>
+                <div id="mensaje" class="col-lg-12">
+                    <p>Es importante mantener actualizado tu foto de perfil y/o portada; asi será más fácil que sea encontrado por tus amigos, familiares y comunidad</p>
+                </div>
+                <p class="text-center">
+                    <button id="finalizar" type="submit" class="btn btn-primary btn-block">
+                        Finalizar
+                    </button>
+                </p>
             </div>
-            <div id="nombreFinalizar"></div>
-            <div id="mensaje">
-                <p>Es importante mantener actualizado tu foto de perfil y/o portada; asi será más fácil que sea encontrado por tus amigos, familiares y comunidad</p>
-            </div>
-            <p class="text-center pFinalizar">
-                <button id="finalizar" type="submit" class="btn btn-primary btn-block">
-                    Finalizar
-                </button>
-            </p>
         </div>
     </form>
 @stop

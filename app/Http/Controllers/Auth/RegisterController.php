@@ -87,6 +87,8 @@ class RegisterController extends Controller
             'numeroCelular' => $data['numeroCelular'],
             'documento' => $data['documento'],
             'correo' => $data['correo'],
+            'portado' => $data['portada'],
+            'imagen' => $data['foto'],
         ]);
     }
 }

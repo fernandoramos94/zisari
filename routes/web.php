@@ -20,6 +20,8 @@ Route::get('/', function () {
 Route::get('/logo/nuevo', function(){
 	return view('logo.nuevo');
 });
+Route::get('/registro', 'UsuariosController@create');
+Route::post('/agregarUser', 'UsuariosController@store');
 Route::post('/agregaLogoImg', function(Request $request){
 	$fechaInicialImg = $request->get("fechaInicioImg") . " " . $request->get("horaInicioImg");
 	$fechaFinalImg = $request->get("fechaFinalImg") . " " .$request->get("horaFinalImg");
