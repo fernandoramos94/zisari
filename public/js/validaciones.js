@@ -170,6 +170,7 @@ $(document).ready(function() {
 		$("#div3").hide();
 		$(".crearcuenta").attr("style", "padding: 0");
 		$("#title").hide();
+		$("#imagenLogo").hide();
 		$("#textCrear").hide();
 		$("#con").hide();
 		var ht  = "<p><strong>"+$("#nombres").val()+" "+$("#apellidos").val()+"</strong><br><strong>"+$("#name").val()+"</strong></p>";

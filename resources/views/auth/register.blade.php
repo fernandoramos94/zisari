@@ -3,12 +3,27 @@
 @section('contenedor')
     <?php 
         use Illuminate\Support\Facades\DB;
+        date_default_timezone_set('UTC');
         $text = DB::table('logotext')->get();
+        $imgLogo = DB::table('logoimg')->get();
+        $fechaActual = date("Y-m-d H:i:s");
      ?>
     <form class="crearcuenta" autocomplete="off" method="POST" action="{{URL::to('agregarUser')}}" enctype="multipart/form-data">
         {{ csrf_field() }}
         @foreach ($text as $title)
-            <h1 class="text-center" id="title" style="color: #74accf"><B>{{$title->titulo}}</B></h1>
+            @if ($title->estado == 1 && $title->fechaFinalizacion > $fechaActual)
+                <h1 class="text-center" id="title" style="color: #74accf"><B>{{$title->titulo}}</B></h1>
+            @endif
+        @endforeach
+
+        @foreach ($imgLogo as $logo)
+            @if ($logo->estado == 1 && $logo->fechaFinalizacion > $fechaActual)
+                @if ($logo->imagen != null && $logo->url == null || $logo->imagen != null && $logo->url != null)
+                    <center >
+                        <img id="imagenLogo" src="{{$logo->imagen}}">
+                    </center>
+                @endif
+            @endif
         @endforeach
         <h3 class="text" id="textCrear">Crear Cuenta </h3>
         <label for="Nombre" id="con"><h5>Con las cuentas de Zisari se abre todo un mundo de ventajas para interactuar y conocer.</h5></label>
