@@ -52,7 +52,7 @@
         <div class="form-group">
             <div class="checkbox">
                 <label>
-                    <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Recordarme
+                    <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Mantener la sesión iniciada
                 </label>
             </div>
         </div>
@@ -61,10 +61,14 @@
             <button type="submit" class="btn btn-primary btn-block">
                 Iniciar Sesion
             </button>
-
-            <a class="btn btn-link" href="{{ route('password.request') }}">
-            Recuperar Contraseña?
-            </a>
+            <p style="margin-bottom: 0; margin-top: 5%;">
+                ¿Aun no tienes una cuenta?<a  class="btn btn-link" href="{{URL::to('registro')}}">Crear una</a>
+            </p>
+            <p align="center">
+                <a class="btn btn-link" href="{{ route('password.request') }}">
+                Recuperar Contraseña
+                </a>
+            </p>
         </div>
     </form>
 <!-- <div class="container">
