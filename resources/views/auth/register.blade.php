@@ -11,16 +11,20 @@
     <form class="crearcuenta" autocomplete="off" method="POST" action="{{URL::to('agregarUser')}}" enctype="multipart/form-data">
         {{ csrf_field() }}
         @foreach ($text as $title)
-            @if ($title->estado == 1 && $title->fechaFinalizacion > $fechaActual)
+            @if ($title->fechaFinalizacion > $fechaActual)
                 <h1 class="text-center" id="title" style="color: #74accf"><B>{{$title->titulo}}</B></h1>
             @endif
         @endforeach
 
         @foreach ($imgLogo as $logo)
-            @if ($logo->estado == 1 && $logo->fechaFinalizacion > $fechaActual)
+            @if ($logo->fechaFinalizacion > $fechaActual)
                 @if ($logo->imagen != null && $logo->url == null || $logo->imagen != null && $logo->url != null)
                     <center >
                         <img id="imagenLogo" src="{{$logo->imagen}}">
+                    </center>
+                @else
+                    <center >
+                        <img id="imagenLogo" src="{{$logo->url}}">
                     </center>
                 @endif
             @endif
