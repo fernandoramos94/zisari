@@ -115,7 +115,7 @@
             <div class="form-group{{ $errors->has('dia') ? ' has-error' : '' }}">
                 <div class="row">
                     <div class="col-lg-3">
-                        <input id="dia" placeholder="Día" type="number" class="form-control" name="dia" required autofocus>
+                        <input id="dia" placeholder="Día" type="text" class="form-control" name="dia" required autofocus>
 
                         @if ($errors->has('dia'))
                             <span class="help-block">
@@ -135,7 +135,7 @@
                         @endif
                     </div>
                     <div class="col-lg-4">
-                        <input id="anio" placeholder="Año" type="number" class="form-control" name="anio" required autofocus>
+                        <input id="anio" placeholder="Año" type="tetx" class="form-control" name="anio" required autofocus>
 
                         @if ($errors->has('anio'))
                             <span class="help-block">
@@ -167,7 +167,7 @@
             </div>
             <div class="form-group{{ $errors->has('genero') ? has-'error' : '' }}">
 
-                <input id="documento" placeholder="Documento de Identidad" type="number" class="form-control" name="documento" required>
+                <input id="documento" placeholder="Documento de Identidad" type="text" class="form-control" name="documento" required>
                 @if ($errors->has('documento'))
                     <span class="help-block">
                         <strong>{{ $errors->first('documento') }}</strong>
@@ -185,14 +185,14 @@
                 <a class="actualizarPortada" id="actualizarPortada">
                     <img src="" id="iconPortada">
                 </a>
-                <img src="" id="portada">
+                <img src="{{asset('img/img_users/portadas/$2a$04$1lrlqTr8WqiM3NHlYEEGy.png')}}" id="portada">
             </div>
             <div style="padding: 0 35px; ">
                 <div class="foto col-lg-4">
                     <a class="actualizarPerfil" id="actualizarPerfil">
                         <img src="" id="iconPerfil">
                     </a>
-                    <img src="" id="foto">
+                    <img src="{{asset('img/img_users/perfil/TFQirkLGuJP6ipZyCNuJIEdCHMk5Ce7cO.png')}}" id="foto">
                 </div>
                 <div id="nombreFinalizar" class="col-lg-8"></div>
                 <div id="mensaje" class="col-lg-12">
