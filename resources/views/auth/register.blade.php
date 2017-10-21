@@ -24,7 +24,7 @@
                     </center>
                 @else
                     <center >
-                        <img id="imagenLogo" src="{{$logo->url}}">
+                        <img width="100%" id="imagenLogo" src="{{$logo->url}}">
                     </center>
                 @endif
             @endif

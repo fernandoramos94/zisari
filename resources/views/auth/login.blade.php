@@ -20,7 +20,7 @@
             @if ($logo->estado == 1 && $logo->fechaFinalizacion > $fechaActual)
                 @if ($logo->imagen != null && $logo->url == null || $logo->imagen != null && $logo->url != null)
                     <center>
-                        <img src="{{$logo->imagen}}">
+                        <img width="100%" src="{{$logo->imagen}}">
                     </center>
                 @endif
             @endif
