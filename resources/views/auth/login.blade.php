@@ -106,7 +106,7 @@
 @section('scripts')
 <script type="text/javascript">
     $(document).ready(function() {
-        var URLactual = window.location;
+        var url = "{{URL::to('')}}";
         $("#siguienteLogin").on("click", function(){
             $("#siguienteLogin").attr('disabled', true);
             $.ajax({
@@ -114,7 +114,7 @@
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
-                url: URLactual+"getUser",
+                url: url+"/getUser",
                 success: function (data) {
                     for (var i = 0; i < data.length; i++) {
                         if(data[i].email == $("#email").val()){

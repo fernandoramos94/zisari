@@ -76,17 +76,19 @@
                 </a>
             </div>
             <div class="col-lg-6">
-                <button type="submit" id="restablecer" style="border:none;" class="btn btn-primary btn-block">
-                    Restablecer
+                <a id="restablecer" style="border:none;" class="btn btn-primary btn-block">Restablecer</a>
+                <button id="buttonRestablecer" style="display: none;" class="btn btn-primary btn-block">
+                    
                 </button>
             </div>
         </div>
     </div>
 </form>
 @endsection
-@section('scrips')
+@section('scripts')
 <script type="text/javascript">
     $(document).ready(function(){
+        var url = "{{URL::to('')}}";
         $("#restablecer").on("click", function() {
             if ($("#password").val() != $("#password-confirm").val()) {
                 notif({
@@ -97,6 +99,33 @@
                 });
                 return false;
             }
+            $.ajax({
+                type: "POST",
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                url: url+"/getUser",
+                success: function (data) {
+                    for (var i = 0; i < data.length; i++) {
+                        if(data[i].email == $("#email").val()){
+                            $("#buttonRestablecer").trigger("click");
+                        }else{
+                            notif({
+                                type: "error",
+                                msg: "El email ingresado no esta actualmente registrado",
+                                position: "right",
+                                opacity: 0.8
+                            });
+                            return false;
+                        }
+                    }
+                },
+                error: function (data) {
+                    console.log('Error:', data);
+                }
+            });
+
+
         })
     })
     
