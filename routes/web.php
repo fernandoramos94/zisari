@@ -38,6 +38,7 @@ Route::get('/deleteLogoImg/{id}', 'LogoImgController@eliminar');
 Route::post('/updateLogoImg', 'LogoImgController@editar');
 
 Route::post('/agregaLogoText', 'LogoTextController@store');
+
 Route::get('/logo', function(){
 	return view('logo.index');
 });

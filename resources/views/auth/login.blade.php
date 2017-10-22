@@ -51,6 +51,20 @@
             </div>
         </div>
         <div id="login2" style="display: none;">
+            <label></label>
+            <label></label>
+            <div class="form-group">
+                <p class="emailInPassword">
+                    <span>ferrati949100112668@gmail.com</span> <img id="imgUser" src="">
+                </p>
+                
+            </div>
+            <div class="form-group">
+                <h4>Escribir contraseña</h4>
+                <span>
+                    Como vas a acceder a información confidencial, es necesario que confirmes tu contraseña.
+                </span>
+            </div>
             <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                     <input id="password" type="password" class="form-control" placeholder="Contraseña" name="password" required>
                     @if ($errors->has('password'))
@@ -60,16 +74,23 @@
                     @endif
             </div>
             <div class="form-group">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a class="btn btn-primary btn-block" id="btnAtras" style="background: #cccccc !important; color: #000000 !important; border:none;" >
+                            Atras
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <button type="submit" style="border:none;" class="btn btn-primary btn-block">
+                            Iniciar Sesion
+                        </button>
+                    </div>
+                </div>
                 <div class="checkbox">
                     <label>
                         <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Mantener la sesión iniciada
                     </label>
                 </div>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block">
-                    Iniciar Sesion
-                </button>
                 <p align="center">
                     <a class="btn btn-link" href="{{ route('password.request') }}">
                     Recuperar Contraseña
@@ -86,16 +107,40 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $("#siguienteLogin").on("click", function(){
+            $("#siguienteLogin").attr('disabled', true);
             $.ajax({
-            type: "POST",
+                type: "POST",
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
                 url: "http://localhost/blog/public/getUser",
                 success: function (data) {
-                    console.log(data);
+                    for (var i = 0; i < data.length; i++) {
+                        if(data[i].email == $("#email").val()){
+                            $("#imgUser").attr("src", "{{asset('img/img_users/perfil')}}/"+data[i].imagen);
+                            $("#login1").hide();
+                            $("#login2").show();
+                            $("#siguienteLogin").attr('disabled', false);
+                        }else{
+                            notif({
+                                type: "error",
+                                msg: "El email ingresado no esta actualmente registrado",
+                                position: "right",
+                                opacity: 0.8
+                            });
+                            $("#siguienteLogin").attr('disabled', false);
+                            return false;
+                        }
+                    }
                 },
                 error: function (data) {
                     console.log('Error:', data);
                 }
             });
+        })
+        $("#btnAtras").on("click", function(){
+            $("#login1").show();
+            $("#login2").hide();
         })
     })
 </script>
