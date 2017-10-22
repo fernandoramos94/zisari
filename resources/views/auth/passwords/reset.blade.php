@@ -76,7 +76,7 @@
                 </a>
             </div>
             <div class="col-lg-6">
-                <button type="submit" style="border:none;" class="btn btn-primary btn-block">
+                <button type="submit" id="restablecer" style="border:none;" class="btn btn-primary btn-block">
                     Restablecer
                 </button>
             </div>
@@ -84,3 +84,21 @@
     </div>
 </form>
 @endsection
+@section('scrips')
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#restablecer").on("click", function() {
+            if ($("#password").val() != $("#password-confirm").val()) {
+                notif({
+                    type: "error",
+                    msg: "Las contaseñas no coinciden.",
+                    position: "right",
+                    opacity: 0.8
+                });
+                return false;
+            }
+        })
+    })
+    
+</script>
+@stop()
