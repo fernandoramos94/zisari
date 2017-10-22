@@ -17,38 +17,31 @@ use App\LogoImg;
 Route::get('/', function () {
     return view('auth.login');
 });
+
 Route::get('/logo/nuevo', function(){
 	return view('logo.nuevo');
 });
-Route::get('/registro', 'UsuariosController@create');
-Route::post('/agregarUser', 'UsuariosController@store');
-Route::post('/agregaLogoImg', function(Request $request){
-	$fechaInicialImg = $request->get("fechaInicioImg") . " " . $request->get("horaInicioImg");
-	$fechaFinalImg = $request->get("fechaFinalImg") . " " .$request->get("horaFinalImg");
-	$logImagen = new LogoImg();
-	$logImagen->imagen = $request->get("imagen");
-	$logImagen->url = $request->get("url");
-	$logImagen->fechaInicio = $fechaInicialImg;
-	$logImagen->fechaFinalizacion = $fechaFinalImg;
-	$logImagen->estado = 1;
-	if ($logImagen->save()) {
-		return redirect('home');
-	}
-});
-Route::post('/agregaLogoText', function(Request $request){
-	$fechaFinal = $request->get("fechaInicio") . " ". $request->get("horaInicio");
-	$fechaInicial = $request->get("fechaFinal") . " " . $request->get("horaFinal");
-    $logo = new LogoText();
-    $logo->titulo = $request->get("titulo");
-    $logo->fechaInicio = $fechaInicial;
-    $logo->fechaFinalizacion = $fechaFinal;
-    $logo->estado = 1;
-    if ($logo->save()) {
-		return redirect('home');
-	}
-});
 
+Route::get('/registro', 'UsuariosController@create');
+
+Route::post('/agregarUser', 'UsuariosController@store');
+
+Route::post('/agregaLogoImg', 'LogoImgController@store');
+
+Route::post('/updateLogoText', 'LogoTextController@editar');
+
+Route::get('/deleteLogoText/{id}', 'LogoTextController@eliminar');
+
+Route::get('/deleteLogoImg/{id}', 'LogoImgController@eliminar');
+
+Route::post('/updateLogoImg', 'LogoImgController@editar');
+
+Route::post('/agregaLogoText', 'LogoTextController@store');
+Route::get('/logo', function(){
+	return view('logo.index');
+});
 Route::get('/usuarios', 'UsuariosController@index');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

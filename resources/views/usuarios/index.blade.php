@@ -17,7 +17,7 @@
 						<th>País</th>
 						<th>Ip</th>
 						<th>Ver Perfil</th>
-						<th>Opción</th>
+						<!-- <th>Opción</th> -->
 					</tr>
 				</thead>
 				<tbody>
@@ -27,8 +27,8 @@
 							<td>{{$user->apellidos}}</td>
 							<td>{{$user->pais}}</td>
 							<td>{{$user->ip}}</td>
-							<td><a>Ver </a></td>
-							<td><a > Bloquear Usuario </a></td>
+							<td><a href="" data-toggle="modal" data-target="#modal{{$user->id}}">Ver </a></td>
+							<!-- <td><a > Bloquear Usuario </a></td> -->
 						</tr>
 					@endforeach
 				</tbody>
@@ -37,6 +37,41 @@
 	</div>
 	
 </div>
+
+@foreach ( $usuario as $us)
+<div class="modal fade" id="modal{{$us->id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      	<div class="modal-header">
+         	<h4 class="modal-title" id="myModalLabel">Perfil</h4>
+      	</div>
+        <div class="modal-body">
+	            <div class="portada">
+	                <a class="actualizarPortada" id="actualizarPortada">
+	                    <img src="" id="iconPortada">
+	                </a>
+	                <img src="{{asset('img/img_users/portadas/'.$us->portado)}}" id="portada">
+	            </div>
+	            <div style="padding: 0 35px; ">
+	                <div class="foto col-lg-4">
+	                    <a class="actualizarPerfil" id="actualizarPerfil">
+	                        <img src="" id="iconPerfil">
+	                    </a>
+	                    <img src="{{asset('img/img_users/perfil/'.$us->imagen)}}" id="foto">
+	                </div>
+	                <div id="nombreFinalizar" class="col-lg-12">
+	                	<p><strong>{{$us->nombres}} {{$us->apellidos}}</strong><br><strong>{{$us->name}}</strong></p>
+	                </div>
+	            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        </div>
+  	</div>
+</div>
+</div>
+@endforeach()
+
 
 @stop()
 @section('scripts')

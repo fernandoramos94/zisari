@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\LogoImg;
 
 class LogoImgController extends Controller
 {
@@ -34,7 +35,23 @@ class LogoImgController extends Controller
      */
     public function store(Request $request)
     {
-        dd("te");
+        $fechaInicialImg = $request->get("fechaInicioImg") . " " . $request->get("horaInicioImg");
+        $fechaFinalImg = $request->get("fechaFinalImg") . " " .$request->get("horaFinalImg");
+        $logImagen = new LogoImg();
+        if ($file = $request->file('file')) {
+            $file     = $request->file('file');
+            $nameComp = md5(time()) . '.' . $file->getClientOriginalExtension();
+            $path     = public_path() . '/img/logo/';
+            $file->move($path, $nameComp);
+        }
+        $logImagen->imagen = $nameComp;
+        $logImagen->url = $request->get("url");
+        $logImagen->fechaInicio = $fechaInicialImg;
+        $logImagen->fechaFinalizacion = $fechaFinalImg;
+        $logImagen->estado = 1;
+        if ($logImagen->save()) {
+            return redirect('logo');
+        }
     }
 
     /**
@@ -54,9 +71,28 @@ class LogoImgController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function editar(Request $request)
     {
-        //
+        $fechaInicialImg = $request->get("fechaInicioImg") . " " . $request->get("horaInicioImg");
+        $fechaFinalImg = $request->get("fechaFinalImg") . " " .$request->get("horaFinalImg");
+        $logImagen = LogoImg::find($request->get('id'));
+        if ($file = $request->file('file')) {
+            $file     = $request->file('file');
+            $nameComp = md5(time()) . '.' . $file->getClientOriginalExtension();
+            $path     = public_path() . '/img/logo/';
+            $file->move($path, $nameComp);
+        }
+        else{
+            $nameComp = $logImagen->imagen;
+        }
+        $logImagen->imagen = $nameComp;
+        $logImagen->url = $request->get("url");
+        $logImagen->fechaInicio = $fechaInicialImg;
+        $logImagen->fechaFinalizacion = $fechaFinalImg;
+        $logImagen->estado = 1;
+        if ($logImagen->save()) {
+            return redirect('logo');
+        }
     }
 
     /**
@@ -77,8 +113,11 @@ class LogoImgController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function eliminar($id)
     {
-        //
+        $logImagen = LogoImg::find($id);
+        if ($logImagen->delete()) {
+            return redirect('logo');
+        }
     }
 }

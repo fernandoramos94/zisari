@@ -35,7 +35,16 @@ class LogoTextController extends Controller
      */
     public function store(Request $request)
     {
-        
+        $fechaInicial = $request->get("fechaInicio") . " ". $request->get("horaInicio");
+        $fechaFinal = $request->get("fechaFinal") . " " . $request->get("horaFinal");
+        $logo = new LogoText();
+        $logo->titulo = $request->get("titulo");
+        $logo->fechaInicio = $fechaInicial;
+        $logo->fechaFinalizacion = $fechaFinal;
+        $logo->estado = 1;
+        if ($logo->save()) {
+            return redirect('logo');
+        }
     }
     /**
      * Display the specified resource.
@@ -54,9 +63,18 @@ class LogoTextController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function editar(Request $request)
     {
-        //
+        $fechaInicial = $request->get("fechaInicio") . " ". $request->get("horaInicio");
+        $fechaFinal = $request->get("fechaFinal") . " " . $request->get("horaFinal");
+        $logo = LogoText::find($request->get('id'));
+        $logo->titulo = $request->get("titulo");
+        $logo->fechaInicio = $fechaInicial;
+        $logo->fechaFinalizacion = $fechaFinal;
+        $logo->estado = 1;
+        if ($logo->save()) {
+            return redirect('logo');
+        }
     }
 
     /**
@@ -77,8 +95,11 @@ class LogoTextController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function eliminar($id)
     {
-        //
+        $text = LogoText::find($id);
+        if ($text->delete()) {
+            return redirect('logo');
+        }
     }
 }
