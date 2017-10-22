@@ -39,6 +39,12 @@ Route::post('/updateLogoImg', 'LogoImgController@editar');
 
 Route::post('/agregaLogoText', 'LogoTextController@store');
 
+Route::get('/recuperarPassword', function(){
+	return view('auth.passwords.reset');
+});
+
+Route::post('/updatePass', 'UsuariosController@updatePassword');
+
 Route::get('/logo', function(){
 	return view('logo.index');
 });
@@ -47,6 +53,10 @@ Route::post('/getUser', function(){
 	return Response::json($usuarios);
 });
 Route::get('/usuarios', 'UsuariosController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 

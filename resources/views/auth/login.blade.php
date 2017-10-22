@@ -92,7 +92,7 @@
                     </label>
                 </div>
                 <p align="center">
-                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                    <a class="btn btn-link" href="{{URL::to('recuperarPassword') }}">
                     Recuperar Contraseña
                     </a>
                 </p>
