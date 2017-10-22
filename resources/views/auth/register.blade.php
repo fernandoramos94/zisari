@@ -20,11 +20,11 @@
             @if ($logo->fechaFinalizacion > $fechaActual)
                 @if ($logo->imagen != null && $logo->url == null || $logo->imagen != null && $logo->url != null)
                     <center >
-                        <img style="width: 100%" id="imagenLogo" src="{{$logo->imagen}}">
+                        <img style="width: 100%" id="imagenLogo" src="{{asset('img/logo/'.$logo->imagen)}}">
                     </center>
                 @else
                     <center >
-                        <img style="width: 100%" id="imagenLogo" src="{{$logo->url}}">
+                        <img style="width: 100%" id="imagenLogo" src="{{asset('img/logo/'.$logo->url)}}">
                     </center>
                 @endif
             @endif

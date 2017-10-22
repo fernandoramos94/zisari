@@ -2,6 +2,7 @@
 use Illuminate\Http\Request;
 use App\LogoText;
 use App\LogoImg;
+use App\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +40,10 @@ Route::post('/updateLogoImg', 'LogoImgController@editar');
 Route::post('/agregaLogoText', 'LogoTextController@store');
 Route::get('/logo', function(){
 	return view('logo.index');
+});
+Route::post('/getUser', function(){
+	$usuarios = User::All();
+	return Response::json($usuarios);
 });
 Route::get('/usuarios', 'UsuariosController@index');
 
