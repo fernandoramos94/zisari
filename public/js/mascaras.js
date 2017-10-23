@@ -30,7 +30,7 @@ $(document).ready(function(){
 
 	$("#name").on("keyup", function(e){
 		ucWords(this.val());
-	}
+	});
 
 	// formulario registro de logo
 	$("#horaInicioText").mask('00:00:00',{placeholder:"00:00:00"});
