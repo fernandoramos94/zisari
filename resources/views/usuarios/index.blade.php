@@ -75,7 +75,9 @@
 	                		<strong>Genero</strong><br>
 	                		<span>{{$us->genero}}</span>
 	                	</div>
-
+	                </div>
+	                <div class="row">
+						<hr>
 	                	<div class="col-lg-4">
 	                		<strong>País</strong><br>
 	                		<span>{{$us->pais}}</span>
