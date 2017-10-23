@@ -43,6 +43,10 @@ Route::get('/recuperarPassword', function(){
 	return view('auth.passwords.reset');
 });
 
+Route::get('/layout', function(){
+	return view('layout.index');
+});
+
 Route::post('/updatePass', 'UsuariosController@updatePassword');
 
 Route::get('/logo', function(){
