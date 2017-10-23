@@ -166,7 +166,7 @@
             <div id="leftside-navigation" class="nano">
                 <ul class="nano-content">
                     <li class="active" id="liuno">
-                        <a href="index.html"><i class="fa fa-dashboard"></i><span>Administrador General</span></a>
+                        <a href="{{URL::to('home')}}"><i class="fa fa-dashboard"></i><span>Administrador General</span></a>
                     </li>
                     <li class="sub-menu" id="lidos">
                         <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>Elementos de Diseño</span><i class="arrow fa fa-angle-right pull-right"></i></a>
