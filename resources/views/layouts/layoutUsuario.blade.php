@@ -181,7 +181,7 @@
         </aside>
         <!--sidebar left end-->
         <!--main content start-->
-        <section class="main-content-wrapper">
+        <section class="main-content-wrapper" style="background: #fff">
             <section id="main-content">
                 <!--tiles start-->
                 <div class="row">
