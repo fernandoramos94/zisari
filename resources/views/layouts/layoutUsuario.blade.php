@@ -250,8 +250,8 @@
                     </li>
                     <li class="dropdown settings">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                      Fernando Ramos<i class="fa fa-angle-down"></i>
-                    </a>
+                            Fernando Ramos<i class="fa fa-angle-down"></i>
+                        </a>
                         <ul class="dropdown-menu animated fadeInDown">
                             <li>
                                 <a href="#"><i class="fa fa-user"></i> Perfil</a>
@@ -267,13 +267,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <!-- <li>
                         <div class="toggle-navigation toggle-right">
                             <button type="button" class="btn btn-default" id="toggle-right">
                                 <i class="fa fa-comment"></i>
                             </button>
                         </div>
-                    </li>
+                    </li> -->
 
                 </ul>
             </div>
