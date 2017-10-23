@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- Favicon -->
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
     <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}" type="image/x-icon">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap/css/bootstrap.min.css') }}">
@@ -31,13 +32,12 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
 </head>
 
 <body>
     <script src="{{ asset('js/main.js') }}"></script>
     <section id="container">
-        <header id="header">
+        <header id="header" style="background: transparent !important;">
             <!--logo start-->
             <!-- <div class="brand">
                 <a href="index.html" class="logo"><span>Zisari</span></a>
