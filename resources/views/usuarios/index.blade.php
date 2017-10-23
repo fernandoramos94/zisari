@@ -54,13 +54,7 @@
 	            </div>
 	            <div style="padding: 0 35px; ">
 	                <div class="foto col-lg-4">
-	                    <a class="actualizarPerfil" id="actualizarPerfil">
-	                        <img src="" id="iconPerfil">
-	                    </a>
 	                    <img src="{{asset('img/img_users/perfil/'.$us->imagen)}}" id="foto">
-	                </div>
-	                <div id="nombreFinalizar" class="col-lg-12">
-	                	<p><strong>{{$us->nombres}} {{$us->apellidos}}</strong><br><strong>{{$us->name}}</strong></p>
 	                </div>
 	                <div class="row">
 	                	<div class="col-lg-4">
@@ -76,6 +70,7 @@
 	                		<span>{{$us->genero}}</span>
 	                	</div>
 	                </div>
+	                <hr>
 	                <div class="row">
 						<hr>
 	                	<div class="col-lg-4">
