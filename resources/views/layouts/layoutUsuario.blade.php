@@ -118,7 +118,7 @@
                     <li class="dropdown messages">
                         <!-- <span class="badge badge-danager animated bounceIn" id="new-messages">5</span> -->
                         <button type="button" class="btn btn-default dropdown-toggle options" id="toggle-mail" data-toggle="dropdown">
-                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                            <i class="fa fa-users" aria-hidden="true"></i>
                         </button>
                         <ul class="dropdown-menu alert animated fadeInDown">
                             <li>
