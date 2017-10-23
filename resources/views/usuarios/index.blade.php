@@ -62,6 +62,33 @@
 	                <div id="nombreFinalizar" class="col-lg-12">
 	                	<p><strong>{{$us->nombres}} {{$us->apellidos}}</strong><br><strong>{{$us->name}}</strong></p>
 	                </div>
+	                <div class="col-lg-12">
+	                	<div class="col-lg-4">
+	                		<strong>Nombres</strong>
+	                		<span>{{$us->nombres}}</span>
+	                	</div>
+	                	<div class="col-lg-4">
+	                		<strong>Apellidos</strong>
+	                		<span>{{$us->apellidos}}</span>
+	                	</div>
+	                	<div class="col-lg-4">
+	                		<strong>Genero</strong>
+	                		<span>{{$us->genero}}</span>
+	                	</div>
+
+	                	<div class="col-lg-4">
+	                		<strong>País</strong>
+	                		<span>{{$us->pais}}</span>
+	                	</div>
+	                	<div class="col-lg-4">
+	                		<strong>Fecha Nacimiento</strong>
+	                		<span>{{$us->dia}}-{{$us->mes}}-{{$us->anio}}</span>
+	                	</div>
+	                	<div class="col-lg-4">
+	                		<strong>Numero Movil</strong>
+	                		<span>{{$us->numeroCelular}}</span>
+	                	</div>
+	                </div>
 	            </div>
         </div>
         <div class="modal-footer">
