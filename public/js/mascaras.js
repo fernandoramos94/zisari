@@ -29,8 +29,8 @@ $(document).ready(function(){
 
 
 	$("#nombres").on("keypress", function(e){
-		var nombre = ucWords($("#name").val());
-		$("#name").val(nombre);
+		var nombre = ucWords($("#nombres").val());
+		$("#nombres").val(nombre);
 	});
 	$("#apellidos").on("keypress", function(e){
 		var data = ucWords($("#apellidos").val());
