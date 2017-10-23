@@ -17,7 +17,7 @@ class CreateLogoImgTable extends Migration
             $table->increments('id');
             $table->text('imagen')->nullable();
             $table->text('imagenLogo')->nullable();
-            $tabla->text('tooltip')->nullable();
+            $tabla->string('tooltip')->nullable();
             $table->string('url')->nullable();
             $table->dateTime('fechaInicio');
             $table->dateTime('fechaFinalizacion');
