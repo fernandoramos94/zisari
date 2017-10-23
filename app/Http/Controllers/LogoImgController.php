@@ -99,7 +99,18 @@ class LogoImgController extends Controller
         else{
             $nameComp = $logImagen->imagen;
         }
+        if ($logoMini = $request->file('fileMini')) {
+            $logoMini     = $request->file('fileMini');
+            $nameCompMini = md5(time()) . '.' . $logoMini->getClientOriginalExtension();
+            $path     = public_path() . '/img/logo/';
+            $logoMini->move($path, $nameComp);
+        }
+        else{
+            $nameCompMini = $logImagen->imagenLogo;
+        }
+
         $logImagen->imagen = $nameComp;
+        $logImagen->imagenLogo = $nameCompMini;
         $logImagen->url = $request->get("url");
         $logImagen->fechaInicio = $fechaInicialImg;
         $logImagen->fechaFinalizacion = $fechaFinalImg;

@@ -88,8 +88,12 @@
          <div class="modal-body">
                <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                <div class="form-group">
-                  <label>Texto de Titulo</label>
+                  <label>Texto de Titulo(400x112)</label>
                   <input type="text" class="form-control" name="titulo">
+               </div>
+               <div class="form-group">
+                  <label>Texto de Titulo(98x27)</label>
+                  <input type="text" class="form-control" name="tituloMini">
                </div>
                <div class="form-group">
                   <label>Definir Fecha de Inicio y de Finalizacion</label>
@@ -218,6 +222,10 @@
                      <input type="text" class="form-control" name="titulo" value="{{$titulo->titulo}}">
                   </div>
                   <div class="form-group">
+                  <label>Texto de Titulo(98x27)</label>
+                    <input type="text" class="form-control" value="{{$titulo->tituloMini}}" name="tituloMini">
+                  </div>
+                  <div class="form-group">
                      <label>Definir Fecha de Inicio y de Finalizacion</label>
                   </div>
                   <div class="form-group">
@@ -277,9 +285,17 @@
                   <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                   <input type="hidden" name="id" value="{{$logo->id}}">
                   <div class="form-group">
-                     <label>Subir Imagen</label>
-                     <input type="file" name="file" id="imagenLogo" >
-                  </div>
+                      <label>Subir Imagen (400x112)</label>
+                      <input type="file" name="file" id="imagenLogo">
+                   </div>
+                   <div class="form-group">
+                      <label>Subir Imagen (98x127)</label>
+                      <input type="file" name="fileMini" id="">
+                   </div>
+                   <div class="form-group">
+                      <label>Texto Tooltip</label>
+                      <input type="text" name="tooltip" class="form-control">
+                   </div>
                   <div class="form-group">
                      <label>Enlace de Imagen</label>
                      <input type="text" name="url" class="form-control" value="{{$logo->url}}">

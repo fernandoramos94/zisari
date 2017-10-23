@@ -15,9 +15,10 @@ class CreateLogoTextTable extends Migration
     {
         Schema::create('logoText', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('titulo');
-            $table->dateTime('fechaInicio');
-            $table->dateTime('fechaFinalizacion');
+            $table->string('titulo')->nullable();
+            $table->string('tituloMini')->nullable();
+            $table->dateTime('fechaInicio')->nullable();
+            $table->dateTime('fechaFinalizacion')->nullable();
             $table->boolean('estado');
             $table->timestamps();
         });

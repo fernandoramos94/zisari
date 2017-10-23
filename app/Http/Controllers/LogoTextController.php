@@ -39,6 +39,7 @@ class LogoTextController extends Controller
         $fechaFinal = $request->get("fechaFinal") . " " . $request->get("horaFinal");
         $logo = new LogoText();
         $logo->titulo = $request->get("titulo");
+        $logo->tituloMini = $request->get('tituloMini');
         $logo->fechaInicio = $fechaInicial;
         $logo->fechaFinalizacion = $fechaFinal;
         $logo->estado = 1;
@@ -69,6 +70,7 @@ class LogoTextController extends Controller
         $fechaFinal = $request->get("fechaFinal") . " " . $request->get("horaFinal");
         $logo = LogoText::find($request->get('id'));
         $logo->titulo = $request->get("titulo");
+        $logo->tituloMini = $request->get('tituloMini');
         $logo->fechaInicio = $fechaInicial;
         $logo->fechaFinalizacion = $fechaFinal;
         $logo->estado = 1;
