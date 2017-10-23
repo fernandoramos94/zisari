@@ -28,8 +28,8 @@ $(document).ready(function(){
 
 
 
-	$("#name").on("keyup", function(e){
-		ucWords($("#name").val());
+	$("#name").on("keypress", function(e){
+		console.log(ucWords($("#name").val()));
 	});
 
 	// formulario registro de logo
