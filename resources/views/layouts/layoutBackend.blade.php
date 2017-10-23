@@ -181,7 +181,7 @@
                         <ul>
                             <li><a href="">Administración</a>
                             </li>
-                            <li><a href="{{URL::to('usuarios')}}" id="userRegister">Registros</a>
+                            <li id="userRegister"><a href="{{URL::to('usuarios')}}" >Registros</a>
                             </li>
                         </ul>
                     </li>                   
