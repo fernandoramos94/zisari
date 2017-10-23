@@ -43,7 +43,7 @@
 		animation: bg 45s linear infinite;
 		opacity: 1;
 		visibility: visible;
-		z-index: 1;
+		/*z-index: 1;*/
 	}
 
 	#bg div.visible.top {
