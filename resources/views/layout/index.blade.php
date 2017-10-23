@@ -1,6 +1,5 @@
 @extends('layouts.layoutUsuario')
 @section('contenedorLayout')
-<div class="row">
 	<div class="col-lg-8">
 		<ul class="nav nav-tabs" role="tablist">
 			<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
@@ -20,5 +19,4 @@
 	<div class="col-lg-4">
 		
 	</div>
-</div>
 @stop()
