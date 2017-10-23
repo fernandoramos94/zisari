@@ -329,6 +329,7 @@
     <script>
         $(document).ready(function() {
             var url = location.pathname;
+            url = url.split("/").pop();
             alert(url);
             // if (if () {}) {}
 
