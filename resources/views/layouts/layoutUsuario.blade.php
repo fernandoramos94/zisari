@@ -36,7 +36,7 @@
 
 <body>
     <script src="{{ asset('js/main.js') }}"></script>
-    <section id="container">
+    <section id="container" style="position: relative;">
         <header id="header" style="background: transparent !important;">
             <!--logo start-->
             <!-- <div class="brand">
