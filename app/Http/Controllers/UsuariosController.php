@@ -88,7 +88,7 @@ class UsuariosController extends Controller
     public function eliminar($id)
     {
         $usuarios = User::find($id);
-        if ($usuario->delete()) {
+        if ($usuarios->delete()) {
             return redirect("usuarios");
         }
     }
