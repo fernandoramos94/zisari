@@ -16,6 +16,8 @@ class CreateLogoImgTable extends Migration
         Schema::create('logoImg', function (Blueprint $table) {
             $table->increments('id');
             $table->text('imagen')->nullable();
+            $table->text('imagenLogo')->nullable();
+            $tabla->text('tooltip')->nullable();
             $table->string('url')->nullable();
             $table->dateTime('fechaInicio');
             $table->dateTime('fechaFinalizacion');

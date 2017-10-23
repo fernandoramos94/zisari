@@ -129,7 +129,7 @@
     </div>
   </div>
 </div>
-
+<!-- modal logo imagen  -->
 <div class="modal fade" id="modalImagen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -140,8 +140,16 @@
          <div class="modal-body">
                <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                <div class="form-group">
-                  <label>Subir Imagen</label>
+                  <label>Subir Imagen (400x112)</label>
                   <input type="file" name="file" id="imagenLogo">
+               </div>
+               <div class="form-group">
+                  <label>Subir Imagen (98x127)</label>
+                  <input type="file" name="fileMini" id="">
+               </div>
+               <div class="form-group">
+                  <label>Texto Tooltip</label>
+                  <input type="text" name="tooltip" class="form-control">
                </div>
                <div class="form-group">
                   <label>Enlace de Imagen</label>
