@@ -29,11 +29,11 @@ $(document).ready(function(){
 
 
 	$("#nombres").on("keypress", function(e){
-		var data = ucWords($("#name").val()));
+		var data = ucWords($("#name").val());
 		$("#name").val(data);
 	});
 	$("#apellidos").on("keypress", function(e){
-		var data = ucWords($("#apellidos").val()));
+		var data = ucWords($("#apellidos").val());
 		$("#apellidos").val(data);
 	});
 
