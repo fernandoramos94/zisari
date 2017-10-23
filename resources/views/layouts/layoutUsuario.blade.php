@@ -118,7 +118,7 @@
                     <li class="dropdown messages">
                         <!-- <span class="badge badge-danager animated bounceIn" id="new-messages">5</span> -->
                         <button type="button" class="btn btn-default dropdown-toggle options" id="toggle-mail" data-toggle="dropdown">
-                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
                         </button>
                         <ul class="dropdown-menu alert animated fadeInDown">
                             <li>
@@ -179,7 +179,6 @@
                             </li>
                         </ul>
                     </li>
-                    
                     <li class="dropdown messages">
                         <!-- <span class="badge badge-danager animated bounceIn" id="new-messages">5</span> -->
                         <button type="button" class="btn btn-default dropdown-toggle options" id="toggle-mail" data-toggle="dropdown">
@@ -243,7 +242,6 @@
                             <li><a href="#">Ver todos los mensajes <i class="fa fa-angle-right"></i></a>
                             </li>
                         </ul>
-
                     </li>
                     <li class="profile-photo">
                         <img src="" alt="" class="img-circle">
