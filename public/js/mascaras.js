@@ -29,7 +29,7 @@ $(document).ready(function(){
 
 
 	$("#name").on("keyup", function(e){
-		ucWords(this.val());
+		ucWords($("#name").val());
 	});
 
 	// formulario registro de logo
