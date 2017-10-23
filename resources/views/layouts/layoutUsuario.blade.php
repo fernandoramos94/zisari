@@ -280,7 +280,7 @@
             </form>
         </header>
         <!--sidebar left start-->
-        <aside class="sidebar sidebar-toggle">
+        <aside class="sidebar">
             <div id="leftside-navigation" class="nano">
                 <ul class="nano-content">
                     <li class="active">
