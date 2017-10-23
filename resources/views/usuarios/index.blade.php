@@ -53,9 +53,10 @@
 	                <img src="{{asset('img/img_users/portadas/'.$us->portado)}}" id="portada">
 	            </div>
 	            <div style="padding: 0 35px; ">
-	                <div class="foto col-lg-4">
+	                <div class="foto col-lg-12">
 	                    <img src="{{asset('img/img_users/perfil/'.$us->imagen)}}" id="foto">
 	                </div>
+	                <hr>
 	                <div class="row">
 	                	<div class="col-lg-4">
 	                		<strong>Nombres</strong><br>
@@ -72,7 +73,6 @@
 	                </div>
 	                <hr>
 	                <div class="row">
-						<hr>
 	                	<div class="col-lg-4">
 	                		<strong>País</strong><br>
 	                		<span>{{$us->pais}}</span>
