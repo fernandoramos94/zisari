@@ -165,10 +165,10 @@
         <aside class="sidebar">
             <div id="leftside-navigation" class="nano">
                 <ul class="nano-content">
-                    <li class="active">
+                    <li class="active" id="liuno">
                         <a href="index.html"><i class="fa fa-dashboard"></i><span>Administrador General</span></a>
                     </li>
-                    <li class="sub-menu">
+                    <li class="sub-menu" id="lidos">
                         <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>Elementos de Diseño</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                         <ul>
 
@@ -176,12 +176,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="sub-menu">
+                    <li class="sub-menu" id="litres">
                         <a href="javascript:void(0);"><i class="fa fa-table"></i><span>Usuarios</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                         <ul>
-                            <li><a href="{{URL::to('usuarios')}}">Administración</a>
+                            <li><a href="">Administración</a>
                             </li>
-                            <li><a href="#">Registros</a>
+                            <li><a href="{{URL::to('usuarios')}}" id="userRegister">Registros</a>
                             </li>
                         </ul>
                     </li>                   
@@ -330,8 +330,23 @@
         $(document).ready(function() {
             var url = location.pathname;
             url = url.split("/").pop();
-            alert(url);
-            // if (if () {}) {}
+            if (url == "logo") {
+                $("#lidos > ul").show();
+                $("#lidos > ul > li").addClass("active");
+                $("#liuno").removeClass("active");
+                $("#litres").removeClass("active");
+            }
+            if (url == "home") {
+                $("#liuno").addClass("active");
+                $("#lidos").removeClass("active");
+                $("#litres").removeClass("active");
+            }
+            if (url == "usuarios") {
+                $("#litres > ul").show();
+                $("#litres > ul > li#userRegister").addClass("active");
+                $("#liuno").removeClass("active");
+                $("#lidos").removeClass("active");
+            }
 
             app.timer();
             app.map();
