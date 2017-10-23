@@ -35,9 +35,9 @@
 </head>
 
 <body>
-    <script src="{{ asset('js/main.js') }}"></script>
     <section id="container">
         <header id="header" style="background: transparent !important;">
+            <script src="{{ asset('js/main.js') }}"></script>
             <!--logo start-->
             <!-- <div class="brand">
                 <a href="index.html" class="logo"><span>Zisari</span></a>

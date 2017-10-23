@@ -43,11 +43,11 @@
 		animation: bg 45s linear infinite;
 		opacity: 1;
 		visibility: visible;
-		/*z-index: 1;*/
+		z-index: 1;
 	}
 
 	#bg div.visible.top {
-		/*z-index: 2;*/
+		z-index: 2;
 	}
 
 	@media screen and (max-width: 1280px) {
