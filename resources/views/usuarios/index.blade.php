@@ -60,34 +60,46 @@
 	                	<div class="col-lg-4">
 	                		<strong>Nombres</strong><br>
 	                		<span>{{$us->nombres}}</span>
-	                		<hr>
+	                		<hr style="border-top: 1px solid #03141e">
 	                	</div>
 	                	<div class="col-lg-4">
 	                		<strong>Apellidos</strong><br>
 	                		<span>{{$us->apellidos}}</span>
-	                		<hr>
+	                		<hr style="border-top: 1px solid #03141e">
 	                	</div>
 	                	<div class="col-lg-4">
 	                		<strong>Genero</strong><br>
 	                		<span>{{$us->genero}}</span>
-	                		<hr>
+	                		<hr style="border-top: 1px solid #03141e">
 	                	</div>
 	                </div>
 	                <div class="row">
 	                	<div class="col-lg-4">
 	                		<strong>País</strong><br>
 	                		<span>{{$us->pais}}</span>
-	                		<hr>
+	                		<hr style="border-top: 1px solid #03141e">
 	                	</div>
 	                	<div class="col-lg-4">
-	                		<hr>
 	                		<strong>Fecha Nacimiento</strong><br>
 	                		<span>{{$us->dia}}-{{$us->mes}}-{{$us->anio}}</span>
+	                		<hr style="border-top: 1px solid #03141e">
 	                	</div>
 	                	<div class="col-lg-4">
 	                		<strong>Numero Movil</strong><br>
 	                		<span>{{$us->numeroCelular}}</span>
-	                		<hr>
+	                		<hr style="border-top: 1px solid #03141e">
+	                	</div>
+	                </div>
+	                <div class="row">
+	                	<div class="col-lg-4">
+	                		<strong>Documento de Identidad</strong><br>
+	                		<span>{{$us->documento}}</span>
+	                		<hr style="border-top: 1px solid #03141e">
+	                	</div>
+	                	<div class="col-lg-4">
+	                		<strong>Correo Electrónico</strong><br>
+	                		<span>{{$us->correo}}</span>
+	                		<hr style="border-top: 1px solid #03141e">
 	                	</div>
 	                </div>
 	            </div>
