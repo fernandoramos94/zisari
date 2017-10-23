@@ -85,9 +85,12 @@ class UsuariosController extends Controller
         //
     }
 
-    public function destroy($id)
+    public function eliminar($id)
     {
-        //
+        $usuarios = User::find($id);
+        if ($usuario->delete()) {
+            return redirect("usuarios")
+        }
     }
     public function updatePassword(Request $request)
     {

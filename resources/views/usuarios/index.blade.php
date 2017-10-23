@@ -16,7 +16,7 @@
 						<th>Apellidos</th>
 						<th>País</th>
 						<th>Ip</th>
-						<th>Ver Perfil</th>
+						<th></th>
 						<!-- <th>Opción</th> -->
 					</tr>
 				</thead>
@@ -27,7 +27,7 @@
 							<td>{{$user->apellidos}}</td>
 							<td>{{$user->pais}}</td>
 							<td>{{$user->ip}}</td>
-							<td><a href="" data-toggle="modal" data-target="#modal{{$user->id}}">Ver </a></td>
+							<td><a href="" data-toggle="modal" data-target="#modal{{$user->id}}">Ver </a> | <a href="{{URL::to('deleteUsuario')}}/{{$user->id}}" >Eliminar</a></td>
 							<!-- <td><a > Bloquear Usuario </a></td> -->
 						</tr>
 					@endforeach

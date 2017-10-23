@@ -47,7 +47,7 @@ Route::get('/layout', function(){
 	return view('layout.index');
 });
 
-Route::post('/updatePass', 'UsuariosController@updatePassword');
+Route::post('/updatePass', 'deleteUsuario@updatePassword');
 
 Route::get('/logo', function(){
 	return view('logo.index');
@@ -56,6 +56,9 @@ Route::post('/getUser', function(){
 	$usuarios = User::All();
 	return Response::json($usuarios);
 });
+
+Route::get('/deleteUsuario/{id}', 'deleteUsuario@eliminar');
+
 Route::get('/usuarios', 'UsuariosController@index');
 
 Auth::routes();
