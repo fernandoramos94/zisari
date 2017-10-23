@@ -58,26 +58,26 @@
 	                </div>
 	                <div class="row">
 	                	<div class="col-lg-4">
-	                		<hr>
 	                		<strong>Nombres</strong><br>
 	                		<span>{{$us->nombres}}</span>
+	                		<hr>
 	                	</div>
 	                	<div class="col-lg-4">
-	                		<hr>
 	                		<strong>Apellidos</strong><br>
 	                		<span>{{$us->apellidos}}</span>
+	                		<hr>
 	                	</div>
 	                	<div class="col-lg-4">
-	                		<hr>
 	                		<strong>Genero</strong><br>
 	                		<span>{{$us->genero}}</span>
+	                		<hr>
 	                	</div>
 	                </div>
 	                <div class="row">
 	                	<div class="col-lg-4">
-	                		<hr>
 	                		<strong>País</strong><br>
 	                		<span>{{$us->pais}}</span>
+	                		<hr>
 	                	</div>
 	                	<div class="col-lg-4">
 	                		<hr>
@@ -85,9 +85,9 @@
 	                		<span>{{$us->dia}}-{{$us->mes}}-{{$us->anio}}</span>
 	                	</div>
 	                	<div class="col-lg-4">
-	                		<hr>
 	                		<strong>Numero Movil</strong><br>
 	                		<span>{{$us->numeroCelular}}</span>
+	                		<hr>
 	                	</div>
 	                </div>
 	            </div>
