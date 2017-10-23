@@ -37,9 +37,9 @@
     <section id="container">
         <header id="header">
             <!--logo start-->
-            <div class="brand">
+            <!-- <div class="brand">
                 <a href="index.html" class="logo"><span>Zisari</span></a>
-            </div>
+            </div> -->
             <!--logo end-->
             <div class="toggle-navigation toggle-left">
                 <button type="button" class="btn btn-default" id="toggle-left" data-toggle="tooltip" data-placement="right" title="Menú de Navegación">
