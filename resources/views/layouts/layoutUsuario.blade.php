@@ -280,7 +280,7 @@
             </form>
         </header>
         <!--sidebar left start-->
-        <aside class="sidebar">
+        <aside class="sidebar sidebar-toggle">
             <div id="leftside-navigation" class="nano">
                 <ul class="nano-content">
                     <li class="active">
@@ -306,7 +306,7 @@
                 </ul>
             </div>
         </aside>
-        <section class="main-content-wrapper" style="background: #fff">
+        <section class="main-content-wrapper main-content-toggle-left" style="background: #fff">
             <section id="main-content">
                 <!--tiles start-->
                 <div class="row">
