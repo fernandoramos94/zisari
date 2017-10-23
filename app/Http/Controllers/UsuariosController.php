@@ -89,7 +89,7 @@ class UsuariosController extends Controller
     {
         $usuarios = User::find($id);
         if ($usuario->delete()) {
-            return redirect("usuarios")
+            return redirect("usuarios");
         }
     }
     public function updatePassword(Request $request)
