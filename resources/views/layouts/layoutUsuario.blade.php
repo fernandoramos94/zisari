@@ -310,7 +310,7 @@
             <section id="main-content">
                 <!--tiles start-->
                 <div class="row">
-                    @yield('contenedorBackend')
+                    @yield('contenedorLayout')
                 </div>
             </section>
         </section>
