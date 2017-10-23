@@ -57,31 +57,35 @@
 	                    <img src="{{asset('img/img_users/perfil/'.$us->imagen)}}" id="foto">
 	                </div>
 	                <div class="row">
-	                	<hr>
 	                	<div class="col-lg-4">
+	                		<hr>
 	                		<strong>Nombres</strong><br>
 	                		<span>{{$us->nombres}}</span>
 	                	</div>
 	                	<div class="col-lg-4">
+	                		<hr>
 	                		<strong>Apellidos</strong><br>
 	                		<span>{{$us->apellidos}}</span>
 	                	</div>
 	                	<div class="col-lg-4">
+	                		<hr>
 	                		<strong>Genero</strong><br>
 	                		<span>{{$us->genero}}</span>
 	                	</div>
 	                </div>
 	                <div class="row">
-	                	<hr>
 	                	<div class="col-lg-4">
+	                		<hr>
 	                		<strong>País</strong><br>
 	                		<span>{{$us->pais}}</span>
 	                	</div>
 	                	<div class="col-lg-4">
+	                		<hr>
 	                		<strong>Fecha Nacimiento</strong><br>
 	                		<span>{{$us->dia}}-{{$us->mes}}-{{$us->anio}}</span>
 	                	</div>
 	                	<div class="col-lg-4">
+	                		<hr>
 	                		<strong>Numero Movil</strong><br>
 	                		<span>{{$us->numeroCelular}}</span>
 	                	</div>

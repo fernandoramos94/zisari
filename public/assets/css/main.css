@@ -42,6 +42,7 @@ li.profile-photo > img{
     position: relative;
     text-align: center;
     margin-top: -12%;
+    margin-bottom: 8%; 
     padding: 0 !important;
  }
  .foto > img{
