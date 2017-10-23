@@ -56,8 +56,8 @@
 	                <div class="foto col-lg-12">
 	                    <img src="{{asset('img/img_users/perfil/'.$us->imagen)}}" id="foto">
 	                </div>
-	                <hr>
 	                <div class="row">
+	                	<hr>
 	                	<div class="col-lg-4">
 	                		<strong>Nombres</strong><br>
 	                		<span>{{$us->nombres}}</span>
@@ -71,8 +71,8 @@
 	                		<span>{{$us->genero}}</span>
 	                	</div>
 	                </div>
-	                <hr>
 	                <div class="row">
+	                	<hr>
 	                	<div class="col-lg-4">
 	                		<strong>País</strong><br>
 	                		<span>{{$us->pais}}</span>
