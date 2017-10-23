@@ -27,8 +27,10 @@
 							<td>{{$user->apellidos}}</td>
 							<td>{{$user->pais}}</td>
 							<td>{{$user->ip}}</td>
-							<td><a href="" data-toggle="modal" data-target="#modal{{$user->id}}">Ver </a> | <a href="{{URL::to('deleteUsuario')}}/{{$user->id}}" >Eliminar</a></td>
-							<!-- <td><a > Bloquear Usuario </a></td> -->
+							<td><a href="" data-toggle="modal" data-target="#modal{{$user->id}}">Ver </a> | <a href="{{URL::to('deleteUsuario')}}/{{$user->id}}" >Eliminar</a> | <a href="" onclick="event.preventDefault(); document.getElementById('bloqueo').submit();""> Bloquear Usuario </a></td>
+							<form id="bloqueo" action="{{ URL::to('bloquearUser') }}/{{$user->id}}" method="POST" style="display: none;">
+				                {{ csrf_field() }}
+				            </form>
 						</tr>
 					@endforeach
 				</tbody>

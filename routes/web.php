@@ -57,6 +57,8 @@ Route::post('/getUser', function(){
 	return Response::json($usuarios);
 });
 
+Route::post('/bloquearUser/{id}', 'UsuariosController@bloquearUser');
+
 Route::get('/deleteUsuario/{id}', 'deleteUsuario@eliminar');
 
 Route::get('/usuarios', 'UsuariosController@index');

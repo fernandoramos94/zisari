@@ -92,6 +92,13 @@ class UsuariosController extends Controller
             return redirect("usuarios");
         }
     }
+    public function bloquearUser(Request $request, $id){
+        $users = User::find($id);
+        $users->status = 0;
+        if ($users->save()) {
+            return redirect('usuarios');
+        }
+    }
     public function updatePassword(Request $request)
     {
         $usuario = User::where('email', $request->get("email"))->first();
