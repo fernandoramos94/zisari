@@ -34,6 +34,7 @@
 </head>
 
 <body>
+    <script src="{{ asset('js/main.js') }}"></script>
     <section id="container">
         <header id="header">
             <!--logo start-->
