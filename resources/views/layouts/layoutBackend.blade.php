@@ -328,6 +328,10 @@
 
     <script>
         $(document).ready(function() {
+            var url = location.pathname;
+            alert(url);
+            // if (if () {}) {}
+
             app.timer();
             app.map();
             app.weather();
