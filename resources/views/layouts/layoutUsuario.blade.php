@@ -114,12 +114,76 @@
                             <li><a href="#">Ver todos los mensajes <i class="fa fa-angle-right"></i></a>
                             </li>
                         </ul>
-
                     </li>
                     <li class="dropdown messages">
                         <span class="badge badge-danager animated bounceIn" id="new-messages">5</span>
                         <button type="button" class="btn btn-default dropdown-toggle options" id="toggle-mail" data-toggle="dropdown">
-                            <i class="fa fa-envelope"></i>
+                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                        </button>
+                        <ul class="dropdown-menu alert animated fadeInDown">
+                            <li>
+                                <h1>Tienes <strong>5</strong> mensajes nuevos</h1>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="profile-photo">
+                                        <img src="assets/img/avatar.gif" alt="" class="img-circle">
+                                    </div>
+                                    <div class="message-info">
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="profile-photo">
+                                        <img src="assets/img/avatar1.gif" alt="" class="img-circle">
+                                    </div>
+                                    <div class="message-info">
+                                        <span class="sender"></span>
+                                        <span class="time">2 hour</span>
+                                        <div class="message-content">hendrerit pellentesque, iure tincidunt, faucibus vitae dolor aliquam...</div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="profile-photo">
+                                        <img src="assets/img/avatar2.gif" alt="" class="img-circle">
+                                    </div>
+                                    <div class="message-info">
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="profile-photo">
+                                        <img src="assets/img/avatar3.gif" alt="" class="img-circle">
+                                    </div>
+                                    <div class="message-info">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="profile-photo">
+                                        <img src="assets/img/avatar4.gif" alt="" class="img-circle">
+                                    </div>
+                                    <div class="message-info">
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#">Ver todos los mensajes <i class="fa fa-angle-right"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown messages">
+                        <span class="badge badge-danager animated bounceIn" id="new-messages">5</span>
+                        <button type="button" class="btn btn-default dropdown-toggle options" id="toggle-mail" data-toggle="dropdown">
+                            <i class="fa fa-globe" aria-hidden="true"></i>
                         </button>
                         <ul class="dropdown-menu alert animated fadeInDown">
                             <li>
