@@ -60,46 +60,46 @@
 	                	<div class="col-lg-4">
 	                		<strong>Nombres</strong><br>
 	                		<span>{{$us->nombres}}</span>
-	                		<hr style="border-top: 1px solid #03141e">
+	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
 	                	</div>
 	                	<div class="col-lg-4">
 	                		<strong>Apellidos</strong><br>
 	                		<span>{{$us->apellidos}}</span>
-	                		<hr style="border-top: 1px solid #03141e">
+	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
 	                	</div>
 	                	<div class="col-lg-4">
-	                		<strong>Genero</strong><br>
+	                		<strong>Género</strong><br>
 	                		<span>{{$us->genero}}</span>
-	                		<hr style="border-top: 1px solid #03141e">
+	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
 	                	</div>
 	                </div>
 	                <div class="row">
 	                	<div class="col-lg-4">
 	                		<strong>País</strong><br>
 	                		<span>{{$us->pais}}</span>
-	                		<hr style="border-top: 1px solid #03141e">
+	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
 	                	</div>
 	                	<div class="col-lg-4">
 	                		<strong>Fecha Nacimiento</strong><br>
 	                		<span>{{$us->dia}}-{{$us->mes}}-{{$us->anio}}</span>
-	                		<hr style="border-top: 1px solid #03141e">
+	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
 	                	</div>
 	                	<div class="col-lg-4">
 	                		<strong>Numero Movil</strong><br>
 	                		<span>{{$us->numeroCelular}}</span>
-	                		<hr style="border-top: 1px solid #03141e">
+	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
 	                	</div>
 	                </div>
 	                <div class="row">
-	                	<div class="col-lg-4">
+	                	<div class="col-lg-8">
 	                		<strong>Documento de Identidad</strong><br>
 	                		<span>{{$us->documento}}</span>
-	                		<hr style="border-top: 1px solid #03141e">
+	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
 	                	</div>
 	                	<div class="col-lg-4">
 	                		<strong>Correo Electrónico</strong><br>
 	                		<span>{{$us->correo}}</span>
-	                		<hr style="border-top: 1px solid #03141e">
+	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
 	                	</div>
 	                </div>
 	            </div>
