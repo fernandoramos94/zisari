@@ -28,8 +28,13 @@ $(document).ready(function(){
 
 
 
-	$("#name").on("keypress", function(e){
-		console.log(ucWords($("#name").val()));
+	$("#nombres").on("keypress", function(e){
+		var data = ucWords($("#name").val()));
+		$("#name").val(data);
+	});
+	$("#apellidos").on("keypress", function(e){
+		var data = ucWords($("#apellidos").val()));
+		$("#apellidos").val(data);
 	});
 
 	// formulario registro de logo
