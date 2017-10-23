@@ -6,6 +6,31 @@ $(document).ready(function(){
 	$("#anio").mask("0000", {placeholder: "Año"});
 	$('#numeroCelular').mask('+(00) 000 000 00 00', {placeholder: "+(Código) Número de Móvil"});
 
+	function ucWords(string){
+ 		var arrayWords;
+ 		var returnString = "";
+ 		var len;
+ 		arrayWords = string.split(" ");
+ 		len = arrayWords.length;
+ 		for(i=0;i < len ;i++){
+	  		if(i != (len-1)){
+	   			returnString = returnString+ucFirst(arrayWords[i])+" ";
+	  		}	
+	  		else{
+	   			returnString = returnString+ucFirst(arrayWords[i]);
+	  		}
+ 		}
+ 		return returnString;
+	}
+	function ucFirst(string){
+	 	return string.substr(0,1).toUpperCase()+string.substr(1,string.length).toLowerCase();
+	}
+
+
+
+	$("#name").on("keyup", function(e){
+		ucWords(this.val());
+	}
 
 	// formulario registro de logo
 	$("#horaInicioText").mask('00:00:00',{placeholder:"00:00:00"});
