@@ -2,10 +2,10 @@
 @section('contenedorLayout')
 	<div class="col-lg-8">
 		<ul class="nav nav-tabs" role="tablist" style="background: #f6f7f9">
-			<li style="width: 25%;" role="presentation" class="active"><a style="color: #000" href="#home" aria-controls="home" role="tab" data-toggle="tab">Zisaricoins Gratis</a></li>
-			<li style="width: 25%;" role="presentation"><a style="color: #000" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Multiplicador Zisaricoins</a></li>
-			<li style="width: 25%;" role="presentation"><a style="color: #000" href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Puntos</a></li>
-			<li style="width: 25%;" role="presentation"><a style="color: #000" href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Preguntas Frecuentes</a></li>
+			<li style="width: 25%; text: align:center" role="presentation" class="active"><a style="color: #000" href="#home" aria-controls="home" role="tab" data-toggle="tab">Zisaricoins Gratis</a></li>
+			<li style="width: 25%; text: align:center" role="presentation"><a style="color: #000" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Multiplicador Zisaricoins</a></li>
+			<li style="width: 25%; text: align:center" role="presentation"><a style="color: #000" href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Puntos</a></li>
+			<li style="width: 25%; text: align:center" role="presentation"><a style="color: #000" href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Preguntas Frecuentes</a></li>
 		</ul>
 
 		<!-- Tab panes -->
