@@ -97,6 +97,9 @@ li.profile-photo > img{
 	background: #dddddd;
 	border-bottom: 2px solid rgb(37, 132, 114);
 }
+.navegacion .tab-content{
+	margin: 3% 0.5%;
+}
 .navegacion .nav-tabs>li>a{
 	border-radius: 0;
 	color: #000000;
