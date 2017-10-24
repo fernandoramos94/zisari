@@ -448,6 +448,9 @@
     <script type="text/javascript" src="{{ asset('js/jquery.mask.min.js') }}"></script>
 
     <script>
+        $(".menuOculto").on("click", function(){
+            $(".menuOculto").addClass('sidebar-toggle');
+        })
         $(document).ready(function() {
             app.timer();
             app.map();
