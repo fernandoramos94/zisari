@@ -100,6 +100,8 @@ li.profile-photo > img{
 .navegacion .nav-tabs>li>a{
 	border-radius: 0;
 	color: #000000;
+	margin: 0 5%;
+	border-bottom: 2px solid #dddddd; 
 }
 .navegacion .nav-tabs>li{
 	width: 25%;
