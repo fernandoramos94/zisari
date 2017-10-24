@@ -111,6 +111,7 @@ li.profile-photo > img{
 }
 .anuncio .linkCrearAnuncio{
 	text-align: right;
+	float: right;
 }
 .navegacion .nav-tabs>li>a{
 	border-radius: 0;
