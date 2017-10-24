@@ -136,6 +136,8 @@ li.profile-photo > img{
 }
 .cabecera .user-nav{
 	padding-top: 14px !important;
+	float: left !important;
+	display: inline-block !important;
 }
 .navegacion .nav-tabs>li{
 	width: 25%;
@@ -184,10 +186,6 @@ aside.menuOculto.sidebar{
 }
 .cabecera li.dropdown.messages{
 	margin: 0 5px;
-}
-.cabecera #header.user-nav{
-	float: left !important;
-	display: inline-block !important;
 }
 .search button{
     background: #cccccc;
