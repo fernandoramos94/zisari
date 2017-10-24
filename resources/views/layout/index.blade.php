@@ -60,4 +60,9 @@
 
   </div>
 </div>
+<style type="text/css">
+	.modal-backdrop{
+		position: relative !important;; 
+	}
+</style>
 @stop()
