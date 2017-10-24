@@ -306,7 +306,7 @@
                 </ul>
             </div>
         </aside>
-        <section class="main-content-wrapper main-content-toggle-left" style="background: #fff">
+        <section class="main-content-wrapper main-content-toggle-left" style="background: #e9ebee">
             <section id="main-content">
                 <!--tiles start-->
                 <div class="row">
