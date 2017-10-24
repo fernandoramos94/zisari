@@ -97,3 +97,6 @@ li.profile-photo > img{
 	background: #dddddd;
 	border: none;
 }
+.navegacion .nav-tabs>li>a{
+	border-radius: 0;
+}
