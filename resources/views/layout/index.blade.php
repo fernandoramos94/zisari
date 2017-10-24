@@ -37,7 +37,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="myModal" class="modal fade" role="dialog">
+	<div id="myModal" style="background: rgba(0, 0, 0, 0.5)" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
