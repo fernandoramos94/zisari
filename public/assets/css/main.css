@@ -136,7 +136,7 @@ li.profile-photo > img{
 }
 .cabecera .user-nav{
 	padding-top: 14px !important;
-	float: left !important;
+	float: initial !important;
 	display: inline-block !important;
 }
 .navegacion .nav-tabs>li{
