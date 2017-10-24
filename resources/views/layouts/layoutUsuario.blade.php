@@ -450,6 +450,7 @@
     <script>
         $(".menuOculto").on("click", function(){
             $(".menuOculto").addClass('sidebar-toggle');
+            4(".contenidoPrincipal").addClass("main-content-toggle-left");
         })
         $(document).ready(function() {
             app.timer();
