@@ -48,6 +48,12 @@
                     <i class="fa fa-bars"></i>
                 </button>
             </div>
+            <div>
+                <form>
+                    <input type="text" name="">
+                    <button>Buscar</button>
+                </form>
+            </div>
             <div class="user-nav">
                 <ul>
                     
