@@ -182,6 +182,9 @@ aside.menuOculto.sidebar{
     padding: 5px 11px;
     width: 80%;
 }
+.cabecera li.dropdown.messages{
+	margin: 0 5px;
+}
 .search button{
     background: #cccccc;
     padding: 6px 11px;
