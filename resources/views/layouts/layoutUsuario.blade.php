@@ -250,7 +250,7 @@
                         </ul>
                     </li>
                     <li class="profile-photo">
-                        <img src="" alt="" class="img-circle">
+                        <img src="https://www.thisischile.cl/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="" class="img-circle">
                     </li>
                     <li class="dropdown settings">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
