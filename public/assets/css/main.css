@@ -98,7 +98,12 @@ li.profile-photo > img{
 	border-bottom: 2px solid rgb(37, 132, 114);
 }
 .navegacion .tab-content{
-	margin: 3% 0.5%;
+	margin: 0 0.5%;
+    padding: 5% 3%;
+    max-height: 600px;
+    height: 550px;
+    background: #ffffff;
+
 }
 .navegacion .nav-tabs>li>a{
 	border-radius: 0;
