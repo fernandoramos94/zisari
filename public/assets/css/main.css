@@ -185,9 +185,9 @@ aside.menuOculto.sidebar{
 .cabecera li.dropdown.messages{
 	margin: 0 5px;
 }
-.cabecera #header .user-nav{
-	float: left;
-	display: inline-block;
+.cabecera #header.user-nav{
+	float: left !important;
+	display: inline-block !important;
 }
 .search button{
     background: #cccccc;
