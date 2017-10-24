@@ -21,10 +21,10 @@
             @if ($logo->estado == 1 && $logo->fechaFinalizacion > $fechaActual)
                 @if ($logo->imagen != null && $logo->url == null || $logo->imagen != null && $logo->url != null)
                     <center>
-                        <a href="http://{{$logo->url}}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" style="width: 100%;" src="{{asset('img/logo/'.$logo->imagen)}}"></a>
+                        <a href="{{$logo->url}}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" style="width: 100%;" src="{{asset('img/logo/'.$logo->imagen)}}"></a>
                     </center>
                 @else
-                    <a href="http://{11$logo->url}}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" style="width: 100%" id="imagenLogo" src="$logo->url"></a>
+                    <a href="{{$logo->url}}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" style="width: 100%" id="imagenLogo" src="$logo->url"></a>
                 @endif
             @endif
         @endforeach
