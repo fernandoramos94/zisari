@@ -50,7 +50,7 @@
             </div>
             <div class="search">
                 <form>
-                    <input type="text" class="buscador" name="">
+                    <input placeholder="Buscar a tus amigos(as) para tu comunidad" type="text" class="buscador" name="">
                     <button>Buscar</button>
                 </form>
             </div>
