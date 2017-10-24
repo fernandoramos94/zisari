@@ -10,9 +10,9 @@
 		<div class="tab-content">
 			<div role="tabpanel" class="tab-pane active" id="home">
 				<center>
-					<h4>
+					<h3>
 						<a href="" data-toggle="modal" data-target="#modalTexto"> ¿Por qué la cantidad de Zisaricoins que puedes ganar sigue cambiando?</a>
-					</h4>
+					</h3>
 				</center>
 			</div>
 			<div role="tabpanel" class="tab-pane" id="profile">
