@@ -127,7 +127,13 @@ li.profile-photo > img{
 	background: #f6f7f9;
 }
 .cabecera{
-	max-height: 42px !important; 
+	min-height: 42px !important; 
+}
+.cabecera .toggle-navigation.toggle-left{
+    margin: 13px 0 8px 20px;
+}
+.cabecera .user-nav{
+	padding-top: 14px !important;
 }
 .navegacion .nav-tabs>li{
 	width: 25%;
