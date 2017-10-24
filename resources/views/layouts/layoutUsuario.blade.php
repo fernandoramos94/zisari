@@ -50,7 +50,7 @@
             </div>
             <div class="search">
                 <form>
-                    <input type="text" class="form-control" name="">
+                    <input type="text" class="buscador" name="">
                     <button>Buscar</button>
                 </form>
             </div>

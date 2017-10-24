@@ -155,3 +155,9 @@ li.profile-photo > img{
 	margin-left: 20%;
 	display: inline-block;;
 }
+.buscador{
+	background: transparent;
+	color: #fff;
+	border-radius: 2px;
+	border: 1px solid #fff;
+}
