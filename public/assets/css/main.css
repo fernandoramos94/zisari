@@ -151,3 +151,7 @@ li.profile-photo > img{
 	background: #e9ebee;
 	min-height: 700px;
 }
+.search{
+	margin-left: 20%;
+	display: inline-block;;
+}

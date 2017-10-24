@@ -48,9 +48,9 @@
                     <i class="fa fa-bars"></i>
                 </button>
             </div>
-            <div>
+            <div class="search">
                 <form>
-                    <input type="text" name="">
+                    <input type="text" class="form-control" name="">
                     <button>Buscar</button>
                 </form>
             </div>
