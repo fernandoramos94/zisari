@@ -11,7 +11,7 @@
 			<div role="tabpanel" class="tab-pane active" id="home">
 				<center>
 					<h3>
-						<a href="" data-toggle="modal" data-target="#modalTexto"> ¿Por qué la cantidad de Zisaricoins que puedes ganar sigue cambiando?</a>
+						<a href="" data-toggle="modal" data-target="#myModal"> ¿Por qué la cantidad de Zisaricoins que puedes ganar sigue cambiando?</a>
 					</h3>
 				</center>
 			</div>
@@ -37,18 +37,27 @@
 			</div>
 		</div>
 	</div>
-<div class="modal fade" id="modalTexto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
+	<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
     <div class="modal-content">
-         <div class="modal-body">
-         	<p><span>
-         		La cantidad de Zisaricoins que puede ganar GRATUITO depende del precio actual de bitcoin y el premio mayor se fija en US $ 100 y los otros premios en proporción a este. Entonces, cuando el precio de un bitcoin baja, la cantidad de recompensa calculada en Zisaricoins aumenta y viceversa. Por lo tanto, independientemente del precio actual de bitcoin, tiene una buena oportunidad de ganar US $ 100 en Zisaricoins en cada tirada.
-         	</span></p>
-         </div>
-         <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-         </div>
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+        	<span>
+     			La cantidad de Zisaricoins que puede ganar GRATUITO depende del precio actual de bitcoin y el premio mayor se fija en US $ 100 y los otros premios en proporción a este. Entonces, cuando el precio de un bitcoin baja, la cantidad de recompensa calculada en Zisaricoins aumenta y viceversa. Por lo tanto, independientemente del precio actual de bitcoin, tiene una buena oportunidad de ganar US $ 100 en Zisaricoins en cada tirada.
+     		</span>
+     	</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
     </div>
+
   </div>
 </div>
 @stop()
