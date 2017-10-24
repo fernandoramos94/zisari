@@ -109,6 +109,9 @@ li.profile-photo > img{
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
+.anuncio .linkCrearAnuncio{
+	text-align: right;
+}
 .navegacion .nav-tabs>li>a{
 	border-radius: 0;
 	color: #000000;

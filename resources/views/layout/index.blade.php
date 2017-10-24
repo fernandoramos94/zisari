@@ -24,7 +24,7 @@
 	</div>
 	<div class="col-lg-4">
 		<div class="col-lg-8 anuncio">
-			<p><span>Publicidad</span><a href="">Crear Anuncio</a></p>
+			<p><span class="textPublicidad">Publicidad</span><a class="linkCrearAnuncio" href="">Crear Anuncio</a></p>
 			<img src="http://img.aws.ehowcdn.com/intl-620/ds-cdn-write/upload//8000/900/50/3/288953.jpg">
 			<h4>¿Por qué Uruguay perdió el repechaje?</h4>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
