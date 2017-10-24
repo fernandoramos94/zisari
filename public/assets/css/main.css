@@ -93,3 +93,7 @@ li.profile-photo > img{
  	width: 100%;
  	position: relative;
 }
+.navegacion .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+	background: #dddddd;
+	border: none;
+}
