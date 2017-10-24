@@ -171,3 +171,15 @@ li.profile-photo > img{
     border-radius: 5px;
     color: #fff;
 }
+.buscador::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+.buscador::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+.buscador:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+.buscador:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
