@@ -130,7 +130,7 @@ li.profile-photo > img{
 	min-height: 42px !important; 
 }
 .cabecera .toggle-navigation.toggle-left{
-    margin: 13px 0 8px 20px;
+    margin: 13px 0 8px 20px !important;
 }
 .cabecera .user-nav{
 	padding-top: 14px !important;
