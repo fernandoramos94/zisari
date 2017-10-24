@@ -100,7 +100,7 @@ li.profile-photo > img{
 .navegacion .nav-tabs>li>a{
 	border-radius: 0;
 	color: #000000;
-	padding: 0 2%;
+	margin: 0 2%;
 	border-bottom: 2px solid #000;
 }
 .navegacion .nav-tabs>li{
