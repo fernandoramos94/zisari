@@ -21,11 +21,11 @@
             @if ($logo->fechaFinalizacion > $fechaActual)
                 @if ($logo->imagen != null && $logo->url == null || $logo->imagen != null && $logo->url != null)
                     <center >
-                        <a href="{{ HTML::link($logo->url) }}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" style="width: 100%" id="imagenLogo" src="{{asset('img/logo/'.$logo->imagen)}}"></a>
+                        <a href="http://{{$logo->url}}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" style="width: 100%" id="imagenLogo" src="{{asset('img/logo/'.$logo->imagen)}}"></a>
                     </center>
                 @else
                     <center >
-                        <a href="{{ HTML::link($logo->url) }}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" style="width: 100%" id="imagenLogo" src="$logo->url"></a>
+                        <a href="http://{{$logo->url}}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" style="width: 100%" id="imagenLogo" src="$logo->url"></a>
                     </center>
                 @endif
             @endif
