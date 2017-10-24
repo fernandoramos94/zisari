@@ -41,6 +41,7 @@ class LogoTextController extends Controller
         $logo->titulo = $request->get("titulo");
         $logo->tituloMini = $request->get('tituloMini');
         $logo->fechaInicio = $fechaInicial;
+        $logo->pais = $request->get('pais');
         $logo->fechaFinalizacion = $fechaFinal;
         $logo->estado = 1;
         if ($logo->save()) {

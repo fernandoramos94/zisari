@@ -114,6 +114,7 @@ class LogoImgController extends Controller
         $logImagen->imagenLogo = $nameCompMini;
         $logImagen->url = $request->get("url");
         $logImagen->fechaInicio = $fechaInicialImg;
+        $logImagen->pais = $request->get('pais');
         $logImagen->fechaFinalizacion = $fechaFinalImg;
         $logImagen->estado = 1;
         if ($logImagen->save()) {
