@@ -48,6 +48,9 @@
                     <i class="fa fa-bars"></i>
                 </button>
             </div>
+            <div style="display: inline-block;">
+                <img src="https://www.google.com.co/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="92">
+            </div>
             <div class="search">
                 <form>
                     <input placeholder="Buscar a tus amigos(as) para tu comunidad" type="text" class="buscador" name="">
