@@ -2,10 +2,10 @@
 @section('contenedorLayout')
 	<div class="col-lg-8 navegacion" >
 		<ul class="nav nav-tabs" role="tablist">
-			<li role="presentation" class="active" style="border-top-left-radius: 5px;"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Zisaricoins Gratis</a></li>
+			<li role="presentation" class="active"><a style="border-top-left-radius: 15px;" href="#home" aria-controls="home" role="tab" data-toggle="tab">Zisaricoins Gratis</a></li>
 			<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Multiplicador Zisaricoins</a></li>
 			<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Puntos</a></li>
-			<li role="presentation" style="border-top-right-radius: 5px;"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Preguntas Frecuentes</a></li>
+			<li role="presentation"><a style="border-top-right-radius: 15px;" href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Preguntas Frecuentes</a></li>
 		</ul>
 		<div class="tab-content">
 			<div role="tabpanel" class="tab-pane active" id="home">
