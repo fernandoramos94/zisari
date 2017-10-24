@@ -43,11 +43,14 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+      	<center>
+        	<h4 class="modal-title">
+        		¿Por qué la cantidad de Zisaricoins que puedes ganar sigue cambiando?
+        	</h4>
+      	</center>
       </div>
       <div class="modal-body">
-        <p>
+        <p style="text-align: justify;">
         	<span>
      			La cantidad de Zisaricoins que puede ganar GRATUITO depende del precio actual de bitcoin y el premio mayor se fija en US $ 100 y los otros premios en proporción a este. Entonces, cuando el precio de un bitcoin baja, la cantidad de recompensa calculada en Zisaricoins aumenta y viceversa. Por lo tanto, independientemente del precio actual de bitcoin, tiene una buena oportunidad de ganar US $ 100 en Zisaricoins en cada tirada.
      		</span>
