@@ -252,7 +252,7 @@
                             </li>
                         </ul>
                     </li>
-                    |
+                    <li><strong>|</strong></li>
                     <li class="dropdown settings">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                             Fernando Ramos<i class="fa fa-angle-down"></i>
