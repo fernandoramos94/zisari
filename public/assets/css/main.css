@@ -112,6 +112,12 @@ li.profile-photo > img{
 .anuncio .linkCrearAnuncio{
 	text-align: right;
 	float: right;
+	color: blue;
+    font-weight: 600;
+}
+.anuncio span.textPublicidad{
+	color: #000;
+	font-weight: 600;
 }
 .navegacion .nav-tabs>li>a{
 	border-radius: 0;
