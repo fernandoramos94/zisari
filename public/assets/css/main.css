@@ -145,3 +145,7 @@ li.profile-photo > img{
 	background: transparent;
 	border-bottom: 0px;
 }
+.contenidoPrincipal{
+	background: #e9ebee;
+	min-height: 700px;
+}
