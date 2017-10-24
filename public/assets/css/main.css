@@ -126,6 +126,9 @@ li.profile-photo > img{
 	border-bottom: 2px solid #000;
 	background: #f6f7f9;
 }
+.cabecera{
+	max-height: 42px !important; 
+}
 .navegacion .nav-tabs>li{
 	width: 25%;
 	text-align: center;
