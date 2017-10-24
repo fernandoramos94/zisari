@@ -1,7 +1,7 @@
 @extends('layouts.layoutUsuario')
 @section('contenedorLayout')
 	<div class="col-lg-8 navegacion" >
-		<ul class="nav nav-tabs" role="tablist" style="background: #f6f7f9">
+		<ul class="nav nav-tabs" role="tablist">
 			<li style="width: 25%; text-align:center" role="presentation" class="active"><a style="color: #000" href="#home" aria-controls="home" role="tab" data-toggle="tab">Zisaricoins Gratis</a></li>
 			<li style="width: 25%; text-align:center" role="presentation"><a style="color: #000" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Multiplicador Zisaricoins</a></li>
 			<li style="width: 25%; text-align:center" role="presentation"><a style="color: #000" href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Puntos</a></li>

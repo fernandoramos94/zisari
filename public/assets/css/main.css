@@ -100,3 +100,7 @@ li.profile-photo > img{
 .navegacion .nav-tabs>li>a{
 	border-radius: 0;
 }
+.navegacion .nav-tabs{
+	background: #f6f7f9;
+	border-bottom: 0px;
+}
