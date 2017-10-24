@@ -249,9 +249,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="profile-photo">
-                        <img src="https://www.thisischile.cl/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="" class="img-circle">
-                    </li>
+                    
                     <li class="dropdown settings">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                             Fernando Ramos<i class="fa fa-angle-down"></i>
@@ -271,13 +269,12 @@
                             </li>
                         </ul>
                     </li>
-                    <!-- <li>
-                        <div class="toggle-navigation toggle-right">
-                            <button type="button" class="btn btn-default" id="toggle-right">
-                                <i class="fa fa-comment"></i>
-                            </button>
-                        </div>
-                    </li> -->
+                    <li class="profile-photo">
+                        <img src="https://www.thisischile.cl/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="" class="img-circle">
+                    </li>
+                    <li>
+                        <span>00000000Z</span>
+                    </li>
 
                 </ul>
             </div>
