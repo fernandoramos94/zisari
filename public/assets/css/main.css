@@ -106,6 +106,8 @@ li.profile-photo > img{
 }
 .anuncio{
 	background: #ffffff;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 .navegacion .nav-tabs>li>a{
 	border-radius: 0;
