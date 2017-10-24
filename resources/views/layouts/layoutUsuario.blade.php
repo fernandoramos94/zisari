@@ -286,7 +286,7 @@
             </form>
         </header>
         <!--sidebar left start-->
-        <aside class="sidebar sidebar-toggle">
+        <aside class="menuOculto sidebar sidebar-toggle">
             <div id="leftside-navigation" class="nano">
                 <ul class="nano-content">
                     <li class="active">

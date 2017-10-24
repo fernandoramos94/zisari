@@ -152,6 +152,10 @@ li.profile-photo > img{
 	min-height: 700px;
 	margin-left: 0;
 }
+.menuOculto{
+	background: #f5f5f5;
+}
+
 .search{
 	width: 40%;
 	margin-left: 15%;
