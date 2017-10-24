@@ -151,6 +151,9 @@ li.profile-photo > img{
 	min-height: 700px;
 	margin-left: 0;
 }
+aside.menuOculto.sidebar.sidebar-toggle{
+	background: transparent;
+}
 aside.menuOculto.sidebar{
 	height: 612px;
 	width: 100%;
