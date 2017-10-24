@@ -21,7 +21,7 @@
             @if ($logo->fechaFinalizacion > $fechaActual)
                 @if ($logo->imagen != null && $logo->url == null || $logo->imagen != null && $logo->url != null)
                     <center >
-                        <img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" style="width: 100%" id="imagenLogo" src="{{asset('img/logo/'.$logo->imagen)}}">
+                        <a href="{{asset('img/logo/'.$logo->imagen)}}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" style="width: 100%" id="imagenLogo" src="{{asset('img/logo/'.$logo->imagen)}}"></a>
                     </center>
                 @else
                     <center >
