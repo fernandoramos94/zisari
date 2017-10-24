@@ -150,6 +150,7 @@ li.profile-photo > img{
 .contenidoPrincipal{
 	background: #e9ebee;
 	min-height: 700px;
+	margin-left: 0;
 }
 .search{
 	width: 40%;
@@ -183,3 +184,4 @@ li.profile-photo > img{
 .buscador:-moz-placeholder { /* Firefox 18- */
   color: #fff;
 }
+.main-content-wrapper
