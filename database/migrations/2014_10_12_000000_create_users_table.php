@@ -31,6 +31,8 @@ class CreateUsersTable extends Migration
             $table->text('portado')->nullable();
             $table->text('imagen')->nullable();
             $table->string('ip')->nullable();
+            $table->boolean('status');
+            $table->string('pais')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

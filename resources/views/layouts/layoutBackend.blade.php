@@ -183,6 +183,8 @@
                             </li>
                             <li id="userRegister"><a href="{{URL::to('usuarios')}}" >Registros</a>
                             </li>
+                            <li id="paisesActivos"><a href="{{URL::to('paises')}}" >Paises</a>
+                            </li>
                         </ul>
                     </li>                   
                 </ul>
@@ -344,6 +346,12 @@
             if (url == "usuarios") {
                 $("#litres > ul").show();
                 $("#litres > ul > li#userRegister").addClass("active");
+                $("#liuno").removeClass("active");
+                $("#lidos").removeClass("active");
+            }
+            if (url == "paises") {
+                $("#litres > ul").show();
+                $("#litres > ul > li#paisesActivos").addClass("active");
                 $("#liuno").removeClass("active");
                 $("#lidos").removeClass("active");
             }

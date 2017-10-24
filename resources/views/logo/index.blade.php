@@ -5,6 +5,7 @@
    date_default_timezone_set('UTC');
    $text = DB::table('logotext')->get();
    $imgLogo = DB::table('logoimg')->get();
+   $paises = DB::table('paises')->where('estado', 1)->get();
    $fechaActual = date("Y-m-d H:i:s");
 ?>
 <div class="col-lg-12">
@@ -96,6 +97,15 @@
                   <input type="text" class="form-control" name="tituloMini">
                </div>
                <div class="form-group">
+                  <label>País</label>
+                  <select name="pais" class="form-control">
+                    <option>Seleccione</option>
+                    @foreach($paises as $pais)
+                      <option value="{{$pais->nombre}}">{{$pais->nombre}}</option>
+                    @endforeach()
+                  </select>
+               </div>
+               <div class="form-group">
                   <label>Definir Fecha de Inicio y de Finalizacion</label>
                </div>
                <div class="form-group">
@@ -143,17 +153,26 @@
       <form method="POST" action="{{URL::to('agregaLogoImg')}}" enctype="multipart/form-data">
          <div class="modal-body">
                <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
-               <div class="form-group">
+               <div class="form-group row col-lg-6">
                   <label>Subir Imagen (400x112)</label>
                   <input type="file" name="file" id="imagenLogo">
                </div>
-               <div class="form-group">
+               <div class="form-group row col-lg-6">
                   <label>Subir Imagen (98x127)</label>
                   <input type="file" name="fileMini" id="">
                </div>
                <div class="form-group">
                   <label>Texto Tooltip</label>
                   <input type="text" name="tooltip" class="form-control">
+               </div>
+               <div class="form-group">
+                  <label>País</label>
+                  <select name="pais" class="form-control">
+                    <option>Seleccione</option>
+                    @foreach($paises as $pais)
+                      <option value="{{$pais->nombre}}">{{$pais->nombre}}</option>
+                    @endforeach()
+                  </select>
                </div>
                <div class="form-group">
                   <label>Enlace de Imagen</label>
@@ -226,6 +245,15 @@
                     <input type="text" class="form-control" value="{{$titulo->tituloMini}}" name="tituloMini">
                   </div>
                   <div class="form-group">
+                    <label>País</label>
+                    <select name="pais" class="form-control">
+                      <option>Seleccione</option>
+                      @foreach($paises as $pais)
+                        <option value="{{$pais->nombre}}">{{$pais->nombre}}</option>
+                      @endforeach()
+                    </select>
+                 </div>
+                  <div class="form-group">
                      <label>Definir Fecha de Inicio y de Finalizacion</label>
                   </div>
                   <div class="form-group">
@@ -284,17 +312,26 @@
             <div class="modal-body">
                   <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                   <input type="hidden" name="id" value="{{$logo->id}}">
-                  <div class="form-group">
+                  <div class="form-group row col-lg-6">
                       <label>Subir Imagen (400x112)</label>
                       <input type="file" name="file" id="imagenLogo">
                    </div>
-                   <div class="form-group">
+                   <div class="form-group row col-lg-6">
                       <label>Subir Imagen (98x127)</label>
                       <input type="file" name="fileMini" id="">
                    </div>
                    <div class="form-group">
                       <label>Texto Tooltip</label>
                       <input type="text" name="tooltip" class="form-control">
+                   </div>
+                   <div class="form-group">
+                      <label>País</label>
+                      <select name="pais" class="form-control">
+                        <option>Seleccione</option>
+                        @foreach($paises as $pais)
+                          <option value="{{$pais->nombre}}">{{$pais->nombre}}</option>
+                        @endforeach()
+                      </select>
                    </div>
                   <div class="form-group">
                      <label>Enlace de Imagen</label>

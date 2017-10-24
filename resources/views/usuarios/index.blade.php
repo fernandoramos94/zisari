@@ -16,6 +16,7 @@
 						<th>Apellidos</th>
 						<th>País</th>
 						<th>Ip</th>
+						<th>Estado</th>
 						<th></th>
 						<!-- <th>Opción</th> -->
 					</tr>
@@ -27,10 +28,26 @@
 							<td>{{$user->apellidos}}</td>
 							<td>{{$user->pais}}</td>
 							<td>{{$user->ip}}</td>
-							<td><a href="" data-toggle="modal" data-target="#modal{{$user->id}}">Ver </a> | <a href="{{URL::to('deleteUsuario')}}/{{$user->id}}" >Eliminar</a> | <a href="" onclick="event.preventDefault(); document.getElementById('bloqueo').submit();""> Bloquear Usuario </a></td>
-							<form id="bloqueo" action="{{ URL::to('bloquearUser') }}/{{$user->id}}" method="POST" style="display: none;">
-				                {{ csrf_field() }}
-				            </form>
+							<td>
+								@if($user->status == 0)
+									Bloqueado
+								@else
+									Activo
+								@endif()
+							</td>
+							<td>
+								@if(Auth::user()->id == $user->id)
+									<a href="" data-toggle="modal" data-target="#modal{{$user->id}}">Ver </a>
+								@else
+									<a href="" data-toggle="modal" data-target="#modal{{$user->id}}">Ver </a> | <a href="{{URL::to('deleteUsuario')}}/{{$user->id}}" >Eliminar</a> | 
+									@if($user->status == 1)
+										<a href="{{URL::to('bloquearUser/'.$user->id)}}" > Bloquear </a>
+									@else
+										<a href="{{URL::to('activarUser/'.$user->id)}}" > Activar </a>
+									@endif()
+								@endif()
+							</td>
+
 						</tr>
 					@endforeach
 				</tbody>

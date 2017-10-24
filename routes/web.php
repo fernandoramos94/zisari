@@ -57,7 +57,13 @@ Route::post('/getUser', function(){
 	return Response::json($usuarios);
 });
 
-Route::post('/bloquearUser/{id}', 'UsuariosController@bloquearUser');
+Route::get('/paises', 'PaisesController@index');
+
+Route::get('/updatePais/{id}', 'PaisesController@updatePais');
+
+Route::get('/bloquearUser/{id}', 'UsuariosController@bloquearUser');
+
+Route::get('/activarUser/{id}', 'UsuariosController@activarUser');
 
 Route::get('/deleteUsuario/{id}', 'UsuariosController@eliminar');
 

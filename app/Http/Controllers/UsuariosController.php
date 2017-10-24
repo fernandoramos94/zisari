@@ -65,6 +65,7 @@ class UsuariosController extends Controller
         $newUser->correo = $request->get('correo');
         $newUser->portado = $nameComp;
         $newUser->imagen = $nameFoto;
+        $newUser->status = 1;
         if ($newUser->save()) {
             return redirect('');
         }
@@ -92,9 +93,17 @@ class UsuariosController extends Controller
             return redirect("usuarios");
         }
     }
-    public function bloquearUser(Request $request, $id){
+    public function bloquearUser($id){
         $users = User::find($id);
         $users->status = 0;
+        if ($users->save()) {
+            return redirect('usuarios');
+        }
+    }
+    public function activarUser($id)
+    {
+        $users = User::find($id);
+        $users->status = 1;
         if ($users->save()) {
             return redirect('usuarios');
         }

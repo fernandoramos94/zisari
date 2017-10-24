@@ -6,6 +6,7 @@
         date_default_timezone_set('UTC');
         $text = DB::table('logotext')->get();
         $imgLogo = DB::table('logoimg')->get();
+        $paises = DB::table('paises')->where('estado', 1)->get();
         $fechaActual = date("Y-m-d H:i:s");
      ?>
     <form class="crearcuenta" autocomplete="off" method="POST" action="{{URL::to('agregarUser')}}" enctype="multipart/form-data">
@@ -91,6 +92,9 @@
             <div class="form-group{{ $errors->has('pais') ? ' has-error' : '' }}">
                     <select placeholder="Seleccionar país" id="pais" name="pais" class="form-control">
                         <option value="">Seleccionar país</option>
+                        @foreach ($paises as $pais)
+                            <option value="{{$pais->nombre}}">{{$pais->nombre}}</option>
+                        @endforeach()
                     </select>
 
                     @if ($errors->has('pais'))
