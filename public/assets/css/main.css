@@ -108,6 +108,8 @@ li.profile-photo > img{
 	background: #ffffff;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 .anuncio .linkCrearAnuncio{
 	text-align: right;
