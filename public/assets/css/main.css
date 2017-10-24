@@ -127,6 +127,7 @@ li.profile-photo > img{
 	margin: 0 2%;
 	border-bottom: 2px solid #000;
 	background: #f6f7f9;
+	font-weight: 600;
 }
 .cabecera{
 	min-height: 42px !important; 

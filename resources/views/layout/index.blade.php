@@ -35,7 +35,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="myModal" style="background: rgba(0, 0, 0, 0.5)" class="modal fade" role="dialog">
+	<div id="myModal" style="background: rgba(0, 0, 0, 0.5); margin-top: 70px;" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
@@ -50,7 +50,7 @@
       <div class="modal-body">
         <p style="text-align: justify;">
         	<span>
-     			La cantidad de Zisaricoins que puede ganar <b>GRATUITO</b> depende del precio actual de bitcoin y el premio mayor se fija en US $ 100 y los otros premios en proporción a este. Entonces, cuando el precio de un bitcoin baja, la cantidad de recompensa calculada en Zisaricoins aumenta y viceversa. <b>Por lo tanto, independientemente del precio actual de bitcoin, tiene una buena oportunidad de ganar US $ 100</b> en Zisaricoins en cada tirada.
+     			La cantidad de Zisaricoins que puede ganar <b>GRATUITO</b> depende del precio actual de bitcoin y el premio mayor se fija en US $ 100 y los otros premios en proporción a este. Entonces, cuando el precio de un bitcoin baja, la cantidad de recompensa calculada en Zisaricoins aumenta y viceversa. <b>Por lo tanto, independientemente del precio actual de bitcoin, tiene una buena oportunidad de ganar US $ 100 en Zisaricoins en cada tirada.</b>
      		</span>
      	</p>
       </div>
