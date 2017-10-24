@@ -152,12 +152,15 @@ li.profile-photo > img{
 	min-height: 700px;
 }
 .search{
+	width: 30%;
 	margin-left: 20%;
 	display: inline-block;;
 }
 .buscador{
-	background: transparent;
-	color: #fff;
-	border-radius: 2px;
-	border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    padding: 5px 11px;
+    width: 80%;
 }
