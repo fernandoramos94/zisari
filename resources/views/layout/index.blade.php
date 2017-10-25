@@ -139,7 +139,7 @@
               	</div>
               	<div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Relacionado al Roll</h3>
+                        <h3 class="panel-title">Relacionado al multiplicador</h3>
                         <div class="actions pull-right">
                             <!-- <i class="fa fa-chevron-down"></i> -->
                             <!-- <i class="fa fa-times"></i> -->
@@ -180,7 +180,7 @@
                	</div>
                	<div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Relacionado al Roll</h3>
+                        <h3 class="panel-title">Relacionado a los puntos</h3>
                         <div class="actions pull-right">
                             <!-- <i class="fa fa-chevron-down"></i> -->
                             <!-- <i class="fa fa-times"></i> -->
