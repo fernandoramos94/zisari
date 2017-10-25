@@ -507,7 +507,7 @@
                                 html += '</div>';
                                 html += '<div class="message-info">';
                                 html += '<span class="sender">'+parts[0]+' '+parts[1]+'</span>';
-                                html += '<div class="message-content"><p>hendrerit pellentesque, iure tincidunt...</p></div>';
+                                html += '<div class="message-content"><span>hendrerit pellentesque, iure tincidunt...</span></div>';
                                 html += '</div></div>'
                                 var jElem = $(html);
 
