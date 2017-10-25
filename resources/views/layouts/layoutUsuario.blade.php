@@ -299,7 +299,7 @@
                         <p style="color: #fff; margin-left: 3%; margin: 0;">0.00000000 Z</p>
                     </li>
                     <li class="dropdown settings">
-                        <p style="color: #fff;margin: 0;">0 Ptos</p>
+                        <p style="color: #fff; margin: 0;">0 Ptos</p>
                     </li>
 
                 </ul>
@@ -428,6 +428,9 @@
             </div>
         </aside>
         <!--sidebar right end-->
+    <footer style="background: #000; color: #fff;padding: 7px 0;">
+        <center>&copy; 2017 Zisari</center>
+    </footer>
     </section>
     <!--Global JS-->
     <!-- <script src="{{ asset('assets/js/jquery-1.10.2.min.js') }}"></script> -->
