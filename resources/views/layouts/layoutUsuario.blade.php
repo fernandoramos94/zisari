@@ -536,6 +536,9 @@
         ul.typeahead.dropdown-menu{
             width: 33%;
         }
+        ul.typeahead.dropdown-menu > li.active{
+            background: #1bbc9b;
+        }
     </style>
     @yield('scripts')
 </body>
