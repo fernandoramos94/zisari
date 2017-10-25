@@ -91,12 +91,12 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                              			<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
+                              			<a data-toggle="collapse" data-parent="#accordion" href="#collapseMulOne" class="collapsed">
                                 			¿Cómo funciona?
                               			</a>
                             		</h4>
                                 </div>
-                                <div id="collapseOne" class="panel-collapse collapse">
+                                <div id="collapseMulOne" class="panel-collapse collapse">
                                 	<div class="panel-body">
                                         Usted hace una apuesta y elije Hi o Lo, y si sale la opción seleccionada usted gana, en caso de salir lo contrario pierde lo que apostó. 
                                     </div>
@@ -105,12 +105,12 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                              			<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                              			<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseMulTwo">
                                 			¿Cuánto puedo ganar en el Multiplicador?
                               			</a>
                         			</h4>
                                 </div>
-                            	<div id="collapseTwo" class="panel-collapse collapse">
+                            	<div id="collapseMulTwo" class="panel-collapse collapse">
                                     <div class="panel-body">
                                         La cantidad que puedes ganar depende del total de la apuesta y el número de veces que jueges.
                                     </div>
