@@ -559,7 +559,8 @@
                 var urlImg = "{{asset('img/img_users/perfil')}}";
                 $("#typeahead").autocomplete({
                     source: function(request, response){
-                        response( $.map( data.results, function( result ) {  
+                        response( $.map( data, function( result ) {  
+                            console.log(result);
                             return {  
                                 label: result.nombres + " - " + result.apellidos,  
                                 value: result.id,  
