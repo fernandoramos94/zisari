@@ -73,10 +73,8 @@
                 <!-- <img src="https://www.google.com.co/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="92"> -->
             </div>
             <div class="search">
-                <form>
-                    <input placeholder="Buscar a tus amigos(as) para tu comunidad" type="text" class="buscador" name="">
+                    <input placeholder="Buscar a tus amigos(as) para tu comunidad" type="text" class="buscador" data-provide="typeahead" id="typeahead">
                     <button>Buscar</button>
-                </form>
             </div>
             <div class="user-nav">
                 <ul>
@@ -484,6 +482,45 @@
             app.weather();
             app.morrisPie();
         });
+        $(document).ready(function() {
+
+        var url = "{{URL::to('')}}";
+        $.ajax({
+            type: "POST",
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            url: url+"/getUser",
+            success: function (data) {
+                $('#typeahead').typeahead({
+                    source: data,
+                    highlighter: function(item) {
+                        console.log(item);
+                    }
+                })
+                // for (var i = 0; i < data.length; i++) {
+                //     if(data[i].email == $("#email").val()){
+                //         $("#imgUser").attr("src", "{{asset('img/img_users/perfil')}}/"+data[i].imagen);
+                //         $("#login1").hide();
+                //         $("#login2").show();
+                //         $("#siguienteLogin").attr('disabled', false);
+                //     }else{
+                //         notif({
+                //             type: "error",
+                //             msg: "El email ingresado no esta actualmente registrado",
+                //             position: "right",
+                //             opacity: 0.8
+                //         });
+                //         $("#siguienteLogin").attr('disabled', false);
+                //         return false;
+                //     }
+                // }
+            },
+            error: function (data) {
+                console.log('Error:', data);
+            }
+        });
+    })
     </script>
     @yield('scripts')
 </body>
