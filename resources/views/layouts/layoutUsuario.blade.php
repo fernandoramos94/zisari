@@ -501,7 +501,7 @@
                             source: array,
                             highlighter: function(item) {
                                 var parts = item.split('#'),
-                                html = '<div style="width:40%;" id="' + parts[4] + '">';
+                                html = '<div style="width:100%;" id="' + parts[4] + '">';
                                 html += '<div class="" ><p><img class="img-circle" style="vertical-align:middle;" width="40" src="'+urlImg+'/'+parts[3]+'"><span style="display: inline-block;">'+parts[0]+' '+parts[1]+'</span><br><span style="display: inline-block;">'+parts[2]+'</span></p></div>';
                                 html += '</div>';
 
