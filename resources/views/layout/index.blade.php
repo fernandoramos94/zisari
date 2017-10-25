@@ -78,58 +78,16 @@
 				</div>
 			</div>
 			<div role="tabpanel" class="tab-pane" id="profile">
-				<div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Relacionado al Roll</h3>
-                        <div class="actions pull-right">
-                            <i class="fa fa-chevron-down"></i>
-                            <i class="fa fa-times"></i>
-                        </div>
-                    </div>
-                    <div class="panel-body">
-                        <div class="panel-group accordion" id="accordion">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                              			<a data-toggle="collapse" data-parent="#accordion" href="#collapseMulOne" class="collapsed">
-                                			¿Cómo funciona?
-                              			</a>
-                            		</h4>
-                                </div>
-                                <div id="collapseMulOne" class="panel-collapse collapse">
-                                	<div class="panel-body">
-                                        Usted hace una apuesta y elije Hi o Lo, y si sale la opción seleccionada usted gana, en caso de salir lo contrario pierde lo que apostó. 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                              			<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseMulTwo">
-                                			¿Cuánto puedo ganar en el Multiplicador?
-                              			</a>
-                        			</h4>
-                                </div>
-                            	<div id="collapseMulTwo" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        La cantidad que puedes ganar depende del total de la apuesta y el número de veces que jueges.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 			</div>
 			<div role="tabpanel" class="tab-pane" id="messages">
-				Puntos
 			</div>
 			<div role="tabpanel" class="tab-pane" id="settings">
 				<div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">Relacionado al Roll</h3>
                         <div class="actions pull-right">
-                            <i class="fa fa-chevron-down"></i>
-                            <i class="fa fa-times"></i>
+                            <!-- <i class="fa fa-chevron-down"></i> -->
+                            <!-- <i class="fa fa-times"></i> -->
                         </div>
                     </div>
                     <div class="panel-body">
@@ -176,6 +134,77 @@
 	                                </div>
 	                            </div>
                             </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                              			<a data-toggle="collapse" data-parent="#accordion" href="#collapseMulOne" class="collapsed">
+                                			¿Cómo funciona?
+                              			</a>
+                            		</h4>
+                                </div>
+                                <div id="collapseMulOne" class="panel-collapse collapse">
+                                	<div class="panel-body">
+                                        Usted hace una apuesta y elije Hi o Lo, y si sale la opción seleccionada usted gana, en caso de salir lo contrario pierde lo que apostó. 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                              			<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseMulTwo">
+                                			¿Cuánto puedo ganar en el Multiplicador?
+                              			</a>
+                        			</h4>
+                                </div>
+                            	<div id="collapseMulTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        La cantidad que puedes ganar depende del total de la apuesta y el número de veces que jueges.
+                                    </div>
+                                </div>
+                            </div>
+							<div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                              			<a data-toggle="collapse" data-parent="#accordion" href="#collapsePuntOne" class="collapsed">
+                                			¿Cómo obtengo los puntos?
+                              			</a>
+                            		</h4>
+                                </div>
+                                <div id="collapsePuntOne" class="panel-collapse collapse">
+                                	<div class="panel-body">
+                                        Los puntos se obtienen por cada vez que juega en el Roll.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                              			<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsePuntTwo">
+                                			¿La obtención de puntos pueden variar?
+                              			</a>
+                        			</h4>
+                                </div>
+                            	<div id="collapsePuntTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Sí , depende de los bonos que brinde el administrador.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                              			<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsePuntThree">
+                                			¿Para qué sirven los puntos?
+                              			</a>
+                        			</h4>
+                                </div>
+                            	<div id="collapsePuntThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Los puntos sirven para canjear por más Zisaricoins por cada roll.
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
