@@ -30,15 +30,15 @@
 									0 - 9885
 								</td>
 								<td>
-									0.00000036 BTC
+									0.00000036Z
 								</td>
 							</tr>
 							<tr>
 								<td>
-									9885 - 9985
+									9886 - 9985
 								</td>
 								<td>
-									0.00000362 BTC
+									0.00000362Z
 								</td>
 							</tr>
 							<tr>
@@ -46,7 +46,7 @@
 									9986 - 9993
 								</td>
 								<td>
-									0.00003624 BTC
+									0.00003624Z
 								</td>
 							</tr>
 							<tr>
@@ -54,7 +54,7 @@
 									9994 - 9997
 								</td>
 								<td>
-									0.00036241 BTC
+									0.00036241Z
 								</td>
 							</tr>
 							<tr>
@@ -62,7 +62,7 @@
 									9998 - 9999
 								</td>
 								<td>
-									0.00362412 BTC
+									0.00362412Z
 								</td>
 							</tr>
 							<tr>
@@ -70,7 +70,7 @@
 									10000
 								</td>
 								<td>
-									0.03624121 BTC
+									0.03624121Z
 								</td>
 							</tr>
 						</tbody>
@@ -126,7 +126,34 @@
   </div>
 </div>
 <style type="text/css">
-
+	.table td:first-child, .table th:first-child {
+	    border-left: none;
+	}
+	.table th:first-child {
+	    -moz-border-radius: 6px 0 0 0;
+	    -webkit-border-radius: 6px 0 0 0;
+	    border-radius: 6px 0 0 0;
+	}
+	.table th:last-child {
+	    -moz-border-radius: 0 6px 0 0;
+	    -webkit-border-radius: 0 6px 0 0;
+	    border-radius: 0 6px 0 0;
+	}
+	.table th:only-child{
+	    -moz-border-radius: 6px 6px 0 0;
+	    -webkit-border-radius: 6px 6px 0 0;
+	    border-radius: 6px 6px 0 0;
+	}
+	.table tr:last-child td:first-child {
+	    -moz-border-radius: 0 0 0 6px;
+	    -webkit-border-radius: 0 0 0 6px;
+	    border-radius: 0 0 0 6px;
+	}
+	.table tr:last-child td:last-child {
+	    -moz-border-radius: 0 0 6px 0;
+	    -webkit-border-radius: 0 0 6px 0;
+	    border-radius: 0 0 6px 0;
+	} 
 	table td:first-child {
 		width: 200px;
 	}
