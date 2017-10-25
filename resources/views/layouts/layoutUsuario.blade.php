@@ -502,19 +502,19 @@
                             highlighter: function(item) {
                                 var parts = item.split('#'),
                                 html = '<div style="width:100%;" id="' + parts[4] + '">';
-                                html += '<div class="" ><p><img class="img-circle" style="vertical-align:middle;" width="40" src="'+urlImg+'/'+parts[3]+'"><span style="display: inline-block;">'+parts[0]+' '+parts[1]+'</span><br><span style="display: inline-block;">'+parts[2]+'</span></p></div>';
+                                html += '<div><p><img class="img-circle" style="vertical-align:middle;" width="40" src="'+urlImg+'/'+parts[3]+'"><span style="display: inline-block;">'+parts[0]+' '+parts[1]+'</span><br><span style="display: inline-block;">'+parts[2]+'</span></p></div>';
                                 html += '</div>';
 
-                                var query = this.query;
-                                var reEscQuery = query.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
-                                var reQuery = new RegExp('(' + reEscQuery + ')', "gi");
+                                // var query = this.query;
+                                // var reEscQuery = query.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+                                // var reQuery = new RegExp('(' + reEscQuery + ')', "gi");
                                 var jElem = $(html);
-                                var textNodes = $(jElem.find('*')).add(jElem).contents().filter(function() {
-                                    return this.nodeType === 3;
-                                });
-                                textNodes.replaceWith(function() {
-                                    return $(this).text().replace(reQuery, '<strong>$1</strong>');
-                                });
+                                // var textNodes = $(jElem.find('*')).add(jElem).contents().filter(function() {
+                                //     return this.nodeType === 3;
+                                // });
+                                // textNodes.replaceWith(function() {
+                                //     return $(this).text().replace(reQuery, '<strong>$1</strong>');
+                                // });
 
                                 return jElem.html();
                             },
