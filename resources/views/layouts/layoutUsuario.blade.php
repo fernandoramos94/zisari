@@ -530,6 +530,7 @@
     <style type="text/css">
         ul.typeahead.dropdown-menu{
             width: 33.2%;
+            top: 62px;
         }
         ul.typeahead.dropdown-menu > li.active > a{
             background: #1bbc9b;
