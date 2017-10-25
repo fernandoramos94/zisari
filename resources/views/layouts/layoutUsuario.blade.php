@@ -471,7 +471,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.0/bootstrap3-typeahead.js"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.mask.min.js') }}"></script>
 
-    <script>
+    <!-- <script>
         $(".menuOculto").on("click", function(){
             $(".menuOculto").addClass('sidebar-toggle');
             4(".contenidoPrincipal").addClass("main-content-toggle-left");
@@ -526,7 +526,7 @@
             }
         });
     })
-    </script>
+    </script> -->
     <style type="text/css">
         ul.typeahead.dropdown-menu{
             width: 100%;
@@ -546,6 +546,40 @@
             width: 20%;
         }
     </style>
+    <script>  
+     $(function() {  
+        var url = "{{URL::to('')}}";
+        $.ajax({
+            type: "POST",
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            url: url+"/getUser",
+            success: function (data) {
+                var array = [];
+                var urlImg = "{{asset('img/img_users/perfil')}}";
+                $("#typeahead").autocomplete({
+                    response( $.map(data, function(result){
+                        return {
+                            label: result.nombres + " " + results.apellidos,
+                            value: result.id,
+                            imgsrc: result.imagen,
+                            description: "Sem dapibus in, orci bibendum faucibus tellus, justo arcu..."
+                        }
+                    }));
+                }).data( "ui-autocomplete" )._renderItem = function( ul, item ) {  
+                    return $( "<li></li>" )  
+                    .data( "item.autocomplete", item )  
+                    .append( "<a>" + "<di class='profile-photo'><img class='img-circle' src='"urlImg+"/" + item.imgsrc + "' /></div><div class='message-info'><span class='sender'>"+item.label+" </span><div class='message-content'>"+item.description+"</span></div></a>" )  
+                    .appendTo( ul );  
+                }
+            },
+            error: function (data) {
+                console.log('Error:', data);
+            }
+        });
+     });  
+     </script>  
     @yield('scripts')
 </body>
 
