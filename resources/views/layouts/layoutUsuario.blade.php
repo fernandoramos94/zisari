@@ -471,41 +471,37 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.0/bootstrap3-typeahead.js"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.mask.min.js') }}"></script>
     <script>  
-     $(function() {  
+    $(function() {  
         var url = "{{URL::to('')}}";
         var urlImg = "{{asset('img/img_users/perfil')}}";
-        $.ajax({
-            type: "POST",
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            url: url+"/getUser",
-            success: function (data) {
-                $("#typeahead").autocomplete({
-                    source: function(request, response){
-                        response( $.map( data, function( result ) {  
-                            console.log(result);
+        $("#typeahead").autocomplete({
+            source: function(request, response) {
+                $.ajax({
+                    type: "POST",
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    url: url+"/getUser",
+                    success: function(data) {
+                        response($.map(data.results, function(result) {
                             return {  
                                 label: result.nombres + " - " + result.apellidos,  
                                 value: result.id,  
                                 imgsrc: result.imagen,
                                 description: "Sem dapibus in, orci bibendum faucibus tellus, justo arcu...",
-                            }  
-                        })); 
+                            } 
+                        }));
                     }
-                }).data( "ui-autocomplete" )._renderItem = function( ul, item ) {  
-                    return $( "<li>" )  
-                    .data("item.autocomplete", item)  
-                    .append("<a><div class='profile-photo'><img width='92' class='img-circle' src='"+ urlImg +"/" + item.imgsrc + "' /></div><div class='message-info'><span class='sender'>"+item.label+"</span><div class='message-content'>"+ item.description +"</div></div></a>")  
-                    .appendTo(ul);  
-                }
-            },
-            error: function (data) {
-                console.log('Error:', data);
+                });
             }
-        });
-     });  
-     </script>  
+        }).data("ui-autocomplete")._renderItem = function(ul, item) {
+            return $("<li></li>")
+            .data("item.autocomplete", item)  
+            .append("<a><div class='profile-photo'><img width='92' class='img-circle' src='"+ urlImg +"/" + item.imgsrc + "' /></div><div class='message-info'><span class='sender'>"+item.label+"</span><div class='message-content'>"+ item.description +"</div></div></a>")  
+            .appendTo(ul);
+        };
+    });  
+    </script>  
     @yield('scripts')
 </body>
 
