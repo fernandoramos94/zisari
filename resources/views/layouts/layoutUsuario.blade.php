@@ -273,7 +273,7 @@
                         </ul>
                     </li>
                     <li class="profile-photo">
-                        <img src="https://www.thisischile.cl/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="" class="img-circle">
+                        <img src="http://www.thisischile.cl/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="" class="img-circle">
                     </li>
                     <li>
                         <span style="color: #fff; margin-left: 3%;">0.000000Z</span>
