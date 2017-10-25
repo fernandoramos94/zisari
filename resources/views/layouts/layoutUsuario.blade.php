@@ -501,20 +501,16 @@
                             source: array,
                             highlighter: function(item) {
                                 var parts = item.split('#'),
-                                html = '<div style="width:100%;" id="' + parts[4] + '">';
-                                html += '<div><p><img class="img-circle" style="vertical-align:middle;" width="40" src="'+urlImg+'/'+parts[3]+'"><span style="display: inline-block;">'+parts[0]+' '+parts[1]+"<br>"+parts[2]+'</span></p></div>';
+                                html = '<div>';
+                                html += '<div class="profile-photo">';
+                                html += '<img src="assets/img/avatar2.gif" alt="" class="img-circle">';
                                 html += '</div>';
-
-                                // var query = this.query;
-                                // var reEscQuery = query.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
-                                // var reQuery = new RegExp('(' + reEscQuery + ')', "gi");
+                                html += '<div class="message-info">';
+                                html += '<span class="sender">'+parts[0]+' '+parts[1]+'</span>';
+                                html += '<span class="time">'+parts[2]+'</span>';
+                                html += '<div class="message-content">hendrerit pellentesque, iure tincidunt, faucibus vitae dolor aliquam...</div>';
+                                html += '</div></div>'
                                 var jElem = $(html);
-                                // var textNodes = $(jElem.find('*')).add(jElem).contents().filter(function() {
-                                //     return this.nodeType === 3;
-                                // });
-                                // textNodes.replaceWith(function() {
-                                //     return $(this).text().replace(reQuery, '<strong>$1</strong>');
-                                // });
 
                                 return jElem.html();
                             },
