@@ -556,17 +556,14 @@
             },
             url: url+"/getUser",
             success: function (data) {
-                var array = [];
                 var urlImg = "{{asset('img/img_users/perfil')}}";
                 $("#typeahead").autocomplete({
-                    response( $.map(data, function(result){
-                        return {
-                            label: result.nombres + " " + results.apellidos,
-                            value: result.id,
-                            imgsrc: result.imagen,
-                            description: "Sem dapibus in, orci bibendum faucibus tellus, justo arcu..."
-                        }
-                    }));
+                    return {
+                        label: data.nombres + " " + datas.apellidos,
+                        value: data.id,
+                        imgsrc: data.imagen,
+                        description: "Sem dapibus in, orci bibendum faucibus tellus, justo arcu..."
+                    }
                 }).data( "ui-autocomplete" )._renderItem = function( ul, item ) {  
                     return $( "<li></li>" )  
                     .data( "item.autocomplete", item )  
