@@ -165,4 +165,44 @@
 		position: relative !important;; 
 	}
 </style>
+
+
+@stop()
+@section("scripts")
+<script type="text/javascript">
+	$(document).ready(function() {
+        var url = "{{URL::to('')}}";
+        $.ajax({
+            type: "POST",
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            url: url+"/getUser",
+            success: function (data) {
+            	console.log(data);
+                // for (var i = 0; i < data.length; i++) {
+                //     if(data[i].email == $("#email").val()){
+                //         $("#imgUser").attr("src", "{{asset('img/img_users/perfil')}}/"+data[i].imagen);
+                //         $("#login1").hide();
+                //         $("#login2").show();
+                //         $("#siguienteLogin").attr('disabled', false);
+                //     }else{
+                //         notif({
+                //             type: "error",
+                //             msg: "El email ingresado no esta actualmente registrado",
+                //             position: "right",
+                //             opacity: 0.8
+                //         });
+                //         $("#siguienteLogin").attr('disabled', false);
+                //         return false;
+                //     }
+                // }
+            },
+            error: function (data) {
+                console.log('Error:', data);
+            }
+        });
+    })
+</script>
+
 @stop()
