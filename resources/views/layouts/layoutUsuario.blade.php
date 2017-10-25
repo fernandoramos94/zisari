@@ -483,8 +483,7 @@
                     },
                     url: url+"/getUser",
                     success: function(data) {
-                        console.log(data);
-                        response($.map(data.results, function(result) {
+                        response($.map(data, function(result) {
                             return {  
                                 label: result.nombres + " - " + result.apellidos,  
                                 value: result.id,  
