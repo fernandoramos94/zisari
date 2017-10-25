@@ -470,66 +470,10 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.0/bootstrap3-typeahead.js"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.mask.min.js') }}"></script>
-
-    <!-- <script>
-        $(".menuOculto").on("click", function(){
-            $(".menuOculto").addClass('sidebar-toggle');
-            4(".contenidoPrincipal").addClass("main-content-toggle-left");
-        })
-        $(document).ready(function() {
-            app.timer();
-            app.map();
-            app.weather();
-            app.morrisPie();
-        });
-        $(document).ready(function() {
-
-        var url = "{{URL::to('')}}";
-        $.ajax({
-            type: "POST",
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            url: url+"/getUser",
-            success: function (data) {
-                var array = [];
-                var urlImg = "{{asset('img/img_users/perfil')}}";
-                for (var i = 0; i < data.length; i++) {
-                    array.push(data[i].nombres+"#"+data[i].apellidos+"#"+data[i].name+"#"+data[i].imagen+"#"+data[i].id)
-                    if (i == data.length-1) {
-                        $('#typeahead').typeahead({
-                            source: array,
-                            highlighter: function(item) {
-                                var parts = item.split('#'),
-                                html = '<div>';
-                                html += '<div class="profile-photo">';
-                                html += '<img src="assets/img/avatar2.gif" alt="" class="img-circle">';
-                                html += '</div>';
-                                html += '<div class="message-info">';
-                                html += '<span class="sender">'+parts[0]+' '+parts[1]+'</span>';
-                                html += '<div class="message-content">hendrerit pellentesque, iure tincidunt, faucibus vitae dolor aliquam...</div>';
-                                html += '</div></div>'
-                                var jElem = $(html);
-
-                                return jElem.html();
-                            },
-                            updater: function(selectedName) {
-                                var name = selectedName.split('#')[0];
-                                return name;
-                            }
-                        })
-                    }
-                }
-            },
-            error: function (data) {
-                console.log('Error:', data);
-            }
-        });
-    })
-    </script> -->
     <script>  
      $(function() {  
         var url = "{{URL::to('')}}";
+        var urlImg = "{{asset('img/img_users/perfil')}}";
         $.ajax({
             type: "POST",
             headers: {
@@ -537,7 +481,6 @@
             },
             url: url+"/getUser",
             success: function (data) {
-                var urlImg = "{{asset('img/img_users/perfil')}}";
                 $("#typeahead").autocomplete({
                     source: function(request, response){
                         response( $.map( data, function( result ) {  
@@ -545,7 +488,7 @@
                             return {  
                                 label: result.nombres + " - " + result.apellidos,  
                                 value: result.id,  
-                                imgsrc: result.image,
+                                imgsrc: result.imagen,
                                 description: "Sem dapibus in, orci bibendum faucibus tellus, justo arcu...",
                             }  
                         })); 
