@@ -502,7 +502,7 @@
                             highlighter: function(item) {
                                 var parts = item.split('#'),
                                 html = '<div><div class="typeahead-inner" id="' + parts[4] + '">';
-                                html += '<div class="item-img"><p><img src="'+urlImg+'/'+parts[3]+'">'+parts[0]+' '+parts[1]+'<br>'+parts[2]+'</p></div>';
+                                html += '<div class="item-img"><p><img class="img-circle" src="'+urlImg+'/'+parts[3]+'">'+parts[0]+' '+parts[1]+'<br>'+parts[2]+'</p></div>';
 
                                 var query = this.query;
                                 var reEscQuery = query.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
