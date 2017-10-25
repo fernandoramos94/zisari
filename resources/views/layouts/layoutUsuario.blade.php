@@ -296,10 +296,10 @@
                         <img src="http://www.thisischile.cl/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="" class="img-circle">
                     </li>
                     <li class="dropdown settings">
-                        <p style="color: #fff; margin-left: 3%; margin: 0;">0.000000Z</p>
+                        <p style="color: #fff; margin-left: 3%; margin: 0;">0.00000000 Z</p>
                     </li>
                     <li class="dropdown settings">
-                        <p style="color: #fff; margin-left: 3%; margin: 0;">0 Ptos</p>
+                        <p style="color: #fff;margin: 0;">0 Ptos</p>
                     </li>
 
                 </ul>
