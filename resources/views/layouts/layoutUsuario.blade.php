@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap/css/bootstrap.min.css') }}">
     <!-- Fonts from Font Awsome -->
     <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSS Animate -->
     <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
     <!-- Custom styles for this theme -->
