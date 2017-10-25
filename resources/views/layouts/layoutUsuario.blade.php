@@ -538,7 +538,6 @@
         }
         ul.typeahead.dropdown-menu > li > a > div.message-info{
             display: inline-block;
-            width: 76%;
             margin: 0 auto
         }
         ul.typeahead.dropdown-menu > li > a > div.profile-photo{
