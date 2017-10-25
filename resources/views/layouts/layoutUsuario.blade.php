@@ -496,7 +496,7 @@
                 }).data( "ui-autocomplete" )._renderItem = function( ul, item ) {  
                     return $( "<li></li>" )  
                     .data("item.autocomplete", item)  
-                    .append("<a><div class='profile-photo'><img class='img-circle' src='"+ urlImg +"/" + item.imgsrc + "' /></div><div class='message-info'><span class='sender'>"+item.label+"</span><div class='message-content'>"+ item.description +"</div></div></a>")  
+                    .append("<a><div class='profile-photo'><img width='92' class='img-circle' src='"+ urlImg +"/" + item.imgsrc + "' /></div><div class='message-info'><span class='sender'>"+item.label+"</span><div class='message-content'>"+ item.description +"</div></div></a>")  
                     .appendTo(ul);  
                 }
             },
