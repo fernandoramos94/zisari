@@ -532,6 +532,11 @@
         });
     })
     </script>
+    <style type="text/css">
+        ul.typeahead.dropdown-menu{
+            width: 33%;
+        }
+    </style>
     @yield('scripts')
 </body>
 
