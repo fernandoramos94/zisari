@@ -529,7 +529,7 @@
     </script>
     <style type="text/css">
         ul.typeahead.dropdown-menu{
-            width: 500px;
+            width: 450px;
         }
         ul.typeahead.dropdown-menu > li.active > a{
             background: #1bbc9b;
