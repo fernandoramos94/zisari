@@ -60,8 +60,8 @@
 
                 @foreach ($imgLogo as $logo)
                     @if ($logo->estado == 1 && $logo->fechaFinalizacion > $fechaActual)
-                        @if ($logo->imagen != null && $logo->url == null || $logo->imagen != null && $logo->url != null)
-                                <a href="{{$logo->url}}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" width="92" src="{{asset('img/logo/'.$logo->imagen)}}"></a>
+                        @if ($logo->imagenLogo != null && $logo->url == null || $logo->imagenLogo != null && $logo->url != null)
+                                <a href="{{$logo->url}}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" width="92" src="{{asset('img/logo/'.$logo->imagenLogo)}}"></a>
                         @else
                             <a href="{{$logo->url}}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" style="width: 100%" id="imagenLogo" src="$logo->url"></a>
                         @endif
