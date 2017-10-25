@@ -3,7 +3,7 @@
 	<div class="col-lg-8 navegacion" >
 		<ul class="nav nav-tabs" role="tablist">
 			<li role="presentation" class="active"><a style="border-top-left-radius: 15px;" href="#home" aria-controls="home" role="tab" data-toggle="tab"> <i class="fa fa-gift" aria-hidden="true"></i> Zisaricoins Gratis</a></li>
-			<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"> <i class="fa fa-cubes" aria-hidden="true"></i> Multiplicador Zisaricoins</a></li>
+			<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"> <i class="fa fa-cubes" aria-hidden="true"></i> Multiplicador</a></li>
 			<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-braille" aria-hidden="true"></i> Puntos</a></li>
 			<li role="presentation"><a style="border-top-right-radius: 15px;" href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Preguntas Frecuentes</a></li>
 		</ul>
