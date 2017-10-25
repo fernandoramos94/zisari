@@ -501,7 +501,7 @@
                             source: array,
                             highlighter: function(item) {
                                 var parts = item.split('#'),
-                                html = '<div>';
+                                html = '<div class="col-lg-12">';
                                 html += '<div class="profile-photo">';
                                 html += '<img src="assets/img/avatar2.gif" alt="" class="img-circle">';
                                 html += '</div>';
