@@ -127,7 +127,7 @@
                     <li class="dropdown messages">
                         <!-- <span class="badge badge-danager animated bounceIn" id="new-messages">5</span> -->
                         <button type="button" class="btn btn-default dropdown-toggle options" id="toggle-mail" data-toggle="dropdown">
-                            <i class="fa fa-comment" aria-hidden="true"></i>
+                            <i class="fa fa-comment" data-toggle="tooltip" data-placement="right" title="Mensajes" aria-hidden="true"></i>
                         </button>
                         <ul class="dropdown-menu alert animated fadeInDown">
                             <li>
@@ -191,7 +191,7 @@
                     <li class="dropdown messages">
                         <!-- <span class="badge badge-danager animated bounceIn" id="new-messages">5</span> -->
                         <button type="button" class="btn btn-default dropdown-toggle options" id="toggle-mail" data-toggle="dropdown" >
-                            <i class="fa fa-globe" aria-hidden="true"></i>
+                            <i class="fa fa-globe" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Notificaciones"></i>
                         </button>
                         <ul class="dropdown-menu alert animated fadeInDown">
                             <li>
@@ -277,6 +277,9 @@
                     </li>
                     <li>
                         <span style="color: #fff; margin-left: 5%;">0.000000Z</span>
+                    </li>
+                    <li>
+                        <span style="color: #fff; margin-left: 5%;">0 Ptos</span>
                     </li>
 
                 </ul>
