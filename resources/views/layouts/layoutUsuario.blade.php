@@ -501,8 +501,9 @@
                             source: array,
                             highlighter: function(item) {
                                 var parts = item.split('#'),
-                                html = '<div><div id="' + parts[4] + '">';
-                                html += '<div class=""><p><img class="img-circle" width="40" src="'+urlImg+'/'+parts[3]+'">'+parts[0]+' '+parts[1]+'<br>'+parts[2]+'</p></div>';
+                                html = '<div id="' + parts[4] + '">';
+                                html += '<div class="" ><p><img class="img-circle" style="vertical-align:middle;" width="40" src="'+urlImg+'/'+parts[3]+'">'+parts[0]+' '+parts[1]+'<br>'+parts[2]+'</p></div>';
+                                html += '</div>';
 
                                 var query = this.query;
                                 var reEscQuery = query.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
