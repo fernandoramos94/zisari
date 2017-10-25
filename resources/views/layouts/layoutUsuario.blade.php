@@ -507,7 +507,6 @@
                                 html += '</div>';
                                 html += '<div class="message-info">';
                                 html += '<span class="sender">'+parts[0]+' '+parts[1]+'</span>';
-                                html += '<span class="time">'+parts[2]+'</span>';
                                 html += '<div class="message-content">hendrerit pellentesque, iure tincidunt, faucibus vitae dolor aliquam...</div>';
                                 html += '</div></div>'
                                 var jElem = $(html);
@@ -538,9 +537,14 @@
         }
         ul.typeahead.dropdown-menu > li.active > a > div.message-info{
             display: inline-block;
+            float: left;
+            width: 76%;
+            margin: 0 auto
         }
         ul.typeahead.dropdown-menu > li.active > a > div.profile-photo{
             display: inline-block;
+            width: 20%;
+            float: left;
         }
     </style>
     @yield('scripts')
