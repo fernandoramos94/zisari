@@ -498,7 +498,7 @@
                     array.push(data[i].nombres+"#"+data[i].apellidos+"#"+data[i].name+"#"+data[i].imagen+"#"+data[i].id)
                     if (i == data.length-1) {
                         $('#typeahead').typeahead({
-                            source: data,
+                            source: array,
                             highlighter: function(item) {
                                 var parts = item.split('#'),
                                 html = '<div><div class="typeahead-inner" id="' + parts[4] + '">';
@@ -509,11 +509,17 @@
                                 var reQuery = new RegExp('(' + reEscQuery + ')', "gi");
                                 var jElem = $(html);
                                 var textNodes = $(jElem.find('*')).add(jElem).contents().filter(function() {
-                                  return this.nodeType === 3;
+                                    return this.nodeType === 3;
                                 });
                                 textNodes.replaceWith(function() {
                                     return $(this).text().replace(reQuery, '<strong>$1</strong>');
-                                }
+                                });
+
+                                return jElem.html();
+                            },
+                            updater: function(selectedName) {
+                                var name = selectedName.split('#')[0];
+                                return name;
                             }
                         })
                     }
