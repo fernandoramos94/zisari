@@ -527,25 +527,6 @@
         });
     })
     </script> -->
-    <style type="text/css">
-        ul.typeahead.dropdown-menu{
-            width: 100%;
-            max-width: 33%;
-            display: block;
-        }
-        ul.typeahead.dropdown-menu > li.active > a{
-            background: #1bbc9b;
-            color: #fff;
-        }
-        ul.typeahead.dropdown-menu > li > a > div.message-info{
-            display: inline-block;
-            margin: 0 auto
-        }
-        ul.typeahead.dropdown-menu > li > a > div.profile-photo{
-            display: inline-block;
-            width: 20%;
-        }
-    </style>
     <script>  
      $(function() {  
         var url = "{{URL::to('')}}";
