@@ -558,11 +558,15 @@
             success: function (data) {
                 var urlImg = "{{asset('img/img_users/perfil')}}";
                 $("#typeahead").autocomplete({
-                    return {
-                        label: data.nombres + " " + datas.apellidos,
-                        value: data.id,
-                        imgsrc: data.imagen,
-                        description: "Sem dapibus in, orci bibendum faucibus tellus, justo arcu..."
+                    source: function(request, response){
+                        response( $.map( data.results, function( result ) {  
+                            return {  
+                                label: result.nombres + " - " + result.apellidos,  
+                                value: result.id,  
+                                imgsrc: result.image,
+                                description: "Sem dapibus in, orci bibendum faucibus tellus, justo arcu..."  
+                            }  
+                        })); 
                     }
                 }).data( "ui-autocomplete" )._renderItem = function( ul, item ) {  
                     return $( "<li></li>" )  
