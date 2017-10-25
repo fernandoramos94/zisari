@@ -85,62 +85,60 @@
 			</div>
 			<div role="tabpanel" class="tab-pane" id="settings">
 				<div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Relacionado al Roll</h3>
-                                <div class="actions pull-right">
-                                    <i class="fa fa-chevron-down"></i>
-                                    <i class="fa fa-times"></i>
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Relacionado al Roll</h3>
+                        <div class="actions pull-right">
+                            <i class="fa fa-chevron-down"></i>
+                            <i class="fa fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel-group accordion" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                              			<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
+                                			¿Por qué la cantidad de Zisaricoins que puedes ganar sigue cambiando?
+                              			</a>
+                            		</h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse">
+                                	<div class="panel-body">
+                                        La cantidad de Zisaricoins que puede ganar GRATUITO depende del crecimiento de la plataforma, asi crecemos juntos. El premio mayor se fija en USD $ 30 y los otros premios en proporción a este. Por lo tanto, tiene una buena oportunidad de ganar USD $ 30 en Zisaricoins en cada tirada.
+                                    </div>
                                 </div>
                             </div>
-                            <div class="panel-body">
-
-                                <div class="panel-group accordion" id="accordion">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
-                                ¿Por qué la cantidad de Zisaricoins que puedes ganar sigue cambiando?
-                              </a>
-                            </h4>
-                                        </div>
-                                        <div id="collapseOne" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                La cantidad de Zisaricoins que puede ganar GRATUITO depende del crecimiento de la plataforma, asi crecemos juntos. El premio mayor se fija en USD $ 30 y los otros premios en proporción a este. Por lo tanto, tiene una buena oportunidad de ganar USD $ 30 en Zisaricoins en cada tirada.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
-                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                ¿Qué es Zisaricoins?
-                              </a>
-                            </h4>
-                                        </div>
-                                        <div id="collapseTwo" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                Zisaricons es una criptomoneda interna de Zisari, la cual se puede convertir en BTC y USD.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
-                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                ¿Cuanto vale 1 Zisaricoins?
-                              </a>
-                            </h4>
-                                        </div>
-                                        <div id="collapseThree" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                1 Zisaricoins equivale a 10USD y en BTC depende de la cantidad de satoshis al precio actual en BTC por el monto de 10USD.
-                                            </div>
-                                        </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                              			<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                			¿Qué es Zisaricoins?
+                              			</a>
+                        			</h4>
+                                </div>
+                            	<div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Zisaricons es una criptomoneda interna de Zisari, la cual se puede convertir en BTC y USD.
                                     </div>
                                 </div>
-
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                              			<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                			¿Cuanto vale 1 Zisaricoins?
+                              			</a>
+                            		</h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+	                                <div class="panel-body">
+	                                    1 Zisaricoins equivale a 10USD y en BTC depende de la cantidad de satoshis al precio actual en BTC por el monto de 10USD.
+	                                </div>
+	                            </div>
                             </div>
                         </div>
+                    </div>
+                </div>
 			</div>
 		</div>
 	</div>
@@ -226,7 +224,7 @@
 @stop()
 @section("scripts")
 <script type="text/javascript">
-	
+
 </script>
 
 @stop()
