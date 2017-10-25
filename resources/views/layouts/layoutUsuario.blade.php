@@ -503,7 +503,7 @@
                                 var parts = item.split('#'),
                                 html = '<div class="contetido">';
                                 html += '<div class="profile-photo">';
-                                html += '<img src="'+urlImg+'/'+parts[3]+'" width="92" alt="" class="img-circle">';
+                                html += '<img src="'+urlImg+'/'+parts[3]+'" width="60" alt="" class="img-circle">';
                                 html += '</div>';
                                 html += '<div class="message-info">';
                                 html += '<span class="sender">'+parts[0]+' '+parts[1]+'</span>';
