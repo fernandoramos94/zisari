@@ -492,12 +492,31 @@
             },
             url: url+"/getUser",
             success: function (data) {
-                $('#typeahead').typeahead({
-                    source: data,
-                    highlighter: function(item) {
-                        console.log(item);
+                var array = [];
+                var urlImg = "{{asset('img/img_users/perfil')}}";
+                for (var i = 0; i < data.length; i++) {
+                    array.push(data[i].nombres+"#"+data[i].apellidos+"#"+data[i].name+"#"+data[i].imagen+"#"+data[i].id)
+                    if (i == data.length-1) {
+                        $('#typeahead').typeahead({
+                            source: data,
+                            highlighter: function(item) {
+                                var parts = item.split('#'),
+                                html = '<div><div class="typeahead-inner" id="' + parts[4] + '">';
+                                html += '<div class="item-img"><p><img src="'+urlImg+'/'+parts[3]+'">'+parts[0]+' '+parts[1]+'<br>'+parts[2]+'</p></div>';
+
+                                var query = this.query;
+                                var reEscQuery = query.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+                                var reQuery = new RegExp('(' + reEscQuery + ')', "gi");
+                                var jElem = $(html);
+                                var textNodes = $(jElem.find('*')).add(jElem).contents().filter(function() {
+                                  return this.nodeType === 3;
+                                });
+                                textNodes.replaceWith(function() {
+                                    return $(this).text().replace(reQuery, '<strong>$1</strong>');
+                            }
+                        })
                     }
-                })
+                }
                 // for (var i = 0; i < data.length; i++) {
                 //     if(data[i].email == $("#email").val()){
                 //         $("#imgUser").attr("src", "{{asset('img/img_users/perfil')}}/"+data[i].imagen);
