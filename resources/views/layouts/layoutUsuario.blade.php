@@ -275,10 +275,10 @@
                     <li class="profile-photo">
                         <img src="http://www.thisischile.cl/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="" class="img-circle">
                     </li>
-                    <li>
+                    <li class="dropdown settings">
                         <span style="color: #fff; margin-left: 3%;">0.000000Z</span>
                     </li>
-                    <li>
+                    <li class="dropdown settings">
                         <span style="color: #fff; margin-left: 3%;">0 Ptos</span>
                     </li>
 
