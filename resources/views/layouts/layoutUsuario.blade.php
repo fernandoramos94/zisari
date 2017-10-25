@@ -333,6 +333,7 @@
                         </ul>
                     </li>                   
                 </ul>
+                <center style="position: absolute;bottom: 20px;left: 5%;">&copy; 2017 Zisari</center>
             </div>
         </aside>
         <section class="main-content-wrapper main-content-toggle-left contenidoPrincipal">
@@ -428,9 +429,6 @@
             </div>
         </aside>
         <!--sidebar right end-->
-    <footer style="background: #000; color: #fff;padding: 7px 0;">
-        <center>&copy; 2017 Zisari</center>
-    </footer>
     </section>
     <!--Global JS-->
     <!-- <script src="{{ asset('assets/js/jquery-1.10.2.min.js') }}"></script> -->
