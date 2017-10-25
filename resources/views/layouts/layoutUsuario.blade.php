@@ -532,10 +532,16 @@
         ul.typeahead.dropdown-menu{
             width: 33%;
         }
-        /*ul.typeahead.dropdown-menu > li.active > a{
+        ul.typeahead.dropdown-menu > li.active > a{
             background: #1bbc9b;
             color: #fff;
-        }*/
+        }
+        ul.typeahead.dropdown-menu > li.active > a > div.message-info{
+            display: inline-block;
+        }
+        ul.typeahead.dropdown-menu > li.active > a > div.profile-photo{
+            display: inline-block;
+        }
     </style>
     @yield('scripts')
 </body>
