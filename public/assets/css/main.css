@@ -102,6 +102,7 @@ li.profile-photo > img{
     padding: 2% 3%;
     max-height: 600px;
     height: 550px;
+    overflow: auto;
     background: #ffffff;
 }
 .anuncio{
