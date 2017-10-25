@@ -513,27 +513,11 @@
                                 });
                                 textNodes.replaceWith(function() {
                                     return $(this).text().replace(reQuery, '<strong>$1</strong>');
+                                }
                             }
                         })
                     }
                 }
-                // for (var i = 0; i < data.length; i++) {
-                //     if(data[i].email == $("#email").val()){
-                //         $("#imgUser").attr("src", "{{asset('img/img_users/perfil')}}/"+data[i].imagen);
-                //         $("#login1").hide();
-                //         $("#login2").show();
-                //         $("#siguienteLogin").attr('disabled', false);
-                //     }else{
-                //         notif({
-                //             type: "error",
-                //             msg: "El email ingresado no esta actualmente registrado",
-                //             position: "right",
-                //             opacity: 0.8
-                //         });
-                //         $("#siguienteLogin").attr('disabled', false);
-                //         return false;
-                //     }
-                // }
             },
             error: function (data) {
                 console.log('Error:', data);
