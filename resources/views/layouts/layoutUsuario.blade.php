@@ -38,11 +38,7 @@
     <script src="{{ asset('js/main.js') }}"></script>
     <section id="container" style="position: relative;">
         <header id="header" class="cabecera" style="background: transparent !important;">
-            <!--logo start-->
-            <!-- <div class="brand">
-                <a href="index.html" class="logo"><span>Zisari</span></a>
-            </div> -->
-            <!--logo end-->
+          
             <div class="toggle-navigation toggle-left">
                 <button type="button" class="btn btn-default" id="toggle-left" data-toggle="tooltip" data-placement="right" title="Menú de Navegación">
                     <i class="fa fa-bars"></i>
@@ -63,7 +59,7 @@
                     <li class="dropdown messages">
                         <!-- <span class="badge badge-danager animated bounceIn" id="new-messages">5</span> -->
                         <button type="button" class="btn btn-default dropdown-toggle options" id="toggle-mail" data-toggle="tooltip" data-placement="right" title="Usuarios">
-                            <i class="fa fa-users" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Usuarios"></i>
+                            <i class="fa fa-users" aria-hidden="true"></i>
                         </button>
                         <ul class="dropdown-menu alert animated fadeInDown">
                             <li>
@@ -126,7 +122,7 @@
                     </li>
                     <li class="dropdown messages">
                         <!-- <span class="badge badge-danager animated bounceIn" id="new-messages">5</span> -->
-                        <button type="button" class="btn btn-default dropdown-toggle options" id="toggle-mail" data-toggle="dropdown">
+                        <button type="button" class="btn btn-default dropdown-toggle options" id="toggle-mensaje" data-toggle="tooltip" data-placement="right" title="Mensajes">
                             <i class="fa fa-comment" data-toggle="tooltip" data-placement="right" title="Mensajes" aria-hidden="true"></i>
                         </button>
                         <ul class="dropdown-menu alert animated fadeInDown">
@@ -190,8 +186,8 @@
                     </li>
                     <li class="dropdown messages">
                         <!-- <span class="badge badge-danager animated bounceIn" id="new-messages">5</span> -->
-                        <button type="button" class="btn btn-default dropdown-toggle options" id="toggle-mail" data-toggle="dropdown" >
-                            <i class="fa fa-globe" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Notificaciones"></i>
+                        <button type="button" class="btn btn-default dropdown-toggle options" id="toggle-noti" data-toggle="tooltip" data-placement="right" title="Notificaciones">
+                            <i class="fa fa-globe" aria-hidden="true"></i>
                         </button>
                         <ul class="dropdown-menu alert animated fadeInDown">
                             <li>

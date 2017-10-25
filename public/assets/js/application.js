@@ -1,9 +1,18 @@
 var app = function() {
     var e = function() {
-            t(), o(), a(), l(), n(), i()
+            t(), o(), a(), l(), n(), i(), no(), u(), m()
         },
         t = function() {
             $("#toggle-left").tooltip()
+        },
+        no = function() {
+            $("#toggle-noti").tooltip()
+        },
+        u = function() {
+            $("#toggle-mail").tooltip()
+        },
+        m = function() {
+            $("#toggle-mensaje").tooltip()
         },
         n = function() {
             $(".actions > .fa-chevron-down").click(function() {
