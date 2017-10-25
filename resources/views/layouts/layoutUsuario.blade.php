@@ -501,7 +501,7 @@
                             source: array,
                             highlighter: function(item) {
                                 var parts = item.split('#'),
-                                html = '<div class="col-lg-12">';
+                                html = '<div class="contetido">';
                                 html += '<div class="profile-photo">';
                                 html += '<img src="assets/img/avatar2.gif" alt="" class="img-circle">';
                                 html += '</div>';
@@ -537,6 +537,8 @@
         }
         ul.typeahead.dropdown-menu > li > a > div.message-info{
             display: inline-block;
+            margin-left: 15px;
+            vertical-align: middle;
         }
         ul.typeahead.dropdown-menu > li > a > div.profile-photo{
             display: inline-block;
