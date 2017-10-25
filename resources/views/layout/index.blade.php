@@ -15,6 +15,67 @@
 				<p align="justify">
 					Complete el captcha a continuación y haga clic en el botón ROLL para obtener sus Zisaricoins gratis. La cantidad de Zisaricoins gratis que obtenga dependerá del número que transfiera y pague de acuerdo con la tabla de pagos a continuación. ¡Puedes volver y jugar cada hora para ganar Zisaricoins gratis una y otra vez!
 				</p>
+				<br>
+				<div align="center"> 
+					<table class="table table-bordered" style="width: auto;text-align: center;">
+						<thead>
+							<tr>
+								<th style="text-align: center;background-color: #2785e5; color: #fff;">NÚMERO DE LA SUERTE</th>
+								<th style="text-align: center;background-color: #2785e5; color: #fff;">PAGO</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									0 - 9885
+								</td>
+								<td>
+									0.00000036 BTC
+								</td>
+							</tr>
+							<tr>
+								<td>
+									9885 - 9985
+								</td>
+								<td>
+									0.00000362 BTC
+								</td>
+							</tr>
+							<tr>
+								<td>
+									9986 - 9993
+								</td>
+								<td>
+									0.00003624 BTC
+								</td>
+							</tr>
+							<tr>
+								<td>
+									9994 - 9997
+								</td>
+								<td>
+									0.00036241 BTC
+								</td>
+							</tr>
+							<tr>
+								<td>
+									9998 - 9999
+								</td>
+								<td>
+									0.00362412 BTC
+								</td>
+							</tr>
+							<tr>
+								<td>
+									10000
+								</td>
+								<td>
+									0.03624121 BTC
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 			<div role="tabpanel" class="tab-pane" id="profile">
 				Multiplicador Zisaricoins
@@ -65,6 +126,14 @@
   </div>
 </div>
 <style type="text/css">
+
+	table td:first-child {
+		width: 200px;
+	}
+	 
+	table td:nth-child(2) {
+		width: 200px;
+	}
 	.modal-backdrop{
 		position: relative !important;; 
 	}
