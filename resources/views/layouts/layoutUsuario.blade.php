@@ -49,6 +49,7 @@
                     use Illuminate\Support\Facades\DB;
                     date_default_timezone_set('UTC');
                     $imgLogo = DB::table('logoimg')->get();
+                    $text = DB::table('logotext')->get();
                     $fechaActual = date("Y-m-d H:i:s");
                  ?>
                  @foreach ($text as $title)
