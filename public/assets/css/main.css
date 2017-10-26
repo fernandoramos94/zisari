@@ -212,4 +212,5 @@ aside.menuOculto.sidebar{
 }
 section.main-content-wrapper.contenidoPrincipal.main-content-toggle-left{
 	background: #e9ebee;
+	position: relative;
 }
