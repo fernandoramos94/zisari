@@ -312,18 +312,19 @@
             <div id="leftside-navigation" class="nano">
                 <ul class="nano-content">
                     <li class="active">
+                        <br><br>
                         <a><i class="fa fa-home"></i><span>Inicio</span></a>
                     </li>
                     <hr>
                     <li class="sub-menu">
-                        <a><h4>Biblioteca</h4></a>
+                        <a><h4>GANAR ZISARICOINS</h4></a>
                     </li>
                     <li class="sub-menu">
-                        <a><i class="fa fa-cogs"></i><span>Historial</span></a>
+                        <a><i class="fa fa-cogs"></i><span>Recojer Gratis</span></a>
                         <!-- <i class="arrow fa fa-angle-right pull-right"></i> -->
                     </li>
                     <li class="sub-menu">
-                        <a><i class="fa fa-table"></i><span>Ver más tarde</span></a>
+                        <a><i class="fa fa-table"></i><span>Ver videos</span></a>
                     </li>
                     <li class="sub-menu">
                         <a><i class="fa fa-table"></i><span>Compras</span></a>
