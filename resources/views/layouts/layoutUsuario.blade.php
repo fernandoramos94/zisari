@@ -335,12 +335,12 @@
 
                 </ul>
                 <div class="politicas">
-                    <p><a>Nosotros</a></p>
-                    <p><a>Términos</a></p>
-                    <p><a>Política de Privacidad</a></p>
-                    <p><a>Publicidad</a></p>
-                    <p><a>Blog</a></p>
-                    <p><a>Actualizaciones</a></p>
+                    <p><a href="#">Nosotros</a></p>
+                    <p><a href="#">Términos</a></p>
+                    <p><a href="#">Política de Privacidad</a></p>
+                    <p><a href="#">Publicidad</a></p>
+                    <p><a href="#">Blog</a></p>
+                    <p><a href="#">Actualizaciones</a></p>
                 </div>
                 <center style="position: absolute;bottom: 10vh;left: 5%;">&copy; 2017 Zisari</center>
             </div>
