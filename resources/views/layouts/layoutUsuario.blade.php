@@ -317,7 +317,7 @@
                     </li>
                     <hr>
                     <li class="sub-menu">
-                        <a><h4>GANAR ZISARICOINS</h4></a>
+                        <h4 style="padding: 10px 0 10px 25px">GANAR ZISARICOINS</h4>
                     </li>
                     <li class="sub-menu">
                         <a><i class="fa fa-gift"></i><span>Recojer Gratis</span></a>
