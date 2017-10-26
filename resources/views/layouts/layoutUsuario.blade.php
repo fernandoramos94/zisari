@@ -312,26 +312,28 @@
             <div id="leftside-navigation" class="nano">
                 <ul class="nano-content">
                     <li class="active">
-                        <a href="index.html"><i class="fa fa-dashboard"></i><span>Administrador General</span></a>
+                        <a><i class="fa fa-home"></i><span>Inicio</span></a>
+                    </li>
+                    <hr>
+                    <h5>Biblioteca</h5>
+                    <li class="sub-menu">
+                        <a><i class="fa fa-cogs"></i><span>Historial</span></a>
+                        <!-- <i class="arrow fa fa-angle-right pull-right"></i> -->
                     </li>
                     <li class="sub-menu">
-                        <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>Elementos de Diseño</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-                        <ul>
+                        <a><i class="fa fa-table"></i><span>Ver más tarde</span></a>
+                    </li>
+                    <li class="sub-menu">
+                        <a><i class="fa fa-table"></i><span>Compras</span><span class="pull-right">2</span></a>
+                    </li>   
+                    <li class="sub-menu">
+                        <a><i class="fa fa-table"></i><span>Video que me gus...</span><span class="pull-right">2</span></a>
+                    </li> 
 
-                            <li><a href="{{URL::to('logo')}}">Imagen de Fecha calendario</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:void(0);"><i class="fa fa-table"></i><span>Usuarios</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-                        <ul>
-                            <li><a href="{{URL::to('usuarios')}}">Administración</a>
-                            </li>
-                            <li><a href="#">Registros</a>
-                            </li>
-                        </ul>
-                    </li>                   
                 </ul>
+                <p>Condiciones Privacidad</p>
+                <p>Politica y Seguridad</p>
+                <p>Prueba nuevas funciones</p>
                 <center style="position: absolute;bottom: 10vh;left: 5%;">&copy; 2017 Zisari</center>
             </div>
         </aside>
