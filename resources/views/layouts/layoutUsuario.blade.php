@@ -315,7 +315,7 @@
                         <a><i class="fa fa-home"></i><span>Inicio</span></a>
                     </li>
                     <hr>
-                    <li>
+                    <li class="sub-menu">
                         <h4>Biblioteca</h4>
                     </li>
                     <li class="sub-menu">
