@@ -318,7 +318,7 @@
                     <hr>
                     <h4 style="padding: 10px 0 10px 25px">GANAR ZISARICOINS</h4>
                     <li class="sub-menu">
-                        <a><i class="fa fa-gift"></i><span>Recojer Gratis</span></a>
+                        <a href="{{URL::to('layout')}}"><i class="fa fa-gift"></i><span>Recojer Gratis</span></a>
                         <!-- <i class="arrow fa fa-angle-right pull-right"></i> -->
                     </li>
                     <li class="sub-menu">
