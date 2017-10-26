@@ -7,7 +7,7 @@
       <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-braille" aria-hidden="true"></i> Puntos</a></li>
       <li role="presentation"><a style="border-top-right-radius: 15px;" href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Preguntas Frecuentes</a></li>
     </ul>
-    <div class="tab-content">
+    <div class="tab-content" id="contenidoGratis">
       <div role="tabpanel" class="tab-pane active" id="home">
         <center>
             <a href="" style="font-size: 18px; margin-bottom: 2%; display: block;" data-toggle="modal" data-target="#myModal"> ¿Por qué la cantidad de Zisaricoins que puedes ganar sigue cambiando?</a>
