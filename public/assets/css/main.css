@@ -148,7 +148,7 @@ li.profile-photo > img{
  .menuOculto #leftside-navigation ul li a{
  	padding: 10px 0 10px 25px;
  }
- .menuOculto #leftside-navigation ul li:hover{
+ .menuOculto #leftside-navigation ul li a:hover{
 	/*background: #fff7dd;*/
 	cursor: pointer;
 	/*color: #fff;*/
