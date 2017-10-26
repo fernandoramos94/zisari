@@ -13,7 +13,11 @@
             <a href="" style="font-size: 18px; margin-bottom: 2%; display: block;" data-toggle="modal" data-target="#myModal"> ¿Por qué la cantidad de Zisaricoins que puedes ganar sigue cambiando?</a>
         </center>
         <p align="justify">
-          Complete el captcha a continuación y haga clic en el botón ROLL para obtener sus Zisaricoins gratis. La cantidad de Zisaricoins gratis que obtenga dependerá del número que transfiera y pague de acuerdo con la tabla de pagos a continuación. ¡Puedes volver y jugar cada hora para ganar Zisaricoins gratis una y otra vez!
+          Complete el captcha a continuación y haga clic en el botón ROLL para obtener sus Zisaricoins gratis. La cantidad de Zisaricoins gratis que obtenga dependerá del número que transfiera y pague de acuerdo con la tabla de pagos a continuación. 
+        </p>
+        <p align="center">
+          <br>
+          ¡Puedes volver y jugar cada hora para ganar Zisaricoins gratis una y otra vez!
         </p>
         <br>
         <div align="center"> 
