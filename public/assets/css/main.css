@@ -138,7 +138,13 @@ li.profile-photo > img{
 	background-color: #000000;
 	border: 2px solid #555555;
 }
-
+ .menuOculto #leftside-navigation ul li a i{
+ 	width: 40px;
+ 	font-size: 14px;
+ }
+.menuOculto #leftside-navigation ul li a span{
+	font-size: 14px;
+}
 
 
 

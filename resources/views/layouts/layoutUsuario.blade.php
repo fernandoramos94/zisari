@@ -315,7 +315,9 @@
                         <a><i class="fa fa-home"></i><span>Inicio</span></a>
                     </li>
                     <hr>
-                    <h5>Biblioteca</h5>
+                    <li>
+                        <h4>Biblioteca</h4>
+                    </li>
                     <li class="sub-menu">
                         <a><i class="fa fa-cogs"></i><span>Historial</span></a>
                         <!-- <i class="arrow fa fa-angle-right pull-right"></i> -->
