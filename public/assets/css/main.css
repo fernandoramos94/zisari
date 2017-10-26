@@ -149,11 +149,14 @@ li.profile-photo > img{
  	padding: 10px 0 10px 25px;
  }
 
-
 .politicas{
     position: absolute;
     bottom: 14%;
     padding: 18px 0 18px 25px;
+}
+.politicas p{
+	font-size: 12px;
+    margin: 0 0 5px;
 }
 
 .anuncio{

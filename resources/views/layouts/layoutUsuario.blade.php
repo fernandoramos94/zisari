@@ -312,7 +312,7 @@
             <div id="leftside-navigation" class="nano">
                 <ul class="nano-content">
                     <li class="active">
-                        <br><br>
+                        <br>
                         <a><i class="fa fa-home"></i><span>Inicio</span></a>
                     </li>
                     <hr>
@@ -335,9 +335,12 @@
 
                 </ul>
                 <div class="politicas">
-                    <p>Condiciones Privacidad</p>
-                    <p>Politica y Seguridad</p>
-                    <p>Prueba nuevas funciones</p>
+                    <p><a>Nosotros</a></p>
+                    <p><a>Términos</a></p>
+                    <p><a>Política de Privacidad</a></p>
+                    <p><a>Publicidad</a></p>
+                    <p><a>Blog</a></p>
+                    <p><a>Actualizaciones</a></p>
                 </div>
                 <center style="position: absolute;bottom: 10vh;left: 5%;">&copy; 2017 Zisari</center>
             </div>
