@@ -146,7 +146,7 @@
                     <li class="dropdown messages">
                         <!-- <span class="badge badge-danager animated bounceIn" id="new-messages">5</span> -->
                         <button type="button" class="btn btn-default dropdown-toggle options" id="toggle-mensaje" data-toggle="tooltip" data-placement="right" title="Mensajes">
-                            <i class="fa fa-comment" data-toggle="tooltip" data-placement="right" title="Mensajes" aria-hidden="true"></i>
+                            <i class="fa fa-comment" aria-hidden="true"></i>
                         </button>
                         <ul class="dropdown-menu alert animated fadeInDown">
                             <li>
