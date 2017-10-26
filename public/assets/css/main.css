@@ -149,9 +149,11 @@ li.profile-photo > img{
  	padding: 10px 0 10px 25px;
  }
  .menuOculto #leftside-navigation ul li a:hover{
-	/*background: #fff7dd;*/
-	cursor: pointer;
-	/*color: #fff;*/
+ 	cursor: pointer;
+ }
+ .menuOculto #leftside-navigation ul li:hover{
+	background: #dddddd;
+	color: #000;
  }
 
 .politicas{
