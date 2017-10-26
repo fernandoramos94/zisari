@@ -148,6 +148,10 @@ li.profile-photo > img{
  .menuOculto #leftside-navigation ul li a{
  	padding: 10px 0 10px 25px;
  }
+ .menuOculto #leftside-navigation ul li:hover{
+	background: #fff7dd;
+	color: #fff;
+ }
 
 .politicas{
     position: absolute;

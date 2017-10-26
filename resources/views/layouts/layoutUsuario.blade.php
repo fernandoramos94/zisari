@@ -320,18 +320,12 @@
                         <a><h4>GANAR ZISARICOINS</h4></a>
                     </li>
                     <li class="sub-menu">
-                        <a><i class="fa fa-cogs"></i><span>Recojer Gratis</span></a>
+                        <a><i class="fa fa-gift"></i><span>Recojer Gratis</span></a>
                         <!-- <i class="arrow fa fa-angle-right pull-right"></i> -->
                     </li>
                     <li class="sub-menu">
-                        <a><i class="fa fa-table"></i><span>Ver videos</span></a>
+                        <a><i class="fa fa-video-camera"></i><span>Ver videos</span></a>
                     </li>
-                    <li class="sub-menu">
-                        <a><i class="fa fa-table"></i><span>Compras</span></a>
-                    </li>   
-                    <li class="sub-menu">
-                        <a><i class="fa fa-table"></i><span>Video que me gus...</span></a>
-                    </li> 
 
                 </ul>
                 <div class="politicas">
