@@ -316,7 +316,7 @@
                     </li>
                     <hr>
                     <li class="sub-menu">
-                        <h4>Biblioteca</h4>
+                        <a><h4>Biblioteca</h4></a>
                     </li>
                     <li class="sub-menu">
                         <a><i class="fa fa-cogs"></i><span>Historial</span></a>
@@ -326,16 +326,18 @@
                         <a><i class="fa fa-table"></i><span>Ver más tarde</span></a>
                     </li>
                     <li class="sub-menu">
-                        <a><i class="fa fa-table"></i><span>Compras</span><span class="pull-right">2</span></a>
+                        <a><i class="fa fa-table"></i><span>Compras</span></a>
                     </li>   
                     <li class="sub-menu">
-                        <a><i class="fa fa-table"></i><span>Video que me gus...</span><span class="pull-right">2</span></a>
+                        <a><i class="fa fa-table"></i><span>Video que me gus...</span></a>
                     </li> 
 
                 </ul>
-                <p>Condiciones Privacidad</p>
-                <p>Politica y Seguridad</p>
-                <p>Prueba nuevas funciones</p>
+                <div class="politicas">
+                    <p>Condiciones Privacidad</p>
+                    <p>Politica y Seguridad</p>
+                    <p>Prueba nuevas funciones</p>
+                </div>
                 <center style="position: absolute;bottom: 10vh;left: 5%;">&copy; 2017 Zisari</center>
             </div>
         </aside>
