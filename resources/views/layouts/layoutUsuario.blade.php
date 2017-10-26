@@ -469,10 +469,8 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.0/bootstrap3-typeahead.js"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.mask.min.js') }}"></script>
-    <script type="text/javascript" src="http://jscrollpane.kelvinluck.com/script/jquery.jscrollpane.min.js"></script>
 
     <script>
-        $("#contenidoGratis").jScrollPane();
         $(".menuOculto").on("click", function(){
             $(".menuOculto").addClass('sidebar-toggle');
             $(".contenidoPrincipal").addClass("main-content-toggle-left");
