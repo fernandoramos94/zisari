@@ -332,7 +332,7 @@
                         </ul>
                     </li>                   
                 </ul>
-                <center style="position: absolute;bottom: 20px;left: 5%;">&copy; 2017 Zisari</center>
+                <center style="position: absolute;bottom: 10vh;left: 5%;">&copy; 2017 Zisari</center>
             </div>
         </aside>
         <section class="main-content-wrapper main-content-toggle-left contenidoPrincipal">
