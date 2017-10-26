@@ -39,7 +39,7 @@
 
 <body style="height: 100%; overflow: hidden;">
     <script src="{{ asset('js/main.js') }}"></script>
-    <section id="container" style="height: 100vh">
+    <section id="container" style="height: 100vh;position: relative;">
         <header id="header" class="cabecera" style="background: transparent !important;">
           
             <div class="toggle-navigation toggle-left">
