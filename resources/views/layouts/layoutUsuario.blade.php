@@ -311,14 +311,12 @@
         <aside class="menuOculto sidebar sidebar-toggle">
             <div id="leftside-navigation" class="nano">
                 <ul class="nano-content">
+                    <br>
                     <li class="active">
-                        <br>
                         <a><i class="fa fa-home"></i><span>Inicio</span></a>
                     </li>
                     <hr>
-                    <li class="sub-menu">
-                        <h4 style="padding: 10px 0 10px 25px">GANAR ZISARICOINS</h4>
-                    </li>
+                    <h4 style="padding: 10px 0 10px 25px">GANAR ZISARICOINS</h4>
                     <li class="sub-menu">
                         <a><i class="fa fa-gift"></i><span>Recojer Gratis</span></a>
                         <!-- <i class="arrow fa fa-angle-right pull-right"></i> -->
