@@ -145,8 +145,16 @@ li.profile-photo > img{
 .menuOculto #leftside-navigation ul li a span{
 	font-size: 13px;
 }
+ .menuOculto #leftside-navigation ul li a{
+ 	padding: 10px 0 10px 25px;
+ }
 
 
+.politicas{
+    position: absolute;
+    bottom: 14%;
+    padding: 18px 0 18px 25px;
+}
 
 .anuncio{
 	background: #ffffff;
