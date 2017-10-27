@@ -477,7 +477,18 @@
         $(".menuOculto").on("click", function(){
             $(".menuOculto").addClass('sidebar-toggle');
             $(".contenidoPrincipal").addClass("main-content-toggle-left");
-        })
+        });
+        $(document).ready(function() {
+            $(document).scroll(function () {
+                var scroll = $(this).scrollTop();
+                var topDist = $("#container").position();
+                if (scroll > topDist.top) {
+                    $('#header').css({"position":"fixed","top":"0"});
+                } else {
+                    $('#header').css({"position":"static","top":"auto"});
+                }
+            });
+        });
         $(document).ready(function() {
             app.timer();
             app.map();

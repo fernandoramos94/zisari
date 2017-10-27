@@ -55,7 +55,7 @@
                         </table>
                         <br>
                         <br>
-                        <a href="" class="btn btn-md btn-success">Roll</a>
+                        <a href="" class="btn btn-md btn-success" style="color: #fff">Roll</a>
                      </div>
                      <br>
                </div>
