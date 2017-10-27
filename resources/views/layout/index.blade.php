@@ -63,7 +63,7 @@
          </div>
     </div>
 </div>
-<div class="col-lg-4">
+<div class="col-lg-4 " id="publicidad">
    <div class="row">
       <div class="col-lg-8 anuncio box image">
          <p>
@@ -160,6 +160,20 @@
 @stop()
 @section("scripts")
 <script type="text/javascript">
+
+   $(document).ready(function() {
+         $(document).scroll(function () {
+             var scroll = $(this).scrollTop();
+             var topDist = $("#container").position();
+             if (scroll > topDist.top) {
+                 $('#publicidad').css({"position":"fixed","top":"80px", "right": "0"});
+             } else {
+                 $('#publicidad').css({"position":"static","top":"auto"});
+             }
+         });
+     });
+
+
     $(document).ready(function() {
       $('#contenidoGratis').slimScroll({
           allowPageScroll: true,

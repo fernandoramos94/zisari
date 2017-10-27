@@ -238,8 +238,6 @@ section.main-content-wrapper.contenidoPrincipal.main-content-toggle-left{
     box-shadow: 0 0 50px 5px rgba(0,0,0,.25);
     height: auto;
     margin: 0;
-    max-width: 900px;
-    overflow: hidden;
     position: relative;
 }
 .box > .box-header {
