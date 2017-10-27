@@ -323,10 +323,11 @@
 @stop()
 @section("scripts")
 <script type="text/javascript">
-	$(function(){
-		$("#contenidoGratis").niceScroll({
-        	cursorwidth: "7px",
-        	autohidemode: true
+	$(document).ready(function() {
+		$('#contenidoGratis').slimScroll({
+          allowPageScroll: true,
+          height: '500px',
+          alwaysVisible: true
       	});
 	})
 </script>

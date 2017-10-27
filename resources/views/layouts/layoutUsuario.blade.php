@@ -35,6 +35,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/prettify.css')}}">
 </head>
 
 <body style="height: 100%; overflow: hidden;">
@@ -469,7 +470,9 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.0/bootstrap3-typeahead.js"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.mask.min.js') }}"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.0/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/prettify.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.slimscroll.js') }}"></script>
+
     <script>
         $(".menuOculto").on("click", function(){
             $(".menuOculto").addClass('sidebar-toggle');
