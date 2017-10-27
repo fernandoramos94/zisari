@@ -101,26 +101,10 @@ li.profile-photo > img{
  	width: 100%;
  	position: relative;
 }
-.navegacion .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
-	background: #dddddd;
-	border-bottom: 2px solid rgb(37, 132, 114);
-}
-.navegacion .tab-content{
-	margin: 0 0.5%;
-    padding: 2% 3%;
-    max-height: 77vh;
-    height: 100%;
-    overflow: auto;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background: #ffffff;
-    border: 3px solid #dddfe2;
-}
-
- .menuOculto #leftside-navigation ul li a i{
+.menuOculto #leftside-navigation ul li a i{
  	width: 40px;
  	font-size: 18px;
- }
+}
 .menuOculto #leftside-navigation ul li a span{
 	font-size: 13px;
 }
@@ -252,7 +236,6 @@ section.main-content-wrapper.contenidoPrincipal.main-content-toggle-left{
     margin: 0;
     max-width: 900px;
     overflow: hidden;
-    padding: 20px 0 0;
     position: relative;
 }
 .box > .box-header {
