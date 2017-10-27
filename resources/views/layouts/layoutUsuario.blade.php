@@ -346,7 +346,7 @@
         <!--main content end-->
         <!--sidebar right start-->
         <aside class="sidebarRight">
-            <div id="rightside-navigation ">
+            <div id="rightside-navigation" style="position: fixed;top: 65px;">
                 <div class="sidebar-heading"><i class="fa fa-user"></i> Contacts</div>
                 <div class="sidebar-title">online</div>
                 <div class="list-contacts">
