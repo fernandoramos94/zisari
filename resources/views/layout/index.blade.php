@@ -63,7 +63,7 @@
          </div>
     </div>
 </div>
-<div class="col-lg-4 " id="publicidad">
+<div class="col-lg-4" id="DivPublicidad">
    <div class="row">
       <div class="col-lg-8 anuncio box image">
          <p>
