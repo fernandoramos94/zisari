@@ -323,7 +323,12 @@
 @stop()
 @section("scripts")
 <script type="text/javascript">
-
+	$(function(){
+		$("#contenidoGratis").niceScroll({
+        	cursorwidth: "7px",
+        	autohidemode: true
+      	});
+	})
 </script>
 
 @stop()
