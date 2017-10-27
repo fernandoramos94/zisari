@@ -43,6 +43,10 @@ Route::get('/recuperarPassword', function(){
 	return view('auth.passwords.reset');
 });
 
+Route::get('/preguntas', function(){
+	return view('layout.preguntas');
+});
+
 Route::get('/layout', function(){
 	return view('layout.index');
 });
