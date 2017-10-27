@@ -162,6 +162,7 @@ li.profile-photo > img{
 	height: 100%;
 	min-height: auto;
 	padding-bottom: 4.1%; 
+	position: relative;
 }
 aside.menuOculto.sidebar.sidebar-toggle{
 	background: transparent;
@@ -171,6 +172,7 @@ aside.menuOculto.sidebar{
 	height: 100%;
 	width: 100%;
 	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
 }
 .menuOculto span{
 	color: #212121;
