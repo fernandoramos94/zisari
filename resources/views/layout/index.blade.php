@@ -326,7 +326,7 @@
 	$(document).ready(function() {
 		$('#contenidoGratis').slimScroll({
           allowPageScroll: true,
-          height: '500px',
+          height: '77vh',
           alwaysVisible: true
       	});
 	})
