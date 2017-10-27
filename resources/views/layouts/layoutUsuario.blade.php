@@ -37,7 +37,7 @@
 
 <body>
     <script src="{{ asset('js/main.js') }}"></script>
-    <section id="container" style="position: relative;">
+    <section id="container">
         <header id="header" class="cabecera" style="background: transparent !important;">
           
             <div class="toggle-navigation toggle-left">
