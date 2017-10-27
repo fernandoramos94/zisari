@@ -32,13 +32,12 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <!-- Feature detection -->
     <script src="{{ asset('assets/js/modernizr-2.6.2.min.js') }}"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
 <body>
     <script src="{{ asset('js/main.js') }}"></script>
-    <section id="container" style="height: 100vh;position: relative;">
+    <section id="container" style="position: relative;">
         <header id="header" class="cabecera" style="background: transparent !important;">
           
             <div class="toggle-navigation toggle-left">
