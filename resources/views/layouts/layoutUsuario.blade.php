@@ -33,12 +33,10 @@
     <!-- Feature detection -->
     <script src="{{ asset('assets/js/modernizr-2.6.2.min.js') }}"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
-
     <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/prettify.css')}}">
 </head>
 
-<body style="height: 100%; overflow: hidden;">
+<body style="height: 100%;">
     <script src="{{ asset('js/main.js') }}"></script>
     <section id="container" style="height: 100vh;position: relative;">
         <header id="header" class="cabecera" style="background: transparent !important;">
@@ -324,6 +322,9 @@
                     </li>
                     <li class="sub-menu">
                         <a><i class="fa fa-video-camera"></i><span>Ver videos</span></a>
+                    </li>
+                    <li class="sub-menu">
+                        <a><i class="fa fa-exclamation-circle"></i><span>Preguntas</span></a>
                     </li>
 
                 </ul>
