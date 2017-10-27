@@ -23,54 +23,6 @@
                 </span>
             </div>
         </div>
-        <div class="box-content">
-            <div class="content">
-            </div>
-            <div class="bottom">
-                <span>
-                    <span class="fa fa-search-plus">
-                    </span>
-                </span>
-            </div>
-        </div>
-        <div class="box-comments">
-            <div class="comment">
-                <img alt="" src="https://goo.gl/oM0Y8G"/>
-                <div class="content">
-                    <h3>
-                        <a href="">
-                            Emily Rudd
-                        </a>
-                        <span>
-                            <time>
-                                1 hr -
-                            </time>
-                            <a href="#">
-                                Like
-                            </a>
-                        </span>
-                    </h3>
-                    <p>
-                        Wow irealy, i love here. Nice pic
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="box-new-comment">
-            <img alt="" src="https://goo.gl/oOD0V2"/>
-            <div class="content">
-                <div class="row">
-                    <textarea placeholder="write a comment...">
-                    </textarea>
-                </div>
-                <div class="row">
-                    <span class="ion-android-attach">
-                    </span>
-                    <span class="fa fa-smile-o">
-                    </span>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 <div class="col-lg-4">
