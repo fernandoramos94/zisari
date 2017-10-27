@@ -8,20 +8,52 @@
             </h4>
             <br>
             <div class="box-content">
-                <div class="content">
-                    <p style="text-align: justify;">
+               <div class="content">
+                     <p style="text-align: justify;">
                         Complete el captcha a continuación y haga clic en el botón ROLL para obtener sus Zisaricoins gratis. La cantidad de Zisaricoins gratis que obtenga dependerá del número que transfiera y pague de acuerdo con la tabla de pagos a continuación.
-                    </p>
-                    <br>
+                     </p>
+                     <br>
                         <p style="text-align: center;">
                            ¡Puedes volver y jugar cada hora para ganar Zisaricoins gratis una y otra vez!
                         </p>
-                    </br>
+                     </br>
+                     <div align="center"> 
+                        <table class="table table-bordered" style="width: auto;text-align: center;">
+                           <thead>
+                              <tr>
+                                 <th style="text-align: center;background-color: #2785e5; color: #fff;">NÚMERO DE LA SUERTE</th>
+                                 <th style="text-align: center;background-color: #2785e5; color: #fff;">PAGO</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>0 - 9885</td>
+                                 <td>0.00000036 Z</td>
+                              </tr>
+                              <tr>
+                                 <td>9886 - 9985</td>
+                                 <td>0.00000362 Z</td>
+                              </tr>
+                              <tr>
+                                 <td>9986 - 9993</td>
+                                 <td>0.00003624 Z</td>
+                              </tr>
+                              <tr>
+                                 <td>9994 - 9997</td>
+                                 <td>0.00036241 Z</td>
+                              </tr>
+                              <tr>
+                                 <td>9998 - 9999</td>
+                                 <td>0.00362412 Z</td>
+                              </tr>
+                              <tr>
+                                 <td>10000</td>
+                                 <td>0.03624121 Z</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
                 </div>
-            </div>
-            <div class="window">
-                <span>
-                </span>
             </div>
         </div>
     </div>
