@@ -307,7 +307,7 @@
         </header>
         <!--sidebar left start-->
         <aside class="menuOculto sidebar sidebar-toggle">
-            <div id="leftside-navigation" class="nano">
+            <div id="leftside-navigation" class="nano" style="position: fixed;top: 65px;">
                 <ul class="nano-content">
                     <br>
                     <li class="active">
@@ -346,7 +346,7 @@
         <!--main content end-->
         <!--sidebar right start-->
         <aside class="sidebarRight">
-            <div id="rightside-navigation" style="position: fixed;top: 65px;">
+            <div id="rightside-navigation">
                 <div class="sidebar-heading"><i class="fa fa-user"></i> Contacts</div>
                 <div class="sidebar-title">online</div>
                 <div class="list-contacts">
