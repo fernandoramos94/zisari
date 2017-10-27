@@ -168,7 +168,7 @@
              if (scroll > topDist.top) {
                  $('#DivPublicidad').css({"position":"fixed","top":"80px", "right": "0"});
              } else {
-                 $('#DivPublicidad').css({"position": "relative"});
+                 $('#DivPublicidad').css({"position": "relative", "top": "0"});
              }
          });
      });
