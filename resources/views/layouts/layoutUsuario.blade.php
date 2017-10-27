@@ -38,7 +38,7 @@
 <body>
     <script src="{{ asset('js/main.js') }}"></script>
     <section id="container">
-        <header id="header" class="cabecera" style="">
+        <header id="header" class="cabecera" style="background: transparent;">
           
             <div class="toggle-navigation toggle-left">
                 <button type="button" class="btn btn-default" id="toggle-left" data-toggle="tooltip" data-placement="right" title="Menú de Navegación">
