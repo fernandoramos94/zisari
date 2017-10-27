@@ -13,8 +13,8 @@
                         Complete el captcha a continuación y haga clic en el botón ROLL para obtener sus Zisaricoins gratis. La cantidad de Zisaricoins gratis que obtenga dependerá del número que transfiera y pague de acuerdo con la tabla de pagos a continuación.
                     </p>
                     <br>
-                        <hp style="text-align: center;">
-                            ¡Puedes volver y jugar cada hora para ganar Zisaricoins gratis una y otra vez!
+                        <p style="text-align: center;">
+                           ¡Puedes volver y jugar cada hora para ganar Zisaricoins gratis una y otra vez!
                         </p>
                     </br>
                 </div>
