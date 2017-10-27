@@ -332,7 +332,7 @@
                     <p><a href="#">Política de Privacidad</a></p>
                     <p><a href="#">Publicidad</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Actualizaciones</a></p>
                 </div>
-                <center style="position: absolute;bottom: 10vh;left: 5%;">&copy; 2017 Zisari</center>
+                <center style="position: absolute;bottom: 10vh;left: 25%;">&copy; 2017 Zisari</center>
             </div>
         </aside>
         <section class="main-content-wrapper main-content-toggle-left contenidoPrincipal">
