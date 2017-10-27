@@ -3,6 +3,7 @@
 <div class="col-lg-8">
     <div class="box image">
         <div class="box-header">
+            <br>
             <h4 style="text-align: center;">
                <a href="" data-toggle="modal" data-target="#myModal"> ¿Por qué la cantidad de Zisaricoins que puedes ganar sigue cambiando?</a>
             </h4>
