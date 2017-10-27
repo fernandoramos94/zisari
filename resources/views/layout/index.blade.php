@@ -27,25 +27,25 @@
     </div>
 </div>
 <div class="col-lg-4">
-    <div class="row">
-        <div class="col-lg-8 anuncio">
+   <div class="row">
+      <div class="col-lg-8 anuncio">
+         <div class="box image">
             <p>
-                <span class="textPublicidad">
-                    Publicidad
-                </span>
-                <a class="linkCrearAnuncio" href="">
+               <span class="textPublicidad">
+                  Publicidad
+               </span>
+               <a class="linkCrearAnuncio" href="">
                     Crear Anuncio
-                </a>
+               </a>
             </p>
             <img src="http://img.aws.ehowcdn.com/intl-620/ds-cdn-write/upload//8000/900/50/3/288953.jpg">
-                <h4>
-                    ¿Por qué Uruguay perdió el repechaje?
-                </h4>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-            </img>
-        </div>
-    </div>
+            <h4>
+               ¿Por qué Uruguay perdió el repechaje?
+            </h4>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         </div>
+      </div>
+   </div>
 </div>
 <div class="modal fade" id="myModal" role="dialog" style="background: rgba(0, 0, 0, 0.5);">
     <div class="modal-dialog" style="margin-top: 70px;">
