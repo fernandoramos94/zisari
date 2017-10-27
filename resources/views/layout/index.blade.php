@@ -53,6 +53,9 @@
                               </tr>
                            </tbody>
                         </table>
+                        <br>
+                        <br>
+                        <a href="" class="btn btn-md btn-success">Roll</a>
                      </div>
                      <br>
                </div>
