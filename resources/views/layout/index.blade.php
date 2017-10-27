@@ -17,7 +17,7 @@
                         <p style="text-align: center;">
                            ¡Puedes volver y jugar cada hora para ganar Zisaricoins gratis una y otra vez!
                         </p>
-                     </br>
+                     <hr>
                      <div align="center"> 
                         <table class="table table-bordered" style="width: auto;text-align: center;">
                            <thead>
@@ -55,9 +55,9 @@
                         </table>
                      </div>
                      <br>
-                </div>
+               </div>
             </div>
-        </div>
+         </div>
     </div>
 </div>
 <div class="col-lg-4">
