@@ -4,17 +4,17 @@
     <div class="box image">
         <div class="box-header">
             <h3 style="text-align: center;">
-               <a href="" style="font-size: 18px; margin-bottom: 2%; display: block;" data-toggle="modal" data-target="#myModal"> ¿Por qué la cantidad de Zisaricoins que puedes ganar sigue cambiando?</a>
+               <a href="" data-toggle="modal" data-target="#myModal"> ¿Por qué la cantidad de Zisaricoins que puedes ganar sigue cambiando?</a>
             </h3>
             <div class="box-content">
                 <div class="content">
-                    <h5 style="text-align: justify;">
+                    <p style="text-align: justify;">
                         Complete el captcha a continuación y haga clic en el botón ROLL para obtener sus Zisaricoins gratis. La cantidad de Zisaricoins gratis que obtenga dependerá del número que transfiera y pague de acuerdo con la tabla de pagos a continuación.
-                    </h5>
+                    </p>
                     <br>
-                        <h5 style="text-align: center;">
+                        <hp style="text-align: center;">
                             ¡Puedes volver y jugar cada hora para ganar Zisaricoins gratis una y otra vez!
-                        </h5>
+                        </p>
                     </br>
                 </div>
             </div>
