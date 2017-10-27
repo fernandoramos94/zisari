@@ -117,51 +117,6 @@ li.profile-photo > img{
     border: 3px solid #dddfe2;
 }
 
-/*::-webkit-scrollbar
-{
-	width: 3px;
-	background-color: #F5F5F5;
-}
-::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
-}
-::-webkit-scrollbar-thumb
-{
-	background-color: #000000;
-	border: 2px solid #555555;
-}*/
-
-.track3 {
-    width: 10px;
-    background: rgba(0, 0, 0, 0);
-    margin-right: 2px;
-    border-radius: 10px;
-    -webkit-transition: background 250ms linear;
-    transition: background 250ms linear;
-}
-
-.track3:hover,
-.track3.dragging {
-    background: #d9d9d9; /* Browsers without rgba support */
-    background: rgba(0, 0, 0, 0.15);
-}
-
-.handle3 {
-    width: 7px;
-    right: 0;
-    background: #999;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 7px;
-    -webkit-transition: width 250ms;
-    transition: width 250ms;
-}
-
-.track3:hover .handle3,
-.track3.dragging .handle3 {
-    width: 10px;
-}
  .menuOculto #leftside-navigation ul li a i{
  	width: 40px;
  	font-size: 18px;
@@ -207,15 +162,6 @@ li.profile-photo > img{
 	color: #000;
 	font-weight: 600;
 }
-.navegacion .nav-tabs>li>a{
-	border-radius: 0;
-	color: #000000;
-	margin: 0 2%;
-	border-bottom: 2px solid #000;
-	background: #f6f7f9;
-	font-weight: 600;
-	padding: 10px 0;
-}
 .cabecera{
 	min-height: 42px !important; 
 }
@@ -227,16 +173,7 @@ li.profile-photo > img{
 	float: initial !important;
 	display: inline-block !important;
 }
-.navegacion .nav-tabs>li{
-	width: 25%;
-	text-align: center;
-	margin-bottom: 0;
-	border-bottom: none;
-}
-.navegacion .nav-tabs{
-	background: transparent;
-	border-bottom: 0px;
-}
+
 .contenidoPrincipal{
 	margin-left: 0;
 	height: 100%;
@@ -309,3 +246,14 @@ section.main-content-wrapper.contenidoPrincipal.main-content-toggle-left{
 #header button#toggle-mensaje:hover i,
 #header button#toggle-noti:hover i
 {color:#F6F6F6}
+.box {
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 0 50px 5px rgba(0,0,0,.25);
+    height: auto;
+    margin: 30px auto 40px;
+    max-width: 900px;
+    overflow: hidden;
+    padding: 20px 0 0;
+    position: relative;
+}
