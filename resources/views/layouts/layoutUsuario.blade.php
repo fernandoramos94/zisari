@@ -485,7 +485,7 @@
                 if (scroll > topDist.top) {
                     $('#header').css({"position":"fixed","top":"0", "width": "100%", "background": "#000"});
                 } else {
-                    $('#header').css({"position":"static","top":"auto"});
+                    $('#header').css({"position":"relative","top":"auto"});
                 }
             });
         });
