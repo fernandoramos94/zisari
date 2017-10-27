@@ -168,7 +168,7 @@
              if (scroll > topDist.top) {
                  $('#publicidad').css({"position":"fixed","top":"80px", "right": "0"});
              } else {
-                 $('#publicidad').css({"position":"static","top":"auto"});
+                 // $('#publicidad').css({"position":"static","top":"auto"});
              }
          });
      });
