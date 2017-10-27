@@ -251,7 +251,7 @@ section.main-content-wrapper.contenidoPrincipal.main-content-toggle-left{
     border-radius: 4px;
     box-shadow: 0 0 50px 5px rgba(0,0,0,.25);
     height: auto;
-    margin: 30px auto 40px;
+    margin: 0;
     max-width: 900px;
     overflow: hidden;
     padding: 20px 0 0;
@@ -259,6 +259,6 @@ section.main-content-wrapper.contenidoPrincipal.main-content-toggle-left{
 }
 .box > .box-header {
     margin: 0 auto;
-    padding: 0 30px 10px;
+    padding: padding: 0 7%;
     width: initial;
 }

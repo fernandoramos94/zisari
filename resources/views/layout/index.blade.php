@@ -4,9 +4,7 @@
     <div class="box image">
         <div class="box-header">
             <h3 style="text-align: center;">
-                <a>
-                    ¿Por qué la cantidad de Zisaricoins que puedes ganar sigue cambiando?
-                </a>
+               <a href="" style="font-size: 18px; margin-bottom: 2%; display: block;" data-toggle="modal" data-target="#myModal"> ¿Por qué la cantidad de Zisaricoins que puedes ganar sigue cambiando?</a>
             </h3>
             <div class="box-content">
                 <div class="content">
