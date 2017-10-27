@@ -36,7 +36,7 @@
     <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
-<body style="height: 100%;">
+<body>
     <script src="{{ asset('js/main.js') }}"></script>
     <section id="container" style="height: 100vh;position: relative;">
         <header id="header" class="cabecera" style="background: transparent !important;">
