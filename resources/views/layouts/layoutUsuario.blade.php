@@ -38,7 +38,7 @@
 <body>
     <script src="{{ asset('js/main.js') }}"></script>
     <section id="container">
-        <header id="header" class="cabecera" style="background: transparent !important;">
+        <header id="header" class="cabecera" style="">
           
             <div class="toggle-navigation toggle-left">
                 <button type="button" class="btn btn-default" id="toggle-left" data-toggle="tooltip" data-placement="right" title="Menú de Navegación">
@@ -483,7 +483,7 @@
                 var scroll = $(this).scrollTop();
                 var topDist = $("#container").position();
                 if (scroll > topDist.top) {
-                    $('#header').css({"position":"fixed","top":"0"});
+                    $('#header').css({"position":"fixed","top":"0", "width": "100%", "background": "#000"});
                 } else {
                     $('#header').css({"position":"static","top":"auto"});
                 }
