@@ -161,6 +161,19 @@
 @section("scripts")
 <script type="text/javascript">
 
+   $(document).ready(function() {
+         $(document).scroll(function () {
+             var scroll = $(this).scrollTop();
+             var topDist = $("#container").position();
+             if (scroll > topDist.top) {
+                 $('#DivPublicidad').css({"position":"fixed","top":"80px", "right": "0"});
+             } else {
+                 $('#DivPublicidad').css({"position": "relative"});
+             }
+         });
+     });
+
+
     $(document).ready(function() {
       $('#contenidoGratis').slimScroll({
           allowPageScroll: true,
