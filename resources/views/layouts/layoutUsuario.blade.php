@@ -323,7 +323,7 @@
                         <a><i class="fa fa-video-camera"></i><span>Ver videos</span></a>
                     </li>
                     <li class="sub-menu">
-                        <a><i class="fa fa-exclamation-circle"></i><span>Preguntas</span></a>
+                        <a href="{{URL::to('preguntas')}}"><i class="fa fa-exclamation-circle"></i><span>Preguntas</span></a>
                     </li>
 
                 </ul>
