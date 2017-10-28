@@ -290,7 +290,7 @@
                         </ul>
                     </li>
                     <li class="profile-photo">
-                        <img src="http://www.thisischile.cl/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="" class="img-circle">
+                        <img src="http://www.thisischile.cl/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="" class="img-circle" style="border: 2px solid #74accf ">
                     </li>
                     <li class="dropdown settings">
                         <p style="color: #fff; margin-left: 3%; margin: 0;">0.00000000 Z</p>
