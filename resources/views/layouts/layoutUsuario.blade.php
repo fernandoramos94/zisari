@@ -35,10 +35,10 @@
     <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
-<body>
-    <script src="{{ asset('js/main.js') }}"></script>
+<body style="background: #e9ebee">
+    <!-- <script src="{{ asset('js/main.js') }}"></script> -->
     <section id="container">
-        <header id="header" class="cabecera" style="background: transparent;">
+        <header id="header" class="cabecera" style="background: #535f6d;">
           
             <div class="toggle-navigation toggle-left">
                 <button type="button" class="btn btn-default" id="toggle-left" data-toggle="tooltip" data-placement="right" title="Menú de Navegación">
@@ -485,7 +485,7 @@
                 if (scroll > topDist.top) {
                     $('#header').css({"position":"fixed","top":"0", "width": "100%", "background": "#000"});
                 } else {
-                    $('#header').css({"position":"relative","top":"auto", "background": "transparent"});
+                    $('#header').css({"position":"relative","top":"auto", "background": "#535f6d"});
                 }
             });
         });
