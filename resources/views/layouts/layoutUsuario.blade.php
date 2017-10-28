@@ -320,7 +320,7 @@
                         <!-- <i class="arrow fa fa-angle-right pull-right"></i> -->
                     </li>
                     <li class="sub-menu">
-                        <a><i class="fa fa-video-camera"></i><span>Ver videos</span></a>
+                        <a><i class="fa fa-youtube-play"></i><span>Ver videos</span></a>
                     </li>
                     <hr>
                     <h4 style="padding: 10px 0 10px 25px">AYUDA</h4>
