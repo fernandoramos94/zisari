@@ -17,13 +17,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
     <!-- Custom styles for this theme -->
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
-    <!-- Vector Map  -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/jvectormap/css/jquery-jvectormap-1.2.2.css') }}">
-    <!-- ToDos  -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/todo/css/todos.css') }}">
-    <!-- Morris  -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/morris/css/morris.css') }}">
-    <!-- Fonts -->
+
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <!-- Feature detection -->

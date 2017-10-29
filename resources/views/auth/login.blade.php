@@ -12,19 +12,17 @@
     <form class="crearcuenta" method="POST" action="{{ route('login') }}">
         {{ csrf_field() }}
         @foreach ($text as $title)
-            @if ($title->estado == 1 && $title->fechaFinalizacion > $fechaActual)
-                <h1 class="text-center" style="color: #74accf"><B>{{$title->titulo}}</B></h1>
+            @if ($title->endDate > $fechaActual)
+                <h1 class="text-center" style="color: #74accf"><B>{{$title->longTitle}}</B></h1>
             @endif
         @endforeach
 
         @foreach ($imgLogo as $logo)
-            @if ($logo->estado == 1 && $logo->fechaFinalizacion > $fechaActual)
-                @if ($logo->imagen != null && $logo->url == null || $logo->imagen != null && $logo->url != null)
+            @if ($logo->endDate > $fechaActual)
+                @if ($logo->longImage != null && $logo->url == null || $logo->longImage != null && $logo->url != null)
                     <center>
-                        <a href="{{$logo->url}}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" style="width: 100%;" src="{{asset('img/logo/'.$logo->imagen)}}"></a>
+                        <a href="{{$logo->url}}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" style="width: 100%;" src="{{asset('img/logo/'.$logo->longImage)}}"></a>
                     </center>
-                @else
-                    <a href="{{$logo->url}}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" style="width: 100%" id="imagenLogo" src="$logo->url"></a>
                 @endif
             @endif
         @endforeach
@@ -53,7 +51,7 @@
             <label></label>
             <div class="form-group">
                 <p class="emailInPassword">
-                    <span>ferrati949100112668@gmail.com</span> <img id="imgUser" src="">
+                    <span id="spanMail"></span> <img id="imgUser" src="">
                 </p>
                 
             </div>
@@ -113,10 +111,11 @@
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
                 url: url+"/getUser",
+                data: {email: $("#email").val()},
                 success: function (data) {
-                    for (var i = 0; i < data.length; i++) {
-                        if(data[i].email == $("#email").val()){
-                            $("#imgUser").attr("src", "{{asset('img/img_users/perfil')}}/"+data[i].imagen);
+                        if(data.length > 0){
+                            $("#spanMail").text(data[0].email);
+                            $("#imgUser").attr("src", "{{asset('img/img_users/perfil')}}/"+data[0].profilePhoto);
                             $("#login1").hide();
                             $("#login2").show();
                             $("#siguienteLogin").attr('disabled', false);
@@ -130,7 +129,6 @@
                             $("#siguienteLogin").attr('disabled', false);
                             return false;
                         }
-                    }
                 },
                 error: function (data) {
                     console.log('Error:', data);

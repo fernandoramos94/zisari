@@ -15,8 +15,8 @@ class CreatePaisesTable extends Migration
     {
         Schema::create('paises', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nombre');
-            $table->boolean('estado');
+            $table->string('name');
+            $table->boolean('status');
             $table->timestamps();
         });
     }

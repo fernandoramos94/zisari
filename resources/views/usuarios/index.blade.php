@@ -24,9 +24,9 @@
 				<tbody>
 					@foreach ($usuario as $user)
 						<tr>
-							<td>{{$user->nombres}}</td>
-							<td>{{$user->apellidos}}</td>
-							<td>{{$user->pais}}</td>
+							<td>{{$user->firtName}}</td>
+							<td>{{$user->lastName}}</td>
+							<td>{{$user->country}}</td>
 							<td>{{$user->ip}}</td>
 							<td>
 								@if($user->status == 0)
@@ -69,55 +69,55 @@
 	                <a class="actualizarPortada" id="actualizarPortada">
 	                    <img src="" id="iconPortada">
 	                </a>
-	                <img src="{{asset('img/img_users/portadas/'.$us->portado)}}" id="portada">
+	                <img src="{{asset('img/img_users/portadas/'.$us->coverPhoto)}}" id="portada">
 	            </div>
 	            <div style="padding: 0 35px; ">
 	                <div class="foto col-lg-12">
-	                    <img src="{{asset('img/img_users/perfil/'.$us->imagen)}}" id="foto">
+	                    <img src="{{asset('img/img_users/perfil/'.$us->profilePhoto)}}" id="foto">
 	                </div>
 	                <div class="row">
 	                	<div class="col-lg-4">
 	                		<strong>Nombres</strong><br>
-	                		<span>{{$us->nombres}}</span>
+	                		<span>{{$us->firtName}}</span>
 	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
 	                	</div>
 	                	<div class="col-lg-4">
 	                		<strong>Apellidos</strong><br>
-	                		<span>{{$us->apellidos}}</span>
+	                		<span>{{$us->lastName}}</span>
 	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
 	                	</div>
 	                	<div class="col-lg-4">
 	                		<strong>Género</strong><br>
-	                		<span>{{$us->genero}}</span>
+	                		<span>{{$us->gender}}</span>
 	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
 	                	</div>
 	                </div>
 	                <div class="row">
 	                	<div class="col-lg-4">
 	                		<strong>País</strong><br>
-	                		<span>{{$us->pais}}</span>
+	                		<span>{{$us->country}}</span>
 	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
 	                	</div>
 	                	<div class="col-lg-4">
 	                		<strong>Fecha Nacimiento</strong><br>
-	                		<span>{{$us->dia}}-{{$us->mes}}-{{$us->anio}}</span>
+	                		<span>{{$us->day}}-{{$us->mounth}}-{{$us->year}}</span>
 	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
 	                	</div>
 	                	<div class="col-lg-4">
 	                		<strong>Numero Movil</strong><br>
-	                		<span>{{$us->numeroCelular}}</span>
+	                		<span>{{$us->numberPhone}}</span>
 	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
 	                	</div>
 	                </div>
 	                <div class="row">
 	                	<div class="col-lg-8">
 	                		<strong>Documento de Identidad</strong><br>
-	                		<span>{{$us->documento}}</span>
+	                		<span>{{$us->document}}</span>
 	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
 	                	</div>
 	                	<div class="col-lg-4">
 	                		<strong>Correo Electrónico</strong><br>
-	                		<span>{{$us->correo}}</span>
+	                		<span>{{$us->email}}</span>
 	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
 	                	</div>
 	                </div>

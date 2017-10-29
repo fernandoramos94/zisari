@@ -8,35 +8,19 @@
     <meta name="description" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <!-- Favicon -->
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
     <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}" type="image/x-icon">
-    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap/css/bootstrap.min.css') }}">
-    <!-- Fonts from Font Awsome -->
     <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
-
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- CSS Animate -->
     <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
-    <!-- Custom styles for this theme -->
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
-    <!-- Vector Map  -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/jvectormap/css/jquery-jvectormap-1.2.2.css') }}">
-    <!-- ToDos  -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/todo/css/todos.css') }}">
-    <!-- Morris  -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/morris/css/morris.css') }}">
-    <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <!-- Feature detection -->
     <script src="{{ asset('assets/js/modernizr-2.6.2.min.js') }}"></script>
     <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
 <body style="background: #e9ebee">
-    <!-- <script src="{{ asset('js/main.js') }}"></script> -->
     <section id="container">
         <header id="header" class="cabecera" style="background: #535f6d;">
           
@@ -54,21 +38,18 @@
                     $fechaActual = date("Y-m-d H:i:s");
                  ?>
                  @foreach ($text as $title)
-                    @if ($title->estado == 1 && $title->fechaFinalizacion > $fechaActual)
-                        <h4 class="text-center" style="color: #74accf"><B>{{$title->titulo}}</B></h4>
+                    @if ($title->endDate > $fechaActual)
+                        <h4 class="text-center" style="color: #74accf"><B>{{$title->minTitle}}</B></h4>
                     @endif
                 @endforeach
 
                 @foreach ($imgLogo as $logo)
-                    @if ($logo->estado == 1 && $logo->fechaFinalizacion > $fechaActual)
-                        @if ($logo->imagenLogo != null && $logo->url == null || $logo->imagenLogo != null && $logo->url != null)
-                                <a href="{{$logo->url}}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" width="92" src="{{asset('img/logo/'.$logo->imagenLogo)}}"></a>
-                        @else
-                            <a href="{{$logo->url}}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" style="width: 100%" id="imagenLogo" src="$logo->url"></a>
+                    @if ($logo->endDate > $fechaActual)
+                        @if ($logo->minImage != null && $logo->url == null || $logo->minImage != null && $logo->url != null)
+                            <a href="{{$logo->url}}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" width="92" src="{{asset('img/logo/'.$logo->minImage)}}"></a>
                         @endif
                     @endif
                 @endforeach
-                <!-- <img src="https://www.google.com.co/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="92"> -->
             </div>
             <div class="search">
                     <input placeholder="Buscar a tus amigos(as) para tu comunidad" type="text" class="buscador" data-provide="typeahead" id="typeahead">
@@ -317,7 +298,6 @@
                     <h4 style="padding: 10px 0 10px 25px">GANAR ZISARICOINS</h4>
                     <li class="sub-menu">
                         <a href="{{URL::to('layout')}}"><i class="fa fa-gift"></i><span>Recojer Gratis</span></a>
-                        <!-- <i class="arrow fa fa-angle-right pull-right"></i> -->
                     </li>
                     <li class="sub-menu">
                         <a><i class="fa fa-youtube-play"></i><span>Ver videos</span></a>
@@ -339,56 +319,18 @@
         </aside>
         <section class="main-content-wrapper main-content-toggle-left contenidoPrincipal">
             <section id="main-content">
-                <!--tiles start-->
                 <div class="row">
                     @yield('contenedorLayout')
                 </div>
             </section>
         </section>
     </section>
-    <!--Global JS-->
-    <!-- <script src="{{ asset('assets/js/jquery-1.10.2.min.js') }}"></script> -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="{{ asset('assets/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/waypoints/waypoints.min.js') }}"></script>
     <script src="{{ asset('assets/js/application.js') }}"></script>
-    <!--Page Level JS-->
-    <script src="{{ asset('assets/plugins/countTo/jquery.countTo.js') }}"></script>
-    <script src="{{ asset('assets/plugins/weather/js/skycons.js') }}"></script>
-    <!-- FlotCharts  -->
-    <script src="{{ asset('assets/plugins/flot/js/jquery.flot.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/flot/js/jquery.flot.resize.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/flot/js/jquery.flot.canvas.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/flot/js/jquery.flot.image.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/flot/js/jquery.flot.categories.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/flot/js/jquery.flot.crosshair.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/flot/js/jquery.flot.errorbars.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/flot/js/jquery.flot.fillbetween.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/flot/js/jquery.flot.navigate.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/flot/js/jquery.flot.pie.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/flot/js/jquery.flot.selection.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/flot/js/jquery.flot.stack.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/flot/js/jquery.flot.symbol.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/flot/js/jquery.flot.threshold.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/flot/js/jquery.colorhelpers.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/flot/js/jquery.flot.time.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/flot/js/jquery.flot.example.js') }}"></script>
-    <!-- Morris  -->
-    <script src="{{ asset('assets/plugins/morris/js/morris.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/morris/js/raphael.2.1.0.min.js') }}"></script>
-    <!-- Vector Map  -->
-    <script src="{{ asset('assets/plugins/jvectormap/js/jquery-jvectormap-1.2.2.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/jvectormap/js/jquery-jvectormap-world-mill-en.js') }}"></script>
-    <!-- ToDo List  -->
-    <script src="{{ asset('assets/plugins/todo/js/todos.js') }}"></script>
-    <!--Load these page level functions-->
-     <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.0/bootstrap3-typeahead.js"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.mask.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/prettify.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.slimscroll.js') }}"></script>
 
     <script>
         $(".menuOculto").on("click", function(){
@@ -407,13 +349,6 @@
             });
         });
         $(document).ready(function() {
-            app.timer();
-            app.map();
-            app.weather();
-            app.morrisPie();
-        });
-        $(document).ready(function() {
-
         var url = "{{URL::to('')}}";
         $.ajax({
             type: "POST",

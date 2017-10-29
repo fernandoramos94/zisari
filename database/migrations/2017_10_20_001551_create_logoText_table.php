@@ -13,13 +13,15 @@ class CreateLogoTextTable extends Migration
      */
     public function up()
     {
-        Schema::create('logoText', function (Blueprint $table) {
+        Schema::create('logotext', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('titulo')->nullable();
-            $table->string('tituloMini')->nullable();
-            $table->dateTime('fechaInicio')->nullable();
-            $table->dateTime('fechaFinalizacion')->nullable();
-            $table->boolean('estado');
+            $table->string('longTitle')->nullable();
+            $table->string('minTitle')->nullable();
+            $table->string('tooltip')->nullable();
+            $table->string('country')->nullable();
+            $table->dateTime('startDate')->nullable();
+            $table->dateTime('endDate')->nullable();
+
             $table->timestamps();
         });
     }
@@ -31,6 +33,6 @@ class CreateLogoTextTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('logoText');
+        Schema::dropIfExists('logotext');
     }
 }

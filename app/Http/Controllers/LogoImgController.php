@@ -7,32 +7,14 @@ use App\LogoImg;
 
 class LogoImgController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         
     }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
-        //
-    }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    }
     public function store(Request $request)
     {
         $fechaInicialImg = $request->get("fechaInicioImg") . " " . $request->get("horaInicioImg");
@@ -56,36 +38,21 @@ class LogoImgController extends Controller
         else{
             $nameCompMini = "";
         }
-        $logImagen->imagen = $nameComp;
+        $logImagen->longImage = $nameComp;
+        $logImagen->endDate = $fechaFinalImg;
         $logImagen->url = $request->get("url");
-        $logImagen->fechaInicio = $fechaInicialImg;
-        $logImagen->fechaFinalizacion = $fechaFinalImg;
-        $logImagen->imagenLogo = $nameCompMini;
+        $logImagen->startDate = $fechaInicialImg;
+        $logImagen->minImage = $nameCompMini;
         $logImagen->tooltip = $request->get('tooltip');
-        $logImagen->pais = $request->get('pais');
-        $logImagen->estado = 1;
+        $logImagen->country = $request->get('pais');
         if ($logImagen->save()) {
             return redirect('logo');
         }
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
-        //
-    }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    }
     public function editar(Request $request)
     {
         $fechaInicialImg = $request->get("fechaInicioImg") . " " . $request->get("horaInicioImg");
@@ -98,7 +65,7 @@ class LogoImgController extends Controller
             $file->move($path, $nameComp);
         }
         else{
-            $nameComp = $logImagen->imagen;
+            $nameComp = $logImagen->longImage;
         }
         if ($logoMini = $request->file('fileMini')) {
             $logoMini     = $request->file('fileMini');
@@ -107,39 +74,24 @@ class LogoImgController extends Controller
             $logoMini->move($path, $nameComp);
         }
         else{
-            $nameCompMini = $logImagen->imagenLogo;
+            $nameCompMini = $logImagen->minImage;
         }
 
-        $logImagen->imagen = $nameComp;
-        $logImagen->imagenLogo = $nameCompMini;
+        $logImagen->longImage = $nameComp;
+        $logImagen->minImage = $nameCompMini;
         $logImagen->url = $request->get("url");
-        $logImagen->fechaInicio = $fechaInicialImg;
-        $logImagen->pais = $request->get('pais');
-        $logImagen->fechaFinalizacion = $fechaFinalImg;
-        $logImagen->estado = 1;
+        $logImagen->tooltip = $request->get("tooltip");
+        $logImagen->startDate = $fechaInicialImg;
+        $logImagen->country = $request->get('pais');
+        $logImagen->endDate = $fechaFinalImg;
         if ($logImagen->save()) {
             return redirect('logo');
         }
     }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
-        //
-    }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    }
     public function eliminar($id)
     {
         $logImagen = LogoImg::find($id);

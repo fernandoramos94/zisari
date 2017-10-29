@@ -5,7 +5,7 @@
    date_default_timezone_set('UTC');
    $text = DB::table('logotext')->get();
    $imgLogo = DB::table('logoimg')->get();
-   $paises = DB::table('paises')->where('estado', 1)->get();
+   $paises = DB::table('paises')->where('status', 1)->get();
    $fechaActual = date("Y-m-d H:i:s");
 ?>
 <div class="col-lg-12">
@@ -33,9 +33,9 @@
               <tbody>
                 @foreach ($text as $title)
                   <tr>
-                    <td>{{$title->titulo}}</td>
-                    <td>{{$title->fechaInicio}}</td>
-                    <td>{{$title->fechaFinalizacion}}</td>
+                    <td>{{$title->longTitle}}</td>
+                    <td>{{$title->startDate}}</td>
+                    <td>{{$title->endDate}}</td>
                     <td><a href="" data-toggle="modal" data-target="#modalTexto{{$title->id}}" >Editar</a> | <a href="{{URL::to('deleteLogoText')}}/{{$title->id}}">Eliminar</a></td>
                   </tr>
                 @endforeach
@@ -63,10 +63,10 @@
               <tbody>
                 @foreach ($imgLogo as $image)
                   <tr>
-                    <td><a target="_blank" href="{{asset('img/logo')}}/{{$image->imagen}}">{{$image->imagen}}</a></td>
+                    <td><a target="_blank" href="{{asset('img/logo')}}/{{$image->longImage}}">{{$image->longImage}}</a></td>
                     <td>{{$image->url}}</td>
-                    <td>{{$image->fechaInicio}}</td>
-                    <td>{{$image->fechaFinalizacion}}</td>
+                    <td>{{$image->startDate}}</td>
+                    <td>{{$image->endDate}}</td>
                     <td><a href="" data-toggle="modal" data-target="#modalImagen{{$image->id}}">Editar</a> | <a href="{{URL::to('deleteLogoImg')}}/{{$image->id}}">Eliminar</a></td>
                   </tr>
                 @endforeach
@@ -101,7 +101,7 @@
                   <select name="pais" class="form-control">
                     <option>Seleccione</option>
                     @foreach($paises as $pais)
-                      <option value="{{$pais->nombre}}">{{$pais->nombre}}</option>
+                      <option value="{{$pais->name}}">{{$pais->name}}</option>
                     @endforeach()
                   </select>
                </div>
@@ -170,7 +170,7 @@
                   <select name="pais" class="form-control">
                     <option>Seleccione</option>
                     @foreach($paises as $pais)
-                      <option value="{{$pais->nombre}}">{{$pais->nombre}}</option>
+                      <option value="{{$pais->name}}">{{$pais->name}}</option>
                     @endforeach()
                   </select>
                </div>
@@ -219,10 +219,10 @@
 
 @foreach ($text as $titulo)
    <?php 
-      $fechaIni = new DateTime($titulo->fechaInicio);
+      $fechaIni = new DateTime($titulo->startDate);
       $fechaI = $fechaIni->format('Y-m-d');
       $horaI = $fechaIni->format('H:i:s');
-      $fechaFin = new DateTime($titulo->fechaFinalizacion);
+      $fechaFin = new DateTime($titulo->endDate);
       $fechaF = $fechaFin->format('Y-m-d');
       $horaF = $fechaFin->format('H:i:s');
    ?>
@@ -238,18 +238,18 @@
                   <input type="hidden" name="id" value="{{$titulo->id}}">
                   <div class="form-group">
                      <label>Texto de Titulo</label>
-                     <input type="text" class="form-control" name="titulo" value="{{$titulo->titulo}}">
+                     <input type="text" class="form-control" name="titulo" value="{{$titulo->longTitle}}">
                   </div>
                   <div class="form-group">
                   <label>Texto de Titulo(98x27)</label>
-                    <input type="text" class="form-control" value="{{$titulo->tituloMini}}" name="tituloMini">
+                    <input type="text" class="form-control" value="{{$titulo->minTitle}}" name="tituloMini">
                   </div>
                   <div class="form-group">
                     <label>País</label>
                     <select name="pais" class="form-control">
                       <option>Seleccione</option>
                       @foreach($paises as $pais)
-                        <option value="{{$pais->nombre}}">{{$pais->nombre}}</option>
+                        <option value="{{$pais->name}}">{{$pais->name}}</option>
                       @endforeach()
                     </select>
                  </div>
@@ -295,10 +295,10 @@
 
 @foreach ($imgLogo as $logo)
    <?php 
-      $fechaIniIm = new DateTime($logo->fechaInicio);
+      $fechaIniIm = new DateTime($logo->startDate);
       $fechaIIm = $fechaIniIm->format('Y-m-d');
       $horaIIm = $fechaIniIm->format('H:i:s');
-      $fechaFinIm = new DateTime($logo->fechaFinalizacion);
+      $fechaFinIm = new DateTime($logo->endDate);
       $fechaFIm = $fechaFinIm->format('Y-m-d');
       $horaFIm = $fechaFinIm->format('H:i:s');
    ?>
@@ -329,7 +329,7 @@
                       <select name="pais" class="form-control">
                         <option>Seleccione</option>
                         @foreach($paises as $pais)
-                          <option value="{{$pais->nombre}}">{{$pais->nombre}}</option>
+                          <option value="{{$pais->name}}">{{$pais->name}}</option>
                         @endforeach()
                       </select>
                    </div>

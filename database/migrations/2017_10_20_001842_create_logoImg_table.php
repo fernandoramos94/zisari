@@ -13,15 +13,15 @@ class CreateLogoImgTable extends Migration
      */
     public function up()
     {
-        Schema::create('logoImg', function (Blueprint $table) {
+        Schema::create('logoimg', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('imagen')->nullable();
-            $table->text('imagenLogo')->nullable();
+            $table->text('longImage')->nullable();
+            $table->text('minImage')->nullable();
             $table->string('tooltip')->nullable();
             $table->string('url')->nullable();
-            $table->dateTime('fechaInicio');
-            $table->dateTime('fechaFinalizacion');
-            $table->boolean('estado');
+            $table->string('country')->nullable();
+            $table->dateTime('startDate');
+            $table->dateTime('endDate');
             $table->timestamps();
         });
     }
@@ -33,6 +33,6 @@ class CreateLogoImgTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('logoImg');
+        Schema::dropIfExists('logoimg');
     }
 }
