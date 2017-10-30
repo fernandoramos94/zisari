@@ -67,24 +67,6 @@
    <div class="row">
       <div class="col-lg-9 anuncio box image">
         <div class="ticket-card active">
-            <div class="body">
-              <!-- <div class="clearfix"></div> -->
-              <!-- <div class="info"> -->
-                <div class="row">
-                  <div class="col-lg-6">
-                    <p class="location">
-                      Publicidad
-                    </p>
-                    
-                  </div>
-                  <div class="col-lg-6">
-                  <p class="date">
-                    <a href="#" style="color: #428bca">Crear Anuncio</a>
-                  </p>
-                  </div>
-                </div>
-              <!-- </div> -->
-            <!-- </div> -->
             <div class="cover">
               <img src="http://s28.postimg.org/iu25iqob1/kanye.jpg" alt="" />
               <div class="info">
@@ -101,10 +83,19 @@
                 
               </div>
               <div class="price">
+                
                 <div class="value">
                 </div>
               </div>
-              
+              <div class="clearfix"></div>
+              <div class="info">
+                <p class="location">
+                  <i class="fa fa-map-marker"></i>Publicidad
+                </p>
+                <p class="date">
+                  <a href="#" style="color: #428bca">Crear Anuncio</a>
+                </p>
+              </div>
               <div class="clearfix"></div>
             </div>
             <div class="collapse in">
