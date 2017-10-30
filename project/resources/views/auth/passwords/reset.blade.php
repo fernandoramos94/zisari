@@ -18,7 +18,7 @@
     @endforeach
 
     @foreach ($imgLogo as $logo)
-        @if ($logo->enDate > $fechaActua)
+        @if ($logo->endDate > $fechaActua)
             @if ($logo->longImage != null || $logo->longImage != "")
                 <center>
                     <a href="{{$logo->url}}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" style="width: 100%;" src="{{asset('img/logo/'.$logo->longImage)}}"></a>
