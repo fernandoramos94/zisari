@@ -17,8 +17,6 @@ class LogoImgController extends Controller
     }
     public function store(Request $request)
     {
-        dd(resource_path());
-        exit;
         $fechaInicialImg = $request->get("fechaInicioImg") . " " . $request->get("horaInicioImg");
         $fechaFinalImg = $request->get("fechaFinalImg") . " " .$request->get("horaFinalImg");
         $logImagen = new LogoImg();
@@ -27,6 +25,7 @@ class LogoImgController extends Controller
             $nameComp = md5(time()) . '.' . $file->getClientOriginalExtension();
             $path     = base_path() . '/img/logo/';
             $file->move($path, $nameComp);
+
         }
         else{
             $nameComp = "";
@@ -63,7 +62,7 @@ class LogoImgController extends Controller
         if ($file = $request->file('file')) {
             $file     = $request->file('file');
             $nameComp = md5(time()) . '.' . $file->getClientOriginalExtension();
-            $path     = public_path() . '/img/logo/';
+            $path     = base_path() . '/img/logo/';
             $file->move($path, $nameComp);
         }
         else{
@@ -72,7 +71,7 @@ class LogoImgController extends Controller
         if ($logoMini = $request->file('fileMini')) {
             $logoMini     = $request->file('fileMini');
             $nameCompMini = md5(time()) . '.' . $logoMini->getClientOriginalExtension();
-            $path     = public_path() . '/img/logo/';
+            $path     = base_path() . '/img/logo/';
             $logoMini->move($path, $nameComp);
         }
         else{
