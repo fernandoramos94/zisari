@@ -68,7 +68,7 @@
       <div class="col-lg-9 anuncio box image">
         <div class="ticket-card active">
             <div class="body">
-              <div class="clearfix"></div>
+              <!-- <div class="clearfix"></div> -->
               <div class="info">
                 <p class="location">
                   <i class="fa fa-map-marker"></i>Publicidad
