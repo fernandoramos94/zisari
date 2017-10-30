@@ -110,14 +110,19 @@
 	                	</div>
 	                </div>
 	                <div class="row">
+	                	<div class="col-lg-6">
+	                		<strong>Correo Electrónico</strong><br>
+	                		<span>{{$us->correo}}</span>
+	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
+	                	</div>
+	                	<div class="col-lg-6">
+	                		<strong>Correo Coinbase</strong><br>
+	                		<span>{{$us->email}}</span>
+	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
+	                	</div>
 	                	<div class="col-lg-8">
 	                		<strong>Documento de Identidad</strong><br>
 	                		<span>{{$us->document}}</span>
-	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
-	                	</div>
-	                	<div class="col-lg-4">
-	                		<strong>Correo Electrónico</strong><br>
-	                		<span>{{$us->email}}</span>
 	                		<hr style="border-top: 1px solid #03141e; margin-bottom: 15px;">
 	                	</div>
 	                </div>

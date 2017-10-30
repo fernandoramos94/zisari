@@ -13,7 +13,7 @@ class UsuariosController extends Controller
     {
         $usuario = DB::table('users')
             ->join('usuarios', 'users.id', '=', 'usuarios.userId')
-            ->select('users.*', 'usuarios.*')
+            ->select('users.email as correo, users.name, users.ip, users.status', 'usuarios.*')
             ->get();
         return view('usuarios.index', [
             'usuario' => $usuario,
