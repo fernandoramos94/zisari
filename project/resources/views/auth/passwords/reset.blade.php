@@ -12,20 +12,16 @@
 <form class="crearcuenta" method="POST" action="{{ URL::to('updatePass') }}">
     {{ csrf_field() }}
     @foreach ($text as $title)
-        @if ($title->estado == 1 && $title->fechaFinalizacion > $fechaActual)
-            <h1 class="text-center" style="color: #74accf"><B>{{$title->titulo}}</B></h1>
+        @if ($title->endDate > $fechaActual && $title->longTitle != null || $title->longTitle != "")
+            <h1 class="text-center" style="color: #74accf"><B>{{$title->longTitle}}</B></h1>
         @endif
     @endforeach
 
     @foreach ($imgLogo as $logo)
-        @if ($logo->estado == 1 && $logo->fechaFinalizacion > $fechaActual)
-            @if ($logo->imagen != null && $logo->url == null || $logo->imagen != null && $logo->url != null)
+        @if ($logo->enDate > $fechaActua)
+            @if ($logo->longImage != null || $logo->longImage != "")
                 <center>
-                    <img style="width: 100%;" src="{{asset('img/logo/'.$logo->imagen)}}">
-                </center>
-            @else
-                <center>
-                    <img style="width: 100%;" src="{{asset('img/logo/'.$logo->imagen)}}">
+                    <a href="{{$logo->url}}" target="_blank"><img data-toggle="tooltip" data-placement="top" title="{{$logo->tooltip}}" style="width: 100%;" src="{{asset('img/logo/'.$logo->longImage)}}"></a>
                 </center>
             @endif
         @endif
@@ -105,9 +101,10 @@
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
                 url: url+"/getUser",
+                data: {email: $("#email").val()}
                 success: function (data) {
                     for (var i = 0; i < data.length; i++) {
-                        if(data[i].email == $("#email").val()){
+                        if(data.length > 0){
                             $("#buttonRestablecer").trigger("click");
                         }else{
                             notif({
