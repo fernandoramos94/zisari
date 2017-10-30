@@ -23,7 +23,7 @@ class LogoImgController extends Controller
         if ($file = $request->file('file')) {
             $file     = $request->file('file');
             $nameComp = md5(time()) . '.' . $file->getClientOriginalExtension();
-            $path     = public_path() . '/img/logo/';
+            $path     = base_path() . '/img/logo/';
             $file->move($path, $nameComp);
         }
         else{
@@ -32,7 +32,7 @@ class LogoImgController extends Controller
         if ($logoMini = $request->file('fileMini')) {
             $logoMini     = $request->file('fileMini');
             $nameCompMini = md5(time()) . '.' . $logoMini->getClientOriginalExtension();
-            $path     = public_path() . '/img/logo/';
+            $path     = base_path() . '/img/logo/';
             $logoMini->move($path, $nameCompMini);
         }
         else{
