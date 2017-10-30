@@ -160,23 +160,62 @@
   </div>
 </div>
 <div class="col-lg-4" id="DivPublicidad">
- <div class="row">
-  <div class="col-lg-8 anuncio box image">
-   <p>
-    <span class="textPublicidad">
-     Publicidad
-   </span>
-   <a class="linkCrearAnuncio" href="">
-     Crear Anuncio
-   </a>
- </p>
- <img src="http://img.aws.ehowcdn.com/intl-620/ds-cdn-write/upload//8000/900/50/3/288953.jpg">
- <h4>
-  ¿Por qué Uruguay perdió el repechaje?
-</h4>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</div>
-</div>
+  <div class="row">
+    <div class="col-lg-9 anuncio box image">
+        <div class="ticket-card active">
+            <div class="cover">
+              <img src="http://s28.postimg.org/iu25iqob1/kanye.jpg" alt="" />
+              <div class="info">
+                <div class="going">
+                  4,234 Impresiones
+                </div>
+                <div class="tickets-left">
+                  240 Visitas
+                </div>
+              </div>
+            </div>
+            <div class="body">
+              <div class="artist">
+                
+              </div>
+              <div class="price">
+                
+                <div class="value">
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="info">
+                <p class="location">
+                  Publicidad
+                </p>
+                <p class="date">
+                  <a href="#" style="color: #428bca">Crear Anuncio</a>
+                </p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="collapse in">
+              <ul class="list-unstyled">
+                <li>
+                  <div class="ticket">
+                    <h5>¿Por qué Uruguay perdió el repechaje?<br>
+                      <small style="text-align: justify;">La verdad del partido sudmericano se disputará en el estadio olimpico internacional mediante encuentros ansestrales de dos equipos muy bien definidos.</small>
+                    </h5>
+                  </div>
+                  <div class="price">
+                    
+                  </div>
+                  <a href="#" class="btn btn-info btn-sm btn-buy">Ver</a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="footer">
+              <button class="btn toggle-tickets">Ocultar Contenido</button>
+            </div>
+          </div>
+      </div>
+  </div>
 </div>
 @stop()
 @section("scripts")

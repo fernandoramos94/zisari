@@ -427,3 +427,6 @@ section.main-content-wrapper.contenidoPrincipal.main-content-toggle-left{
 .ticket-card .footer .btn:focus, .ticket-card .footer .btn:hover, .ticket-card .footer .btn:active {
   outline: none !important;
 }
+.going, .tickets-left{
+	font-size: 12px;
+}

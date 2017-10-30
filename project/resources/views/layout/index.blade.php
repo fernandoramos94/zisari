@@ -103,9 +103,7 @@
                 <li>
                   <div class="ticket">
                     <h5>¿Por qué Uruguay perdió el repechaje?<br>
-                      <small style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing</small><br>
-                      <small style="text-align: justify;">elit, sed do eiusmod tempor incididunt ut labore esrs</small><br>
-                      <small style="text-align: justify;">et dolore magna aliqua.</small>
+                      <small style="text-align: justify;">La verdad del partido sudmericano se disputará en el estadio olimpico internacional mediante encuentros ansestrales de dos equipos muy bien definidos.</small>
                     </h5>
                   </div>
                   <div class="price">
