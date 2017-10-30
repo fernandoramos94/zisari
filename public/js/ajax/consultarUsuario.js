@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var url = "{{URL::to('')}}";
+    // var url = "{{URL::to('')}}";
     $("#siguienteLogin").on("click", function(){
         $("#siguienteLogin").attr('disabled', true);
         $.ajax({
@@ -7,7 +7,7 @@ $(document).ready(function() {
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
-            url: url+"/getUser",
+            url: "/getUser",
             data: {email: $("#email").val()},
             success: function (data) {
                 if(data.length > 0){
