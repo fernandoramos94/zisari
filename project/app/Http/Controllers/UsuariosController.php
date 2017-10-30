@@ -13,8 +13,9 @@ class UsuariosController extends Controller
     {
         $usuario = DB::table('users')
             ->join('usuarios', 'users.id', '=', 'usuarios.userId')
-            ->select('users.email as correo, users.name, users.ip, users.status', 'usuarios.*')
+            ->select('users.email as correo, users.name as name, users.ip as ip, users.status as status', 'usuarios.*')
             ->get();
+            dd($usuario);
         return view('usuarios.index', [
             'usuario' => $usuario,
         ]);
