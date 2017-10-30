@@ -12,7 +12,7 @@ $(document).ready(function() {
             success: function (data) {
                 if(data.length > 0){
                     $("#spanMail").text(data[0].email);
-                    $("#imgUser").attr("src", "{{asset('img/img_users/perfil')}}/"+data[0].profilePhoto);
+                    $("#imgUser").attr("src", url+"/img/img_users/perfil/"+data[0].profilePhoto);
                     $("#login1").hide();
                     $("#login2").show();
                     $("#siguienteLogin").attr('disabled', false);
