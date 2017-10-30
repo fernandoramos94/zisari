@@ -17,7 +17,7 @@ class LogoImgController extends Controller
     }
     public function store(Request $request)
     {
-        dd(app_path());
+        dd(resource_path());
         exit;
         $fechaInicialImg = $request->get("fechaInicioImg") . " " . $request->get("horaInicioImg");
         $fechaFinalImg = $request->get("fechaFinalImg") . " " .$request->get("horaFinalImg");
