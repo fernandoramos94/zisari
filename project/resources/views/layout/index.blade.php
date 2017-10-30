@@ -68,7 +68,7 @@
       <div class="col-lg-9 anuncio box image">
         <div class="ticket-card active">
           <div style="padding: 1px 30px;">
-              <div>
+              <div style="position: relative; display: block; margin-bottom: 15%;">
                 <p class="location" style="float: left;">
                   Publicidad
                 </p>
