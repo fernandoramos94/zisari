@@ -11,6 +11,7 @@
      ?>
     <form class="crearcuenta" method="POST" action="{{ route('login') }}">
         {{ csrf_field() }}
+        <input type="hidden" id="urlRoute" value="{{URL:to('')}}">
         @foreach ($text as $title)
             @if ($title->endDate > $fechaActual && $title->longTitle != "" || $title->longTitle != null)
                 <h1 class="text-center" style="color: #74accf"><B>{{$title->longTitle}}</B></h1>
@@ -94,8 +95,6 @@
                 </p>
             </div>
         </div>
-
-
     </form>
 
 @stop()

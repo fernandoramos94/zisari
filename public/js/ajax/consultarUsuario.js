@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    // var url = "{{URL::to('')}}";
+    var url = $("#urlRoute").val();
     $("#siguienteLogin").on("click", function(){
         $("#siguienteLogin").attr('disabled', true);
         $.ajax({
