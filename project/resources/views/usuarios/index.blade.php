@@ -36,14 +36,14 @@
 								@endif()
 							</td>
 							<td>
-								@if(Auth::user()->id == $user->id)
-									<a href="" data-toggle="modal" data-target="#modal{{$user->id}}">Ver </a>
+								@if(Auth::user()->id == $user->userId)
+									<a href="" data-toggle="modal" data-target="#modal{{$user->userId}}">Ver </a>
 								@else
-									<a href="" data-toggle="modal" data-target="#modal{{$user->id}}">Ver </a> | <a href="{{URL::to('deleteUsuario')}}/{{$user->id}}" >Eliminar</a> | 
+									<a href="" data-toggle="modal" data-target="#modal{{$user->userId}}">Ver </a> | <a href="{{URL::to('deleteUsuario')}}/{{$user->userId}}" >Eliminar</a> | 
 									@if($user->status == 1)
-										<a href="{{URL::to('bloquearUser/'.$user->id)}}" > Bloquear </a>
+										<a href="{{URL::to('bloquearUser/'.$user->userId)}}" > Bloquear </a>
 									@else
-										<a href="{{URL::to('activarUser/'.$user->id)}}" > Activar </a>
+										<a href="{{URL::to('activarUser/'.$user->userId)}}" > Activar </a>
 									@endif()
 								@endif()
 							</td>
@@ -58,7 +58,7 @@
 </div>
 
 @foreach ( $usuario as $us)
-<div class="modal fade" id="modal{{$us->id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="modal{{$us->userId}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       	<div class="modal-header">
