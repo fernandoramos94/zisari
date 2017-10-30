@@ -67,13 +67,12 @@
    <div class="row">
       <div class="col-lg-9 anuncio box image">
         <div class="ticket-card active">
-          <div class="body">
-            <div class="clearfix"></div>
-              <div class="info">
-                <p class="location">
+          <div style="padding: 1px 30px;">
+              <div>
+                <p class="location" style="float: left;">
                   Publicidad
                 </p>
-                <p class="date">
+                <p class="date" style="float: right;text-align: right;">
                   <a href="#" style="color: #428bca">Crear Anuncio</a>
                 </p>
               </div>
@@ -97,15 +96,6 @@
                 
                 <div class="value">
                 </div>
-              </div>
-              <div class="clearfix"></div>
-              <div class="info">
-                <p class="location">
-                  Publicidad
-                </p>
-                <p class="date">
-                  <a href="#" style="color: #428bca">Crear Anuncio</a>
-                </p>
               </div>
               <div class="clearfix"></div>
             </div>
