@@ -67,7 +67,9 @@
    <div class="row">
       <div class="col-lg-9 anuncio box image">
         <div class="ticket-card active">
-            <div class="info">
+            <div class="body">
+              <div class="clearfix"></div>
+              <div class="info">
                 <p class="location">
                   <i class="fa fa-map-marker"></i>Publicidad
                 </p>
@@ -75,7 +77,7 @@
                   <a href="#" style="color: #428bca">Crear Anuncio</a>
                 </p>
               </div>
-              <div class="clearfix"></div>
+            </div>
             <div class="cover">
               <img src="http://s28.postimg.org/iu25iqob1/kanye.jpg" alt="" />
               <div class="info">
@@ -92,12 +94,11 @@
                 
               </div>
               <div class="price">
-                
                 <div class="value">
                 </div>
               </div>
-              <div class="clearfix"></div>
               
+              <div class="clearfix"></div>
             </div>
             <div class="collapse in">
               <ul class="list-unstyled">
