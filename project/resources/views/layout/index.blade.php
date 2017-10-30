@@ -213,19 +213,18 @@
      });
 
     $(document).ready(function(){
-    $('.toggle-tickets').click(function() {
-  $tickets = $(this).parent().siblings('.collapse');
- 
-  if ($tickets.hasClass('in')) {
-    $tickets.collapse('hide');
-    $(this).html('¿Por qué Uruguay perdió el repechaje?');
-    $(this).closest('.ticket-card').removeClass('active');
-  } else {
-    $tickets.collapse('show');
-    $(this).html('Ocultar Contenido');
-    $(this).closest('.ticket-card').addClass('active');
-  }
-});
-});
+      $('.toggle-tickets').click(function() {
+        $tickets = $(this).parent().siblings('.collapse');
+        if ($tickets.hasClass('in')) {
+          $tickets.collapse('hide');
+          $(this).html('¿Por qué Uruguay perdió el repechaje?');
+          $(this).closest('.ticket-card').removeClass('active');
+        } else {
+          $tickets.collapse('show');
+          $(this).html('Ocultar Contenido');
+          $(this).closest('.ticket-card').addClass('active');
+        }
+      });
+    });
 </script>
 @stop()

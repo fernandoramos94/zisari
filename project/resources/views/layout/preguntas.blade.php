@@ -220,7 +220,20 @@
 @stop()
 @section("scripts")
 <script type="text/javascript">
-
+  $(document).ready(function(){
+      $('.toggle-tickets').click(function() {
+        $tickets = $(this).parent().siblings('.collapse');
+        if ($tickets.hasClass('in')) {
+          $tickets.collapse('hide');
+          $(this).html('¿Por qué Uruguay perdió el repechaje?');
+          $(this).closest('.ticket-card').removeClass('active');
+        } else {
+          $tickets.collapse('show');
+          $(this).html('Ocultar Contenido');
+          $(this).closest('.ticket-card').addClass('active');
+        }
+      });
+    });
  $(document).ready(function() {
    $(document).scroll(function () {
      var scroll = $(this).scrollTop();
