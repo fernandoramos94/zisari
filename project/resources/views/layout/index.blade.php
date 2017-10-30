@@ -67,24 +67,14 @@
    <div class="row">
       <div class="col-lg-9 anuncio box image">
         <div class="ticket-card active">
-          <div style="padding: 1px 30px;">
-              <div style="position: relative; display: block; margin-bottom: 15%;">
-                <p class="location" style="float: left;">
-                  Publicidad
-                </p>
-                <p class="date" style="float: right;text-align: right;">
-                  <a href="#" style="color: #428bca">Crear Anuncio</a>
-                </p>
-              </div>
-          </div>
             <div class="cover">
               <img src="http://s28.postimg.org/iu25iqob1/kanye.jpg" alt="" />
               <div class="info">
                 <div class="going">
-                  <i class="fa fa-group"></i> 4,234 Impresiones
+                  4,234 Impresiones
                 </div>
                 <div class="tickets-left">
-                  <i class="fa fa-ticket"></i> 240 Visitas
+                  240 Visitas
                 </div>
               </div>
             </div>
@@ -98,13 +88,24 @@
                 </div>
               </div>
               <div class="clearfix"></div>
+              <div class="info">
+                <p class="location">
+                  Publicidad
+                </p>
+                <p class="date">
+                  <a href="#" style="color: #428bca">Crear Anuncio</a>
+                </p>
+              </div>
+              <div class="clearfix"></div>
             </div>
             <div class="collapse in">
               <ul class="list-unstyled">
                 <li>
                   <div class="ticket">
                     <h5>¿Por qué Uruguay perdió el repechaje?<br>
-                      <small style="text-align: justify;">La verdad del partido sudmericano se disputará en el estadio olimpico internacional mediante encuentros ansestrales de dos equipos muy bien definidos. </small>
+                      <small style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing</small><br>
+                      <small style="text-align: justify;">elit, sed do eiusmod tempor incididunt ut labore esrs</small><br>
+                      <small style="text-align: justify;">et dolore magna aliqua.</small>
                     </h5>
                   </div>
                   <div class="price">
@@ -212,16 +213,6 @@
              }
          });
      });
-
-
-    $(document).ready(function() {
-      $('#contenidoGratis').slimScroll({
-          allowPageScroll: true,
-          height: '77vh',
-          alwaysVisible: true
-         });
-   })
-
 
     $(document).ready(function(){
     $('.toggle-tickets').click(function() {
