@@ -39,7 +39,7 @@ class UsuariosController extends Controller
             if ($file = $request->file('portada')) {
                 $file     = $request->file('portada');
                 $nameComp = md5(time()) . '.' . $file->getClientOriginalExtension();
-                $path     = public_path() . '/img/img_users/portadas/';
+                $path     = './img/img_users/portadas/';
                 $file->move($path, $nameComp);
             }
             else{
@@ -50,7 +50,7 @@ class UsuariosController extends Controller
                 // Subir imagenes en la carpeta publica image/provider
                 $foto     = $request->file('foto');
                 $nameFoto = md5(time()) . '.' . $foto->getClientOriginalExtension();
-                $url     = public_path() . '/img/img_users/perfil/';
+                $url     = './img/img_users/perfil/';
                 $foto->move($url, $nameFoto);
             }else{
                 $nameFoto = "TFQirkLGuJP6ipZyCNuJIEdCHMk5Ce7cO.png";
@@ -90,14 +90,18 @@ class UsuariosController extends Controller
 
     public function update(Request $request, $id)
     {
-        //
+
     }
 
     public function eliminar($id)
     {
-        $usuarios = User::find($id);
+        $usuarios = Usuarios::where('userId', $id)->first();
+        $user = User::find($id);
+
         if ($usuarios->delete()) {
-            return redirect("usuarios");
+            if ($user->delete()) {
+                return redirect("usuarios");
+            }
         }
     }
     public function bloquearUser($id){
