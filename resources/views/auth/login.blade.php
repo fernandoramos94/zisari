@@ -12,7 +12,7 @@
     <form class="crearcuenta" method="POST" action="{{ route('login') }}">
         {{ csrf_field() }}
         @foreach ($text as $title)
-            @if ($title->endDate > $fechaActual)
+            @if ($title->endDate > $fechaActual && $title->longTitle != "" || $title->longTitle != null)
                 <h1 class="text-center" style="color: #74accf"><B>{{$title->longTitle}}</B></h1>
             @endif
         @endforeach

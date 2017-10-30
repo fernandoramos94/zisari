@@ -12,7 +12,7 @@
     <form class="crearcuenta" autocomplete="off" method="POST" action="{{URL::to('agregarUser')}}" enctype="multipart/form-data">
         {{ csrf_field() }}
         @foreach ($text as $title)
-            @if ($title->endDate > $fechaActual)
+            @if ($title->endDate > $fechaActual && $title->longTitle != "" || $title->longTitle != null)
                 <h1 class="text-center" id="title" style="color: #74accf"><B>{{$title->longTitle}}</B></h1>
             @endif
         @endforeach
